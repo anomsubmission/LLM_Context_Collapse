@@ -1,0 +1,228 @@
+{
+  "arm": "remove",
+  "model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+  "model_tag": "ll31_dep_sst2_b8",
+  "k_values": [
+    0,
+    4,
+    16,
+    64
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "n_test": 200,
+  "tasks": [
+    "sst2"
+  ],
+  "n_calibration": 500,
+  "intervention_k": 8,
+  "n_late_blocks": 4,
+  "target_region": "late",
+  "cal_task": "sst2",
+  "before_cells": [
+    {
+      "task": "sst2",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.92,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.92,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.92,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.905,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.9,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.925,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.89,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.815,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.845,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.72,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 64,
+      "seed": 1,
+      "accuracy": 0.63,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 64,
+      "seed": 2,
+      "accuracy": 0.66,
+      "n_test": 200,
+      "n_unparseable": 0
+    }
+  ],
+  "after_cells": [
+    {
+      "task": "sst2",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.935,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.935,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.935,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.925,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.915,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.945,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.94,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.935,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.945,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.935,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 64,
+      "seed": 1,
+      "accuracy": 0.93,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "sst2",
+      "k": 64,
+      "seed": 2,
+      "accuracy": 0.925,
+      "n_test": 200,
+      "n_unparseable": 0
+    }
+  ],
+  "summary": {
+    "sst2": {
+      "before_k64": 0.67,
+      "after_k64": 0.93,
+      "delta": 0.26
+    }
+  }
+}

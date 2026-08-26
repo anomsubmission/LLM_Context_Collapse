@@ -1,0 +1,521 @@
+{
+  "arm": "remove",
+  "model_id": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+  "model_tag": "llama31_8b_remove",
+  "k_values": [
+    0,
+    1,
+    4,
+    16,
+    64
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "n_test": 200,
+  "tasks": [
+    "ag_news",
+    "imdb"
+  ],
+  "n_calibration": 500,
+  "intervention_k": 8,
+  "n_late_blocks": 4,
+  "before_cells": [
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.84,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.84,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.84,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 1,
+      "seed": 0,
+      "accuracy": 0.87,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 1,
+      "seed": 1,
+      "accuracy": 0.8,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 1,
+      "seed": 2,
+      "accuracy": 0.875,
+      "n_test": 200,
+      "n_unparseable": 2
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.78,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.79,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.62,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.295,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.255,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.34,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "ag_news",
+      "k": 64,
+      "seed": 1,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "ag_news",
+      "k": 64,
+      "seed": 2,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "imdb",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.95,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "imdb",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.95,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "imdb",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.95,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "imdb",
+      "k": 1,
+      "seed": 0,
+      "accuracy": 0.955,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "imdb",
+      "k": 1,
+      "seed": 1,
+      "accuracy": 0.915,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "imdb",
+      "k": 1,
+      "seed": 2,
+      "accuracy": 0.95,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "imdb",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.88,
+      "n_test": 200,
+      "n_unparseable": 14
+    },
+    {
+      "task": "imdb",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.54,
+      "n_test": 200,
+      "n_unparseable": 63
+    },
+    {
+      "task": "imdb",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.875,
+      "n_test": 200,
+      "n_unparseable": 12
+    },
+    {
+      "task": "imdb",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "imdb",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "imdb",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "imdb",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "imdb",
+      "k": 64,
+      "seed": 1,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "imdb",
+      "k": 64,
+      "seed": 2,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    }
+  ],
+  "after_cells": [
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.885,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.885,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.885,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 1,
+      "seed": 0,
+      "accuracy": 0.885,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 1,
+      "seed": 1,
+      "accuracy": 0.85,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 1,
+      "seed": 2,
+      "accuracy": 0.87,
+      "n_test": 200,
+      "n_unparseable": 1
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.875,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.865,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.89,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.88,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.9,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.865,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "ag_news",
+      "k": 64,
+      "seed": 1,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "ag_news",
+      "k": 64,
+      "seed": 2,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "imdb",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.94,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "imdb",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.94,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "imdb",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.94,
+      "n_test": 200,
+      "n_unparseable": 0
+    },
+    {
+      "task": "imdb",
+      "k": 1,
+      "seed": 0,
+      "accuracy": 0.92,
+      "n_test": 200,
+      "n_unparseable": 6
+    },
+    {
+      "task": "imdb",
+      "k": 1,
+      "seed": 1,
+      "accuracy": 0.91,
+      "n_test": 200,
+      "n_unparseable": 5
+    },
+    {
+      "task": "imdb",
+      "k": 1,
+      "seed": 2,
+      "accuracy": 0.93,
+      "n_test": 200,
+      "n_unparseable": 5
+    },
+    {
+      "task": "imdb",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.87,
+      "n_test": 200,
+      "n_unparseable": 18
+    },
+    {
+      "task": "imdb",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.62,
+      "n_test": 200,
+      "n_unparseable": 66
+    },
+    {
+      "task": "imdb",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.875,
+      "n_test": 200,
+      "n_unparseable": 16
+    },
+    {
+      "task": "imdb",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "imdb",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "imdb",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "imdb",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "imdb",
+      "k": 64,
+      "seed": 1,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    },
+    {
+      "task": "imdb",
+      "k": 64,
+      "seed": 2,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200
+    }
+  ],
+  "summary": {
+    "ag_news": {
+      "before_k64": 0.0,
+      "after_k64": 0.0,
+      "delta": 0.0
+    },
+    "imdb": {
+      "before_k64": 0.0,
+      "after_k64": 0.0,
+      "delta": 0.0
+    }
+  }
+}

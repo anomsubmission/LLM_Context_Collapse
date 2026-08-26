@@ -1,0 +1,83 @@
+{
+  "experiment": "recipe_difference",
+  "model_id": "us.meta.llama3-1-8b-instruct-v1:0",
+  "model_tag": "llama31_8b_instruct_smoke",
+  "tasks": [
+    "ag_news"
+  ],
+  "k_values": [
+    0,
+    1,
+    4,
+    16,
+    64
+  ],
+  "seeds": [
+    0
+  ],
+  "n_test": 50,
+  "started_at": "2026-05-25T16:10:13.584136+00:00",
+  "cells": [
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.76,
+      "n_unparseable": 0,
+      "n_test": 50,
+      "input_tokens": 5366,
+      "output_tokens": 132,
+      "skipped": false,
+      "elapsed_sec": 3.0
+    },
+    {
+      "task": "ag_news",
+      "k": 1,
+      "seed": 0,
+      "accuracy": 0.82,
+      "n_unparseable": 0,
+      "n_test": 50,
+      "input_tokens": 8337,
+      "output_tokens": 136,
+      "skipped": false,
+      "elapsed_sec": 2.5
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.7,
+      "n_unparseable": 0,
+      "n_test": 50,
+      "input_tokens": 17030,
+      "output_tokens": 130,
+      "skipped": false,
+      "elapsed_sec": 2.5
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.3,
+      "n_unparseable": 0,
+      "n_test": 50,
+      "input_tokens": 53000,
+      "output_tokens": 108,
+      "skipped": false,
+      "elapsed_sec": 2.6
+    },
+    {
+      "task": "ag_news",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.3,
+      "n_unparseable": 0,
+      "n_test": 50,
+      "input_tokens": 197885,
+      "output_tokens": 108,
+      "skipped": false,
+      "elapsed_sec": 3.3
+    }
+  ],
+  "finished_at": "2026-05-25T16:10:27.442844+00:00"
+}

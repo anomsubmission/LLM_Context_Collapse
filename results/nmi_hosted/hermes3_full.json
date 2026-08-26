@@ -1,0 +1,1953 @@
+{
+  "model_id": "NousResearch/Hermes-3-Llama-3.1-8B",
+  "model_tag": "hermes3",
+  "variant": "alt_recipe",
+  "k_values": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "n_test": 200,
+  "tasks": [
+    "ag_news",
+    "sst2",
+    "mnli",
+    "qnli",
+    "imdb",
+    "amazon_electronics",
+    "yelp",
+    "dbpedia"
+  ],
+  "cells": [
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.86,
+      "n_test": 200,
+      "n_unparseable": 5,
+      "input_tokens": 21042,
+      "output_tokens": 457
+    },
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.86,
+      "n_test": 200,
+      "n_unparseable": 5,
+      "input_tokens": 21042,
+      "output_tokens": 457
+    },
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.86,
+      "n_test": 200,
+      "n_unparseable": 5,
+      "input_tokens": 21042,
+      "output_tokens": 457
+    },
+    {
+      "task": "ag_news",
+      "k": 1,
+      "seed": 0,
+      "accuracy": 0.84,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 28042,
+      "output_tokens": 450
+    },
+    {
+      "task": "ag_news",
+      "k": 1,
+      "seed": 1,
+      "accuracy": 0.805,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 29642,
+      "output_tokens": 430
+    },
+    {
+      "task": "ag_news",
+      "k": 1,
+      "seed": 2,
+      "accuracy": 0.875,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 30642,
+      "output_tokens": 530
+    },
+    {
+      "task": "ag_news",
+      "k": 2,
+      "seed": 0,
+      "accuracy": 0.85,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 39642,
+      "output_tokens": 468
+    },
+    {
+      "task": "ag_news",
+      "k": 2,
+      "seed": 1,
+      "accuracy": 0.825,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 36842,
+      "output_tokens": 436
+    },
+    {
+      "task": "ag_news",
+      "k": 2,
+      "seed": 2,
+      "accuracy": 0.89,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 42842,
+      "output_tokens": 460
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.86,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 63842,
+      "output_tokens": 470
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.87,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 58042,
+      "output_tokens": 458
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.82,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 74442,
+      "output_tokens": 472
+    },
+    {
+      "task": "ag_news",
+      "k": 8,
+      "seed": 0,
+      "accuracy": 0.925,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 119242,
+      "output_tokens": 484
+    },
+    {
+      "task": "ag_news",
+      "k": 8,
+      "seed": 1,
+      "accuracy": 0.875,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 95042,
+      "output_tokens": 480
+    },
+    {
+      "task": "ag_news",
+      "k": 8,
+      "seed": 2,
+      "accuracy": 0.86,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 106642,
+      "output_tokens": 468
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.93,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 204642,
+      "output_tokens": 482
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.885,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 184842,
+      "output_tokens": 482
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.88,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 196242,
+      "output_tokens": 476
+    },
+    {
+      "task": "ag_news",
+      "k": 32,
+      "seed": 0,
+      "accuracy": 0.89,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 381642,
+      "output_tokens": 488
+    },
+    {
+      "task": "ag_news",
+      "k": 32,
+      "seed": 1,
+      "accuracy": 0.885,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 376042,
+      "output_tokens": 482
+    },
+    {
+      "task": "ag_news",
+      "k": 32,
+      "seed": 2,
+      "accuracy": 0.89,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 371842,
+      "output_tokens": 486
+    },
+    {
+      "task": "ag_news",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.9,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 786242,
+      "output_tokens": 490
+    },
+    {
+      "task": "ag_news",
+      "k": 64,
+      "seed": 1,
+      "accuracy": 0.86,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 723242,
+      "output_tokens": 496
+    },
+    {
+      "task": "ag_news",
+      "k": 64,
+      "seed": 2,
+      "accuracy": 0.9,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 759042,
+      "output_tokens": 490
+    },
+    {
+      "task": "sst2",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.91,
+      "n_test": 200,
+      "n_unparseable": 1,
+      "input_tokens": 14730,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.91,
+      "n_test": 200,
+      "n_unparseable": 1,
+      "input_tokens": 14730,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.91,
+      "n_test": 200,
+      "n_unparseable": 1,
+      "input_tokens": 14730,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 1,
+      "seed": 0,
+      "accuracy": 0.925,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 17730,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 1,
+      "seed": 1,
+      "accuracy": 0.93,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 16930,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 1,
+      "seed": 2,
+      "accuracy": 0.92,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 17930,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 2,
+      "seed": 0,
+      "accuracy": 0.91,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 19930,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 2,
+      "seed": 1,
+      "accuracy": 0.925,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 18730,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 2,
+      "seed": 2,
+      "accuracy": 0.905,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 22730,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.9,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 23330,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.905,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 23130,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.92,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 30730,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 8,
+      "seed": 0,
+      "accuracy": 0.92,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 33130,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 8,
+      "seed": 1,
+      "accuracy": 0.925,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 39130,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 8,
+      "seed": 2,
+      "accuracy": 0.93,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 42130,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.935,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 60930,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.945,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 71330,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.925,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 89730,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 32,
+      "seed": 0,
+      "accuracy": 0.92,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 126330,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 32,
+      "seed": 1,
+      "accuracy": 0.93,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 118130,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 32,
+      "seed": 2,
+      "accuracy": 0.935,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 140130,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.925,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 244130,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 64,
+      "seed": 1,
+      "accuracy": 0.94,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 248330,
+      "output_tokens": 400
+    },
+    {
+      "task": "sst2",
+      "k": 64,
+      "seed": 2,
+      "accuracy": 0.92,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 255730,
+      "output_tokens": 400
+    },
+    {
+      "task": "mnli",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.47,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 18275,
+      "output_tokens": 628
+    },
+    {
+      "task": "mnli",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.47,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 18275,
+      "output_tokens": 628
+    },
+    {
+      "task": "mnli",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.47,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 18275,
+      "output_tokens": 628
+    },
+    {
+      "task": "mnli",
+      "k": 1,
+      "seed": 0,
+      "accuracy": 0.45,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 28275,
+      "output_tokens": 586
+    },
+    {
+      "task": "mnli",
+      "k": 1,
+      "seed": 1,
+      "accuracy": 0.4,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 23675,
+      "output_tokens": 566
+    },
+    {
+      "task": "mnli",
+      "k": 1,
+      "seed": 2,
+      "accuracy": 0.5,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 26875,
+      "output_tokens": 556
+    },
+    {
+      "task": "mnli",
+      "k": 2,
+      "seed": 0,
+      "accuracy": 0.51,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 35275,
+      "output_tokens": 590
+    },
+    {
+      "task": "mnli",
+      "k": 2,
+      "seed": 1,
+      "accuracy": 0.51,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 33075,
+      "output_tokens": 574
+    },
+    {
+      "task": "mnli",
+      "k": 2,
+      "seed": 2,
+      "accuracy": 0.53,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 40675,
+      "output_tokens": 554
+    },
+    {
+      "task": "mnli",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.505,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 41875,
+      "output_tokens": 584
+    },
+    {
+      "task": "mnli",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.495,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 40075,
+      "output_tokens": 524
+    },
+    {
+      "task": "mnli",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.525,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 49475,
+      "output_tokens": 580
+    },
+    {
+      "task": "mnli",
+      "k": 8,
+      "seed": 0,
+      "accuracy": 0.565,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 61275,
+      "output_tokens": 618
+    },
+    {
+      "task": "mnli",
+      "k": 8,
+      "seed": 1,
+      "accuracy": 0.58,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 65075,
+      "output_tokens": 572
+    },
+    {
+      "task": "mnli",
+      "k": 8,
+      "seed": 2,
+      "accuracy": 0.575,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 76475,
+      "output_tokens": 596
+    },
+    {
+      "task": "mnli",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.61,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 165075,
+      "output_tokens": 632
+    },
+    {
+      "task": "mnli",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.54,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 137875,
+      "output_tokens": 648
+    },
+    {
+      "task": "mnli",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.595,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 163275,
+      "output_tokens": 626
+    },
+    {
+      "task": "mnli",
+      "k": 32,
+      "seed": 0,
+      "accuracy": 0.55,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 301475,
+      "output_tokens": 616
+    },
+    {
+      "task": "mnli",
+      "k": 32,
+      "seed": 1,
+      "accuracy": 0.56,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 273075,
+      "output_tokens": 666
+    },
+    {
+      "task": "mnli",
+      "k": 32,
+      "seed": 2,
+      "accuracy": 0.615,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 309475,
+      "output_tokens": 614
+    },
+    {
+      "task": "mnli",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.57,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 569675,
+      "output_tokens": 668
+    },
+    {
+      "task": "mnli",
+      "k": 64,
+      "seed": 1,
+      "accuracy": 0.615,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 565275,
+      "output_tokens": 648
+    },
+    {
+      "task": "mnli",
+      "k": 64,
+      "seed": 2,
+      "accuracy": 0.54,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 635075,
+      "output_tokens": 684
+    },
+    {
+      "task": "qnli",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.78,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 21087,
+      "output_tokens": 865
+    },
+    {
+      "task": "qnli",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.78,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 21087,
+      "output_tokens": 865
+    },
+    {
+      "task": "qnli",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.78,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 21087,
+      "output_tokens": 865
+    },
+    {
+      "task": "qnli",
+      "k": 1,
+      "seed": 0,
+      "accuracy": 0.755,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 29887,
+      "output_tokens": 888
+    },
+    {
+      "task": "qnli",
+      "k": 1,
+      "seed": 1,
+      "accuracy": 0.715,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 34287,
+      "output_tokens": 850
+    },
+    {
+      "task": "qnli",
+      "k": 1,
+      "seed": 2,
+      "accuracy": 0.705,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 30687,
+      "output_tokens": 852
+    },
+    {
+      "task": "qnli",
+      "k": 2,
+      "seed": 0,
+      "accuracy": 0.81,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 45687,
+      "output_tokens": 893
+    },
+    {
+      "task": "qnli",
+      "k": 2,
+      "seed": 1,
+      "accuracy": 0.765,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 42887,
+      "output_tokens": 878
+    },
+    {
+      "task": "qnli",
+      "k": 2,
+      "seed": 2,
+      "accuracy": 0.82,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 43687,
+      "output_tokens": 887
+    },
+    {
+      "task": "qnli",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.76,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 64687,
+      "output_tokens": 883
+    },
+    {
+      "task": "qnli",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.81,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 69687,
+      "output_tokens": 897
+    },
+    {
+      "task": "qnli",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.815,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 74487,
+      "output_tokens": 884
+    },
+    {
+      "task": "qnli",
+      "k": 8,
+      "seed": 0,
+      "accuracy": 0.775,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 94687,
+      "output_tokens": 908
+    },
+    {
+      "task": "qnli",
+      "k": 8,
+      "seed": 1,
+      "accuracy": 0.83,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 118487,
+      "output_tokens": 897
+    },
+    {
+      "task": "qnli",
+      "k": 8,
+      "seed": 2,
+      "accuracy": 0.8,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 128087,
+      "output_tokens": 905
+    },
+    {
+      "task": "qnli",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.68,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 163287,
+      "output_tokens": 925
+    },
+    {
+      "task": "qnli",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.77,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 212287,
+      "output_tokens": 909
+    },
+    {
+      "task": "qnli",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.74,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 217887,
+      "output_tokens": 913
+    },
+    {
+      "task": "qnli",
+      "k": 32,
+      "seed": 0,
+      "accuracy": 0.7,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 360487,
+      "output_tokens": 905
+    },
+    {
+      "task": "qnli",
+      "k": 32,
+      "seed": 1,
+      "accuracy": 0.74,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 374087,
+      "output_tokens": 915
+    },
+    {
+      "task": "qnli",
+      "k": 32,
+      "seed": 2,
+      "accuracy": 0.76,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 417487,
+      "output_tokens": 903
+    },
+    {
+      "task": "qnli",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.705,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 683087,
+      "output_tokens": 908
+    },
+    {
+      "task": "qnli",
+      "k": 64,
+      "seed": 1,
+      "accuracy": 0.705,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 734487,
+      "output_tokens": 910
+    },
+    {
+      "task": "qnli",
+      "k": 64,
+      "seed": 2,
+      "accuracy": 0.68,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 747287,
+      "output_tokens": 923
+    },
+    {
+      "task": "imdb",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.94,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 73744,
+      "output_tokens": 400
+    },
+    {
+      "task": "imdb",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.94,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 73744,
+      "output_tokens": 400
+    },
+    {
+      "task": "imdb",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.94,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 73744,
+      "output_tokens": 400
+    },
+    {
+      "task": "imdb",
+      "k": 1,
+      "seed": 0,
+      "accuracy": 0.96,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 110144,
+      "output_tokens": 400
+    },
+    {
+      "task": "imdb",
+      "k": 1,
+      "seed": 1,
+      "accuracy": 0.945,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 119344,
+      "output_tokens": 400
+    },
+    {
+      "task": "imdb",
+      "k": 1,
+      "seed": 2,
+      "accuracy": 0.955,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 121344,
+      "output_tokens": 400
+    },
+    {
+      "task": "imdb",
+      "k": 2,
+      "seed": 0,
+      "accuracy": 0.93,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 236744,
+      "output_tokens": 400
+    },
+    {
+      "task": "imdb",
+      "k": 2,
+      "seed": 1,
+      "accuracy": 0.965,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 156544,
+      "output_tokens": 400
+    },
+    {
+      "task": "imdb",
+      "k": 2,
+      "seed": 2,
+      "accuracy": 0.94,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 151544,
+      "output_tokens": 400
+    },
+    {
+      "task": "imdb",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.945,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 316544,
+      "output_tokens": 400
+    },
+    {
+      "task": "imdb",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.95,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 410344,
+      "output_tokens": 400
+    },
+    {
+      "task": "imdb",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.93,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 305744,
+      "output_tokens": 400
+    },
+    {
+      "task": "imdb",
+      "k": 8,
+      "seed": 0,
+      "accuracy": 0.915,
+      "n_test": 200,
+      "n_unparseable": 6,
+      "input_tokens": 666653,
+      "output_tokens": 448
+    },
+    {
+      "task": "imdb",
+      "k": 8,
+      "seed": 1,
+      "accuracy": 0.96,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 595544,
+      "output_tokens": 400
+    },
+    {
+      "task": "imdb",
+      "k": 8,
+      "seed": 2,
+      "accuracy": 0.95,
+      "n_test": 200,
+      "n_unparseable": 1,
+      "input_tokens": 627936,
+      "output_tokens": 408
+    },
+    {
+      "task": "imdb",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "imdb",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "imdb",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "imdb",
+      "k": 32,
+      "seed": 0,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "imdb",
+      "k": 32,
+      "seed": 1,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "imdb",
+      "k": 32,
+      "seed": 2,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "imdb",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "imdb",
+      "k": 64,
+      "seed": 1,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "imdb",
+      "k": 64,
+      "seed": 2,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.975,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 30357,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.975,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 30357,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.975,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 30357,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 1,
+      "seed": 0,
+      "accuracy": 0.965,
+      "n_test": 200,
+      "n_unparseable": 1,
+      "input_tokens": 67357,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 1,
+      "seed": 1,
+      "accuracy": 0.955,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 49757,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 1,
+      "seed": 2,
+      "accuracy": 0.955,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 46757,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 2,
+      "seed": 0,
+      "accuracy": 0.97,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 72557,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 2,
+      "seed": 1,
+      "accuracy": 0.95,
+      "n_test": 200,
+      "n_unparseable": 2,
+      "input_tokens": 76157,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 2,
+      "seed": 2,
+      "accuracy": 0.975,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 57957,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.96,
+      "n_test": 200,
+      "n_unparseable": 1,
+      "input_tokens": 107957,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.965,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 129957,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.97,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 83357,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 8,
+      "seed": 0,
+      "accuracy": 0.97,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 228757,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 8,
+      "seed": 1,
+      "accuracy": 0.975,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 225757,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 8,
+      "seed": 2,
+      "accuracy": 0.965,
+      "n_test": 200,
+      "n_unparseable": 1,
+      "input_tokens": 180557,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.955,
+      "n_test": 200,
+      "n_unparseable": 1,
+      "input_tokens": 441757,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.975,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 378757,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.97,
+      "n_test": 200,
+      "n_unparseable": 1,
+      "input_tokens": 317557,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 32,
+      "seed": 0,
+      "accuracy": 0.955,
+      "n_test": 200,
+      "n_unparseable": 3,
+      "input_tokens": 750957,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 32,
+      "seed": 1,
+      "accuracy": 0.975,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 672757,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 32,
+      "seed": 2,
+      "accuracy": 0.965,
+      "n_test": 200,
+      "n_unparseable": 2,
+      "input_tokens": 681757,
+      "output_tokens": 400
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 64,
+      "seed": 1,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "amazon_electronics",
+      "k": 64,
+      "seed": 2,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "yelp",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.985,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 41495,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.985,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 41495,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.985,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 41495,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 1,
+      "seed": 0,
+      "accuracy": 0.98,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 53495,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 1,
+      "seed": 1,
+      "accuracy": 0.97,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 54295,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 1,
+      "seed": 2,
+      "accuracy": 0.965,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 125295,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 2,
+      "seed": 0,
+      "accuracy": 0.975,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 58895,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 2,
+      "seed": 1,
+      "accuracy": 0.965,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 88095,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 2,
+      "seed": 2,
+      "accuracy": 0.96,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 133295,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.985,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 95295,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.98,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 149895,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.975,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 272695,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 8,
+      "seed": 0,
+      "accuracy": 0.98,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 299295,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 8,
+      "seed": 1,
+      "accuracy": 0.97,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 212295,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 8,
+      "seed": 2,
+      "accuracy": 0.975,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 322895,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.985,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 618495,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.985,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 424695,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.985,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 662295,
+      "output_tokens": 400
+    },
+    {
+      "task": "yelp",
+      "k": 32,
+      "seed": 0,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "yelp",
+      "k": 32,
+      "seed": 1,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "yelp",
+      "k": 32,
+      "seed": 2,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "yelp",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "yelp",
+      "k": 64,
+      "seed": 1,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "yelp",
+      "k": 64,
+      "seed": 2,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "dbpedia",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.965,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 30511,
+      "output_tokens": 569
+    },
+    {
+      "task": "dbpedia",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.965,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 30511,
+      "output_tokens": 569
+    },
+    {
+      "task": "dbpedia",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.965,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 30511,
+      "output_tokens": 569
+    },
+    {
+      "task": "dbpedia",
+      "k": 1,
+      "seed": 0,
+      "accuracy": 0.955,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 37511,
+      "output_tokens": 572
+    },
+    {
+      "task": "dbpedia",
+      "k": 1,
+      "seed": 1,
+      "accuracy": 0.96,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 51311,
+      "output_tokens": 564
+    },
+    {
+      "task": "dbpedia",
+      "k": 1,
+      "seed": 2,
+      "accuracy": 0.96,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 56311,
+      "output_tokens": 594
+    },
+    {
+      "task": "dbpedia",
+      "k": 2,
+      "seed": 0,
+      "accuracy": 0.965,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 50511,
+      "output_tokens": 565
+    },
+    {
+      "task": "dbpedia",
+      "k": 2,
+      "seed": 1,
+      "accuracy": 0.965,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 61711,
+      "output_tokens": 604
+    },
+    {
+      "task": "dbpedia",
+      "k": 2,
+      "seed": 2,
+      "accuracy": 0.98,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 73511,
+      "output_tokens": 571
+    },
+    {
+      "task": "dbpedia",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.975,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 85911,
+      "output_tokens": 570
+    },
+    {
+      "task": "dbpedia",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.965,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 99511,
+      "output_tokens": 580
+    },
+    {
+      "task": "dbpedia",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.975,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 96511,
+      "output_tokens": 574
+    },
+    {
+      "task": "dbpedia",
+      "k": 8,
+      "seed": 0,
+      "accuracy": 0.965,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 121711,
+      "output_tokens": 574
+    },
+    {
+      "task": "dbpedia",
+      "k": 8,
+      "seed": 1,
+      "accuracy": 0.975,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 139311,
+      "output_tokens": 573
+    },
+    {
+      "task": "dbpedia",
+      "k": 8,
+      "seed": 2,
+      "accuracy": 0.97,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 152911,
+      "output_tokens": 572
+    },
+    {
+      "task": "dbpedia",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.97,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 194711,
+      "output_tokens": 569
+    },
+    {
+      "task": "dbpedia",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.97,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 233911,
+      "output_tokens": 572
+    },
+    {
+      "task": "dbpedia",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.975,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 244711,
+      "output_tokens": 570
+    },
+    {
+      "task": "dbpedia",
+      "k": 32,
+      "seed": 0,
+      "accuracy": 0.98,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 431311,
+      "output_tokens": 571
+    },
+    {
+      "task": "dbpedia",
+      "k": 32,
+      "seed": 1,
+      "accuracy": 0.98,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 411911,
+      "output_tokens": 571
+    },
+    {
+      "task": "dbpedia",
+      "k": 32,
+      "seed": 2,
+      "accuracy": 0.98,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 462911,
+      "output_tokens": 571
+    },
+    {
+      "task": "dbpedia",
+      "k": 64,
+      "seed": 0,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    },
+    {
+      "task": "dbpedia",
+      "k": 64,
+      "seed": 1,
+      "accuracy": 0.985,
+      "n_test": 200,
+      "n_unparseable": 0,
+      "input_tokens": 803111,
+      "output_tokens": 568
+    },
+    {
+      "task": "dbpedia",
+      "k": 64,
+      "seed": 2,
+      "accuracy": 0.0,
+      "n_test": 200,
+      "n_unparseable": 200,
+      "input_tokens": 819200,
+      "output_tokens": 2000
+    }
+  ]
+}

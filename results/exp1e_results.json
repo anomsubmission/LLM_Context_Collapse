@@ -1,0 +1,62 @@
+{
+  "gemma3_4b": {
+    "ag_news": 0.767,
+    "sst2": 0.927,
+    "imdb": 0.953,
+    "amazon_electronics_sentiment": 0.943,
+    "mnli": 0.743,
+    "dbpedia": 0.933,
+    "tweet_emotion": 0.753,
+    "synthetic_rule_v1": 0.513
+  },
+  "gemma3_12b": {
+    "ag_news": 0.807,
+    "sst2": 0.947,
+    "imdb": 0.917,
+    "amazon_electronics_sentiment": 0.947,
+    "mnli": 0.79,
+    "dbpedia": 0.833,
+    "tweet_emotion": 0.823,
+    "synthetic_rule_v1": 0.547
+  },
+  "gemma3_27b": {
+    "ag_news": 0.86,
+    "sst2": 0.947,
+    "imdb": 0.9,
+    "amazon_electronics_sentiment": 0.947,
+    "mnli": 0.817,
+    "dbpedia": 0.883,
+    "tweet_emotion": 0.793,
+    "synthetic_rule_v1": 0.52
+  },
+  "qwen3_32b": {
+    "ag_news": 0.763,
+    "sst2": 0.943,
+    "imdb": 0.907,
+    "amazon_electronics_sentiment": 0.957,
+    "mnli": 0.86,
+    "dbpedia": 0.953,
+    "tweet_emotion": 0.773,
+    "synthetic_rule_v1": 0.517
+  },
+  "deepseek_v3": {
+    "ag_news": 0.803,
+    "sst2": 0.94,
+    "imdb": 0.93,
+    "amazon_electronics_sentiment": 0.94,
+    "mnli": 0.82,
+    "dbpedia": 0.913,
+    "tweet_emotion": 0.743,
+    "synthetic_rule_v1": 0.44
+  },
+  "llama3_3_70b": {
+    "ag_news": 0.883,
+    "sst2": 0.947,
+    "imdb": 0.903,
+    "amazon_electronics_sentiment": 0.96,
+    "mnli": 0.807,
+    "dbpedia": 0.88,
+    "tweet_emotion": 0.793,
+    "synthetic_rule_v1": 0.5
+  }
+}

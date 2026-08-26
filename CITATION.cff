@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this code or the archived results, please cite the paper."
+title: "Localizing and repairing the in-context cliff: a complementary learning systems account of fast and slow learning in large language models"
+abstract: >-
+  Many-shot in-context learning is not monotone: for some models accuracy collapses once
+  demonstrations exceed a threshold -- the in-context cliff. Vulnerability is set by the
+  post-training recipe rather than by scale or architecture, and the failure localizes
+  causally to transformer blocks 8-15 by three independent methods (function-vector
+  causal tracing, induction-head scoring, and targeted LoRA consolidation): consolidation
+  restricted to that band repairs the cliff, while the same intervention at the late
+  readout does not. Framed as a complementary learning systems account, with in-context
+  learning as the hippocampal fast path and fine-tuning as neocortical consolidation.
+authors:
+  - family-names: Rostami
+    given-names: Mohammad
+repository-code: "https://github.com/rostami-m/CLS-in-Context"
+license: MIT
+type: software
+keywords:
+  - in-context learning
+  - complementary learning systems
+  - many-shot prompting
+  - mechanistic interpretability
+  - continual learning

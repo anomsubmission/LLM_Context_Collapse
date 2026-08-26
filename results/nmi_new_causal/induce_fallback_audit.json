@@ -1,0 +1,3549 @@
+{
+  "experiment": "induce_arm_supervision_target_audit",
+  "purpose": "measure the _k0_prediction fallback rate in the induce-arm calibration set",
+  "model_id": "google/gemma-3-4b-it",
+  "cal_task": "ag_news",
+  "n_calibration": 500,
+  "intervention_k": 16,
+  "device": "mps",
+  "dtype": "bfloat16",
+  "extracted_source_sha256": "9a3f3df0cbf5b38d2ddd5c752b74f357d7131575766747e35bf67b268a1cf7cb",
+  "extracted_objects": {
+    "TASKS": 37,
+    "_text_of": 4,
+    "load_task": 24,
+    "render_icl_prompt": 19,
+    "apply_chat_template_safe": 12,
+    "class_balanced_sample": 16,
+    "_k0_prediction": 14,
+    "build_calibration_set": 30
+  },
+  "label_names": [
+    "World",
+    "Sports",
+    "Business",
+    "Sci/Tech"
+  ],
+  "fallback_label": "World",
+  "n_fallback": 0,
+  "fallback_rate": 0.0,
+  "n_parsed": 500,
+  "target_agrees_with_gold": 408,
+  "target_gold_agreement_rate": 0.816,
+  "target_gold_agreement_rate_parsed_only": 0.816,
+  "target_distribution": {
+    "Sports": 120,
+    "Business": 184,
+    "World": 134,
+    "Sci/Tech": 62
+  },
+  "gold_distribution": {
+    "Sports": 118,
+    "Business": 136,
+    "World": 127,
+    "Sci/Tech": 119
+  },
+  "most_common_target_share": 0.368,
+  "records": [
+    {
+      "i": 0,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 1,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 2,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 3,
+      "gold": "World",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 4,
+      "gold": "World",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 5,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 6,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 7,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 8,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 9,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 10,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 11,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 12,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 13,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 14,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 15,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 16,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 17,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 18,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 19,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 20,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 21,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 22,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 23,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 24,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 25,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 26,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 27,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 28,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 29,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 30,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 31,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 32,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 33,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 34,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 35,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 36,
+      "gold": "Sci/Tech",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 37,
+      "gold": "Business",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 38,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 39,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 40,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 41,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 42,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 43,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 44,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 45,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 46,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 47,
+      "gold": "Sci/Tech",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 48,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 49,
+      "gold": "Sports",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 50,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 51,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 52,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 53,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 54,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 55,
+      "gold": "Sports",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 56,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 57,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 58,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 59,
+      "gold": "Sports",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 60,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 61,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 62,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 63,
+      "gold": "World",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 64,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 65,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 66,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 67,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 68,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 69,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 70,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 71,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 72,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 73,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 74,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 75,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 76,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 77,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 78,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 79,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 80,
+      "gold": "World",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 81,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 82,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 83,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 84,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 85,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 86,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 87,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 88,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 89,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 90,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 91,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 92,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 93,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 94,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 95,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 96,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 97,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 98,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 99,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 100,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 101,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 102,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 103,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 104,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 105,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 106,
+      "gold": "Sci/Tech",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 107,
+      "gold": "World",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 108,
+      "gold": "Business",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 109,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 110,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 111,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 112,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 113,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 114,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 115,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 116,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 117,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 118,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 119,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 120,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 121,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 122,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 123,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 124,
+      "gold": "Sports",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 125,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 126,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 127,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 128,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 129,
+      "gold": "World",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 130,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 131,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 132,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 133,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 134,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 135,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 136,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 137,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 138,
+      "gold": "World",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 139,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 140,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 141,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 142,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 143,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 144,
+      "gold": "Business",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 145,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 146,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 147,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 148,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 149,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 150,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 151,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 152,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 153,
+      "gold": "Business",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 154,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 155,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 156,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 157,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 158,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 159,
+      "gold": "Sports",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 160,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 161,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 162,
+      "gold": "Sports",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 163,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 164,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 165,
+      "gold": "Sports",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 166,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 167,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 168,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 169,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 170,
+      "gold": "Sports",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 171,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 172,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 173,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 174,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 175,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 176,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 177,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 178,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 179,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 180,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 181,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 182,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 183,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 184,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 185,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 186,
+      "gold": "Business",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 187,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 188,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 189,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 190,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 191,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 192,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 193,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 194,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 195,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 196,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 197,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 198,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 199,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 200,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 201,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 202,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 203,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 204,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 205,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 206,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 207,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 208,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 209,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 210,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 211,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 212,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 213,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 214,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 215,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 216,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 217,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 218,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 219,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 220,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 221,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 222,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 223,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 224,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 225,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 226,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 227,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 228,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 229,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 230,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 231,
+      "gold": "World",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 232,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 233,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 234,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 235,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 236,
+      "gold": "Sports",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 237,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 238,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 239,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 240,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 241,
+      "gold": "Business",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 242,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 243,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 244,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 245,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 246,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 247,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 248,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 249,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 250,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 251,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 252,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 253,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 254,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 255,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 256,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 257,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 258,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 259,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 260,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 261,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 262,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 263,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 264,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 265,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 266,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 267,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 268,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 269,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 270,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 271,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 272,
+      "gold": "Business",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 273,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 274,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 275,
+      "gold": "Sci/Tech",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 276,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 277,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 278,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 279,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 280,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 281,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 282,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 283,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 284,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 285,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 286,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 287,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 288,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 289,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 290,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 291,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 292,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 293,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 294,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 295,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 296,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 297,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 298,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 299,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 300,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 301,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 302,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 303,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 304,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 305,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 306,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 307,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 308,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 309,
+      "gold": "Sci/Tech",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 310,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 311,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 312,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 313,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 314,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 315,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 316,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 317,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 318,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 319,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 320,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 321,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 322,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 323,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 324,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 325,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 326,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 327,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 328,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 329,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 330,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 331,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 332,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 333,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 334,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 335,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 336,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 337,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 338,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 339,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 340,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 341,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 342,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 343,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 344,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 345,
+      "gold": "World",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 346,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 347,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 348,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 349,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 350,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 351,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 352,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 353,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 354,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 355,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 356,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 357,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 358,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 359,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 360,
+      "gold": "World",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 361,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 362,
+      "gold": "World",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 363,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 364,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 365,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 366,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 367,
+      "gold": "Business",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 368,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 369,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 370,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 371,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 372,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 373,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 374,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 375,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 376,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 377,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 378,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 379,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 380,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 381,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 382,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 383,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 384,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 385,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 386,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 387,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 388,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 389,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 390,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 391,
+      "gold": "Business",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 392,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 393,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 394,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 395,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 396,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 397,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 398,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 399,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 400,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 401,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 402,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 403,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 404,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 405,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 406,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 407,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 408,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 409,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 410,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 411,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 412,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 413,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 414,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 415,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 416,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 417,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 418,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 419,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 420,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 421,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 422,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 423,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 424,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 425,
+      "gold": "World",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 426,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 427,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 428,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 429,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 430,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 431,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 432,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 433,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 434,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 435,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 436,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 437,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 438,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 439,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 440,
+      "gold": "World",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 441,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 442,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 443,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 444,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 445,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 446,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 447,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 448,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 449,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 450,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 451,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 452,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 453,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 454,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 455,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 456,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 457,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 458,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 459,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 460,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 461,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 462,
+      "gold": "World",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 463,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 464,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 465,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 466,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 467,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 468,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 469,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 470,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 471,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 472,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 473,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 474,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 475,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 476,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 477,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 478,
+      "gold": "World",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 479,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 480,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 481,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 482,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 483,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 484,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 485,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 486,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 487,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 488,
+      "gold": "World",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 489,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 490,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 491,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 492,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 493,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 494,
+      "gold": "Sci/Tech",
+      "raw_generation": "World",
+      "target": "World",
+      "used_fallback": false
+    },
+    {
+      "i": 495,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    },
+    {
+      "i": 496,
+      "gold": "Business",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 497,
+      "gold": "Sci/Tech",
+      "raw_generation": "Business",
+      "target": "Business",
+      "used_fallback": false
+    },
+    {
+      "i": 498,
+      "gold": "Sci/Tech",
+      "raw_generation": "Sci/Tech",
+      "target": "Sci/Tech",
+      "used_fallback": false
+    },
+    {
+      "i": 499,
+      "gold": "Sports",
+      "raw_generation": "Sports",
+      "target": "Sports",
+      "used_fallback": false
+    }
+  ]
+}

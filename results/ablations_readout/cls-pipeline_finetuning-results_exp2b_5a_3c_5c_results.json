@@ -1,0 +1,512 @@
+{
+  "exp2b": [
+    {
+      "strategy": "no_consolidation",
+      "seed": 0,
+      "per_task": {
+        "ag_news": 0.81,
+        "sst2": 0.95,
+        "mnli": 0.48,
+        "amazon_electronics_sentiment": 0.925,
+        "imdb": 0.465,
+        "dbpedia": 0.655
+      },
+      "backward_transfer": 0.7466666666666667,
+      "forward_transfer": 0.6816666666666666,
+      "average_accuracy": 0.7141666666666667
+    },
+    {
+      "strategy": "no_consolidation",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.81,
+        "sst2": 0.95,
+        "mnli": 0.48,
+        "amazon_electronics_sentiment": 0.925,
+        "imdb": 0.465,
+        "dbpedia": 0.655
+      },
+      "backward_transfer": 0.7466666666666667,
+      "forward_transfer": 0.6816666666666666,
+      "average_accuracy": 0.7141666666666667
+    },
+    {
+      "strategy": "no_consolidation",
+      "seed": 2,
+      "per_task": {
+        "ag_news": 0.81,
+        "sst2": 0.95,
+        "mnli": 0.48,
+        "amazon_electronics_sentiment": 0.925,
+        "imdb": 0.465,
+        "dbpedia": 0.655
+      },
+      "backward_transfer": 0.7466666666666667,
+      "forward_transfer": 0.6816666666666666,
+      "average_accuracy": 0.7141666666666667
+    },
+    {
+      "strategy": "full_finetune",
+      "seed": 0,
+      "per_task": {
+        "ag_news": 0.725,
+        "sst2": 0.95,
+        "mnli": 0.695,
+        "amazon_electronics_sentiment": 0.91,
+        "imdb": 0.445,
+        "dbpedia": 0.105
+      },
+      "backward_transfer": 0.7899999999999999,
+      "forward_transfer": 0.48666666666666664,
+      "average_accuracy": 0.6383333333333333
+    },
+    {
+      "strategy": "full_finetune",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.75,
+        "sst2": 0.945,
+        "mnli": 0.705,
+        "amazon_electronics_sentiment": 0.915,
+        "imdb": 0.44,
+        "dbpedia": 0.135
+      },
+      "backward_transfer": 0.7999999999999999,
+      "forward_transfer": 0.49666666666666665,
+      "average_accuracy": 0.6483333333333333
+    },
+    {
+      "strategy": "full_finetune",
+      "seed": 2,
+      "per_task": {
+        "ag_news": 0.72,
+        "sst2": 0.945,
+        "mnli": 0.59,
+        "amazon_electronics_sentiment": 0.91,
+        "imdb": 0.44,
+        "dbpedia": 0.065
+      },
+      "backward_transfer": 0.7516666666666666,
+      "forward_transfer": 0.4716666666666667,
+      "average_accuracy": 0.6116666666666667
+    },
+    {
+      "strategy": "random_replay",
+      "seed": 0,
+      "per_task": {
+        "ag_news": 0.785,
+        "sst2": 0.95,
+        "mnli": 0.685,
+        "amazon_electronics_sentiment": 0.925,
+        "imdb": 0.465,
+        "dbpedia": 0.21
+      },
+      "backward_transfer": 0.8066666666666666,
+      "forward_transfer": 0.5333333333333333,
+      "average_accuracy": 0.6699999999999999
+    },
+    {
+      "strategy": "random_replay",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.755,
+        "sst2": 0.955,
+        "mnli": 0.7,
+        "amazon_electronics_sentiment": 0.925,
+        "imdb": 0.46,
+        "dbpedia": 0.165
+      },
+      "backward_transfer": 0.8033333333333333,
+      "forward_transfer": 0.5166666666666667,
+      "average_accuracy": 0.66
+    },
+    {
+      "strategy": "random_replay",
+      "seed": 2,
+      "per_task": {
+        "ag_news": 0.735,
+        "sst2": 0.95,
+        "mnli": 0.695,
+        "amazon_electronics_sentiment": 0.925,
+        "imdb": 0.465,
+        "dbpedia": 0.14
+      },
+      "backward_transfer": 0.7933333333333333,
+      "forward_transfer": 0.5100000000000001,
+      "average_accuracy": 0.6516666666666666
+    },
+    {
+      "strategy": "gmm_replay",
+      "seed": 0,
+      "per_task": {
+        "ag_news": 0.75,
+        "sst2": 0.94,
+        "mnli": 0.605,
+        "amazon_electronics_sentiment": 0.92,
+        "imdb": 0.465,
+        "dbpedia": 0.28
+      },
+      "backward_transfer": 0.765,
+      "forward_transfer": 0.555,
+      "average_accuracy": 0.66
+    },
+    {
+      "strategy": "gmm_replay",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.71,
+        "sst2": 0.935,
+        "mnli": 0.61,
+        "amazon_electronics_sentiment": 0.92,
+        "imdb": 0.465,
+        "dbpedia": 0.29
+      },
+      "backward_transfer": 0.7516666666666666,
+      "forward_transfer": 0.5583333333333333,
+      "average_accuracy": 0.6549999999999999
+    },
+    {
+      "strategy": "gmm_replay",
+      "seed": 2,
+      "per_task": {
+        "ag_news": 0.75,
+        "sst2": 0.935,
+        "mnli": 0.625,
+        "amazon_electronics_sentiment": 0.925,
+        "imdb": 0.465,
+        "dbpedia": 0.35
+      },
+      "backward_transfer": 0.77,
+      "forward_transfer": 0.5800000000000001,
+      "average_accuracy": 0.6749999999999999
+    },
+    {
+      "strategy": "ewc",
+      "seed": 0,
+      "per_task": {
+        "ag_news": 0.8,
+        "sst2": 0.935,
+        "mnli": 0.71,
+        "amazon_electronics_sentiment": 0.92,
+        "imdb": 0.465,
+        "dbpedia": 0.585
+      },
+      "backward_transfer": 0.8150000000000001,
+      "forward_transfer": 0.6566666666666666,
+      "average_accuracy": 0.7358333333333333
+    },
+    {
+      "strategy": "ewc",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.795,
+        "sst2": 0.94,
+        "mnli": 0.71,
+        "amazon_electronics_sentiment": 0.92,
+        "imdb": 0.465,
+        "dbpedia": 0.57
+      },
+      "backward_transfer": 0.815,
+      "forward_transfer": 0.6516666666666667,
+      "average_accuracy": 0.7333333333333333
+    },
+    {
+      "strategy": "ewc",
+      "seed": 2,
+      "per_task": {
+        "ag_news": 0.795,
+        "sst2": 0.94,
+        "mnli": 0.73,
+        "amazon_electronics_sentiment": 0.92,
+        "imdb": 0.465,
+        "dbpedia": 0.57
+      },
+      "backward_transfer": 0.8216666666666667,
+      "forward_transfer": 0.6516666666666667,
+      "average_accuracy": 0.7366666666666667
+    },
+    {
+      "strategy": "progressive_prompts",
+      "seed": 0,
+      "per_task": {
+        "ag_news": 0.81,
+        "sst2": 0.95,
+        "mnli": 0.48,
+        "amazon_electronics_sentiment": 0.925,
+        "imdb": 0.465,
+        "dbpedia": 0.655
+      },
+      "backward_transfer": 0.7466666666666667,
+      "forward_transfer": 0.6816666666666666,
+      "average_accuracy": 0.7141666666666667
+    },
+    {
+      "strategy": "progressive_prompts",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.81,
+        "sst2": 0.95,
+        "mnli": 0.48,
+        "amazon_electronics_sentiment": 0.925,
+        "imdb": 0.465,
+        "dbpedia": 0.655
+      },
+      "backward_transfer": 0.7466666666666667,
+      "forward_transfer": 0.6816666666666666,
+      "average_accuracy": 0.7141666666666667
+    },
+    {
+      "strategy": "progressive_prompts",
+      "seed": 2,
+      "per_task": {
+        "ag_news": 0.81,
+        "sst2": 0.95,
+        "mnli": 0.48,
+        "amazon_electronics_sentiment": 0.925,
+        "imdb": 0.465,
+        "dbpedia": 0.655
+      },
+      "backward_transfer": 0.7466666666666667,
+      "forward_transfer": 0.6816666666666666,
+      "average_accuracy": 0.7141666666666667
+    }
+  ],
+  "exp5a": [
+    {
+      "experiment": "exp5a_spacing",
+      "schedule": "interleaved",
+      "seed": 0,
+      "per_task": {
+        "ag_news": 0.73,
+        "sst2": 0.95,
+        "mnli": 0.665,
+        "amazon_electronics_sentiment": 0.91,
+        "imdb": 0.455,
+        "dbpedia": 0.165
+      },
+      "backward_transfer": 0.7816666666666666
+    },
+    {
+      "experiment": "exp5a_spacing",
+      "schedule": "interleaved",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.68,
+        "sst2": 0.95,
+        "mnli": 0.67,
+        "amazon_electronics_sentiment": 0.925,
+        "imdb": 0.445,
+        "dbpedia": 0.14
+      },
+      "backward_transfer": 0.7666666666666666
+    },
+    {
+      "experiment": "exp5a_spacing",
+      "schedule": "interleaved",
+      "seed": 2,
+      "per_task": {
+        "ag_news": 0.765,
+        "sst2": 0.945,
+        "mnli": 0.635,
+        "amazon_electronics_sentiment": 0.905,
+        "imdb": 0.435,
+        "dbpedia": 0.075
+      },
+      "backward_transfer": 0.7816666666666666
+    },
+    {
+      "experiment": "exp5a_spacing",
+      "schedule": "blocked",
+      "seed": 0,
+      "per_task": {
+        "ag_news": 0.715,
+        "sst2": 0.95,
+        "mnli": 0.705,
+        "amazon_electronics_sentiment": 0.915,
+        "imdb": 0.45,
+        "dbpedia": 0.105
+      },
+      "backward_transfer": 0.79
+    },
+    {
+      "experiment": "exp5a_spacing",
+      "schedule": "blocked",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.765,
+        "sst2": 0.945,
+        "mnli": 0.71,
+        "amazon_electronics_sentiment": 0.915,
+        "imdb": 0.44,
+        "dbpedia": 0.135
+      },
+      "backward_transfer": 0.8066666666666666
+    },
+    {
+      "experiment": "exp5a_spacing",
+      "schedule": "blocked",
+      "seed": 2,
+      "per_task": {
+        "ag_news": 0.7,
+        "sst2": 0.945,
+        "mnli": 0.585,
+        "amazon_electronics_sentiment": 0.91,
+        "imdb": 0.44,
+        "dbpedia": 0.075
+      },
+      "backward_transfer": 0.7433333333333333
+    }
+  ],
+  "exp3c": [
+    {
+      "strategy": "no_consolidation",
+      "seed": 0,
+      "per_task": {
+        "ag_news": 0.81,
+        "sst2": 0.36,
+        "mnli": 0.13,
+        "amazon_electronics_sentiment": 0.34,
+        "imdb": 0.36,
+        "dbpedia": 0.0
+      },
+      "backward_transfer": 0.4333333333333333,
+      "forward_transfer": 0.2333333333333333,
+      "average_accuracy": 0.3333333333333333,
+      "experiment": "exp3c_negative_control"
+    },
+    {
+      "strategy": "gmm_replay",
+      "seed": 0,
+      "per_task": {
+        "ag_news": 0.715,
+        "sst2": 0.335,
+        "mnli": 0.295,
+        "amazon_electronics_sentiment": 0.32,
+        "imdb": 0.335,
+        "dbpedia": 0.005
+      },
+      "backward_transfer": 0.4483333333333333,
+      "forward_transfer": 0.22,
+      "average_accuracy": 0.33416666666666667,
+      "experiment": "exp3c_negative_control"
+    },
+    {
+      "strategy": "ewc",
+      "seed": 0,
+      "per_task": {
+        "ag_news": 0.755,
+        "sst2": 0.345,
+        "mnli": 0.24,
+        "amazon_electronics_sentiment": 0.34,
+        "imdb": 0.355,
+        "dbpedia": 0.015
+      },
+      "backward_transfer": 0.4466666666666667,
+      "forward_transfer": 0.2366666666666667,
+      "average_accuracy": 0.34166666666666673,
+      "experiment": "exp3c_negative_control"
+    },
+    {
+      "strategy": "random_replay",
+      "seed": 0,
+      "per_task": {
+        "ag_news": 0.82,
+        "sst2": 0.335,
+        "mnli": 0.23,
+        "amazon_electronics_sentiment": 0.295,
+        "imdb": 0.34,
+        "dbpedia": 0.005
+      },
+      "backward_transfer": 0.46166666666666667,
+      "forward_transfer": 0.21333333333333335,
+      "average_accuracy": 0.33749999999999997,
+      "experiment": "exp3c_negative_control"
+    }
+  ],
+  "exp5c": [
+    {
+      "experiment": "exp5c",
+      "mode": "online",
+      "seed": 0,
+      "per_task": {
+        "ag_news": 0.75,
+        "sst2": 0.95,
+        "mnli": 0.67,
+        "amazon_electronics_sentiment": 0.93,
+        "imdb": 0.465,
+        "dbpedia": 0.565
+      },
+      "backward_transfer": 0.79
+    },
+    {
+      "experiment": "exp5c",
+      "mode": "online",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.7,
+        "sst2": 0.925,
+        "mnli": 0.71,
+        "amazon_electronics_sentiment": 0.935,
+        "imdb": 0.465,
+        "dbpedia": 0.585
+      },
+      "backward_transfer": 0.7783333333333333
+    },
+    {
+      "experiment": "exp5c",
+      "mode": "online",
+      "seed": 2,
+      "per_task": {
+        "ag_news": 0.725,
+        "sst2": 0.92,
+        "mnli": 0.67,
+        "amazon_electronics_sentiment": 0.925,
+        "imdb": 0.465,
+        "dbpedia": 0.595
+      },
+      "backward_transfer": 0.7716666666666666
+    },
+    {
+      "experiment": "exp5c",
+      "mode": "offline",
+      "seed": 0,
+      "per_task": {
+        "ag_news": 0.76,
+        "sst2": 0.945,
+        "mnli": 0.695,
+        "amazon_electronics_sentiment": 0.915,
+        "imdb": 0.445,
+        "dbpedia": 0.13
+      },
+      "backward_transfer": 0.7999999999999999
+    },
+    {
+      "experiment": "exp5c",
+      "mode": "offline",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.74,
+        "sst2": 0.945,
+        "mnli": 0.72,
+        "amazon_electronics_sentiment": 0.91,
+        "imdb": 0.44,
+        "dbpedia": 0.105
+      },
+      "backward_transfer": 0.8016666666666667
+    },
+    {
+      "experiment": "exp5c",
+      "mode": "offline",
+      "seed": 2,
+      "per_task": {
+        "ag_news": 0.78,
+        "sst2": 0.945,
+        "mnli": 0.57,
+        "amazon_electronics_sentiment": 0.915,
+        "imdb": 0.44,
+        "dbpedia": 0.085
+      },
+      "backward_transfer": 0.765
+    }
+  ]
+}

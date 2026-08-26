@@ -1,0 +1,95 @@
+{
+  "seed": 1,
+  "exp2b": [
+    {
+      "strategy": "no_consolidation",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.795,
+        "sst2": 0.94,
+        "mnli": 0.605,
+        "amazon_electronics_sentiment": 0.94,
+        "imdb": 0.47,
+        "dbpedia": 0.885
+      },
+      "backward_transfer": 0.7799999999999999,
+      "forward_transfer": 0.765,
+      "average_accuracy": 0.7725
+    },
+    {
+      "strategy": "random_replay",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.845,
+        "sst2": 0.95,
+        "mnli": 0.7,
+        "amazon_electronics_sentiment": 0.93,
+        "imdb": 0.47,
+        "dbpedia": 0.91
+      },
+      "backward_transfer": 0.8316666666666667,
+      "forward_transfer": 0.77,
+      "average_accuracy": 0.8008333333333334
+    },
+    {
+      "strategy": "gmm_replay",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.755,
+        "sst2": 0.945,
+        "mnli": 0.63,
+        "amazon_electronics_sentiment": 0.93,
+        "imdb": 0.47,
+        "dbpedia": 0.92
+      },
+      "backward_transfer": 0.7766666666666667,
+      "forward_transfer": 0.7733333333333333,
+      "average_accuracy": 0.775
+    },
+    {
+      "strategy": "ewc",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.755,
+        "sst2": 0.95,
+        "mnli": 0.695,
+        "amazon_electronics_sentiment": 0.92,
+        "imdb": 0.47,
+        "dbpedia": 0.905
+      },
+      "backward_transfer": 0.7999999999999999,
+      "forward_transfer": 0.765,
+      "average_accuracy": 0.7825000000000001
+    }
+  ],
+  "exp5a": [
+    {
+      "experiment": "exp5a_spacing",
+      "schedule": "interleaved",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.735,
+        "sst2": 0.95,
+        "mnli": 0.72,
+        "amazon_electronics_sentiment": 0.925,
+        "imdb": 0.47,
+        "dbpedia": 0.9
+      },
+      "backward_transfer": 0.8016666666666667
+    },
+    {
+      "experiment": "exp5a_spacing",
+      "schedule": "blocked",
+      "seed": 1,
+      "per_task": {
+        "ag_news": 0.645,
+        "sst2": 0.955,
+        "mnli": 0.69,
+        "amazon_electronics_sentiment": 0.93,
+        "imdb": 0.47,
+        "dbpedia": 0.9
+      },
+      "backward_transfer": 0.7633333333333333
+    }
+  ]
+}

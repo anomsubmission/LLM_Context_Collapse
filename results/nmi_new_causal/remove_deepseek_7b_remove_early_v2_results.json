@@ -1,0 +1,281 @@
+{
+  "arm": "remove",
+  "model_id": "deepseek-ai/deepseek-llm-7b-chat",
+  "model_tag": "deepseek_7b_remove_early_v2",
+  "k_values": [
+    0,
+    4,
+    8,
+    16,
+    32
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "n_test": 100,
+  "tasks": [
+    "ag_news"
+  ],
+  "n_calibration": 300,
+  "intervention_k": 16,
+  "n_late_blocks": 8,
+  "target_region": "early",
+  "cal_task": "ag_news",
+  "before_cells": [
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.49,
+      "n_test": 100,
+      "n_unparseable": 38
+    },
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.49,
+      "n_test": 100,
+      "n_unparseable": 38
+    },
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.49,
+      "n_test": 100,
+      "n_unparseable": 38
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.55,
+      "n_test": 100,
+      "n_unparseable": 12
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.45,
+      "n_test": 100,
+      "n_unparseable": 7
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.57,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 8,
+      "seed": 0,
+      "accuracy": 0.74,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 8,
+      "seed": 1,
+      "accuracy": 0.55,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 8,
+      "seed": 2,
+      "accuracy": 0.65,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.48,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.41,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.39,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 32,
+      "seed": 0,
+      "accuracy": 0.22,
+      "n_test": 100,
+      "n_unparseable": 25
+    },
+    {
+      "task": "ag_news",
+      "k": 32,
+      "seed": 1,
+      "accuracy": 0.33,
+      "n_test": 100,
+      "n_unparseable": 1
+    },
+    {
+      "task": "ag_news",
+      "k": 32,
+      "seed": 2,
+      "accuracy": 0.26,
+      "n_test": 100,
+      "n_unparseable": 44
+    }
+  ],
+  "after_cells": [
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 0,
+      "accuracy": 0.72,
+      "n_test": 100,
+      "n_unparseable": 2
+    },
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 1,
+      "accuracy": 0.72,
+      "n_test": 100,
+      "n_unparseable": 2
+    },
+    {
+      "task": "ag_news",
+      "k": 0,
+      "seed": 2,
+      "accuracy": 0.72,
+      "n_test": 100,
+      "n_unparseable": 2
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 0,
+      "accuracy": 0.87,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 1,
+      "accuracy": 0.67,
+      "n_test": 100,
+      "n_unparseable": 1
+    },
+    {
+      "task": "ag_news",
+      "k": 4,
+      "seed": 2,
+      "accuracy": 0.6,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 8,
+      "seed": 0,
+      "accuracy": 0.91,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 8,
+      "seed": 1,
+      "accuracy": 0.68,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 8,
+      "seed": 2,
+      "accuracy": 0.73,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 0,
+      "accuracy": 0.84,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 1,
+      "accuracy": 0.82,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 16,
+      "seed": 2,
+      "accuracy": 0.89,
+      "n_test": 100,
+      "n_unparseable": 0
+    },
+    {
+      "task": "ag_news",
+      "k": 32,
+      "seed": 0,
+      "accuracy": 0.74,
+      "n_test": 100,
+      "n_unparseable": 23
+    },
+    {
+      "task": "ag_news",
+      "k": 32,
+      "seed": 1,
+      "accuracy": 0.74,
+      "n_test": 100,
+      "n_unparseable": 19
+    },
+    {
+      "task": "ag_news",
+      "k": 32,
+      "seed": 2,
+      "accuracy": 0.79,
+      "n_test": 100,
+      "n_unparseable": 10
+    }
+  ],
+  "summary": {
+    "ag_news": {
+      "cliff_k": 16,
+      "before_cliff": 0.4266666666666666,
+      "after_cliff": 0.85,
+      "delta_cliff": 0.4233333333333334,
+      "before_k64": null,
+      "after_k64": null,
+      "delta_k64": null
+    }
+  }
+}
