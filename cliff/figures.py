@@ -36,7 +36,7 @@ C_EARLY, C_MID, C_LATE = "#1f4e79", "#6baed6", "#bdbdbd"
 # ---------------------------------------------------------------- data loaders
 def hosted(fname):
     """Hosted-API behavioural sweep: {(task,k): mean_acc}. Single pipeline."""
-    d = json.load(open(results_dir() / "nmi_hosted" / fname))
+    d = json.load(open(results_dir() / "hosted_sweeps" / fname))
     agg = defaultdict(list)
     for c in d["cells"]:
         agg[(c["task"], c["k"])].append(c["accuracy"])
@@ -61,7 +61,7 @@ def exp1a(model, task):
 
 
 def cells(fname, kind):
-    d = json.load(open(results_dir() / "nmi_new_causal" / fname))
+    d = json.load(open(results_dir() / "interventions" / fname))
     out = defaultdict(dict)
     for c in d[kind + "_cells"]:
         out[(c["task"], c["k"])][c["seed"]] = c
@@ -318,7 +318,7 @@ def figure4():
 
 # =========================================================== FIGURE 3
 def figure3():
-    m = json.load(open(RES / "nmi_new_causal/t5_llama31_8b_ag_news_results.json"))
+    m = json.load(open(RES / "interventions/t5_llama31_8b_ag_news_results.json"))
     fv, ih = m["fv_effect_by_layer"], m["induction_score_by_layer"]
     zs, icl = m["zero_shot_acc"], m["icl_acc"]
     band = range(8, 16)

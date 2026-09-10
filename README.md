@@ -1,54 +1,48 @@
 # Running the code
 
-## Install
+Install the package:
 
 ```bash
 python -m pip install -e .
 ```
 
-For experiment commands:
+Install the optional experiment dependencies:
 
 ```bash
 python -m pip install -e ".[experiments]"
 ```
 
-For development and tests:
+Run the environment check:
 
 ```bash
-python -m pip install -e ".[dev]"
+cliff doctor
 ```
 
-## Verify archived results
+Verify the archived results:
 
 ```bash
 cliff verify
 ```
 
-Use a different results directory:
-
-```bash
-CLIFF_RESULTS=/path/to/results cliff verify
-```
-
-## Regenerate figures
+Regenerate figures:
 
 ```bash
 cliff figures
 ```
 
-Regenerate one figure:
+Run the offline smoke test:
 
 ```bash
-cliff figures --only 4
+cliff sweep --backend echo --model echo --ks 0,1,4 --seeds 0 --n-test 20
 ```
 
-## Run the smoke test
+Run all tests:
 
 ```bash
-cliff sweep --backend echo --model echo --tasks ag_news --ks 0,1,4 --seeds 0 --n-test 20
+python -m pytest
 ```
 
-## Run experiments
+Run an experiment:
 
 ```bash
 cliff sweep --model meta-llama/Llama-3.1-8B-Instruct
@@ -57,20 +51,4 @@ cliff mechanism --model meta-llama/Llama-3.1-8B-Instruct --task ag_news --k 16
 cliff audit --model google/gemma-3-4b-it
 ```
 
-## Run tests
-
-```bash
-python -m pytest
-```
-
-## Make targets
-
-```bash
-make install
-make install-all
-make verify
-make figures
-make reproduce
-make test
-make smoke
-```
+Set output locations with `CLIFF_RESULTS`, `CLIFF_FIGURES`, and `CLIFF_OUTPUTS`.

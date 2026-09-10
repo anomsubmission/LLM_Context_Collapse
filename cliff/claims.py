@@ -283,10 +283,10 @@ CAVEATS = [
        lambda: max(abs(v) for v in L.backward_transfer()) <= 0.04),
     _c("caveat.induce_fallback", "Supp Note 5, Table S2",
        "the induce-arm default-label fallback fired 0 times in 500", 0,
-       lambda: L._json("nmi_new_causal/induce_fallback_audit.json")["n_fallback"], tol=0),
+       lambda: L._json("interventions/induce_fallback_audit.json")["n_fallback"], tol=0),
     _c("caveat.induce_targets_correct", "Supp Note 5",
        "induce-arm targets agree with gold on 81.6% of examples", 0.816,
-       lambda: L._json("nmi_new_causal/induce_fallback_audit.json")["target_gold_agreement_rate"]),
+       lambda: L._json("interventions/induce_fallback_audit.json")["target_gold_agreement_rate"]),
 ]
 
 # =====================================================================

@@ -13,7 +13,7 @@ abstract: >-
 authors:
   - family-names: Rostami
     given-names: Mohammad
-repository-code: "https://github.com/rostami-m/CLS-in-Context"
+repository-code: "https://github.com/rostami-m/LLM_Context_Collapse"
 license: MIT
 type: software
 keywords:

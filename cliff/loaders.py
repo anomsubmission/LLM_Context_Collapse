@@ -32,7 +32,7 @@ def _json(rel: str) -> dict:
 @lru_cache(maxsize=None)
 def hosted(fname: str) -> dict:
     """{(task, k): mean_accuracy} for one hosted-API behavioural sweep."""
-    d = _json(f"nmi_hosted/{fname}")
+    d = _json(f"hosted_sweeps/{fname}")
     agg = defaultdict(list)
     for c in d["cells"]:
         agg[(c["task"], c["k"])].append(c["accuracy"])
@@ -84,7 +84,7 @@ def zero_shot(model: str, task: str) -> float:
 # ---------------------------------------------------------------- interventions
 @lru_cache(maxsize=None)
 def _cells(fname: str, kind: str) -> dict:
-    d = _json(f"nmi_new_causal/{fname}")
+    d = _json(f"interventions/{fname}")
     out: dict = defaultdict(dict)
     for c in d[f"{kind}_cells"]:
         out[(c["task"], c["k"])][c["seed"]] = c
@@ -130,7 +130,7 @@ def cell_exists(fname: str, task: str, k: int) -> bool:
 
 # ---------------------------------------------------------------- mechanism
 def mechanism() -> dict:
-    return _json("nmi_new_causal/t5_llama31_8b_ag_news_results.json")
+    return _json("interventions/t5_llama31_8b_ag_news_results.json")
 
 
 def induction_band_means(lo: int = 8, hi: int = 16) -> tuple[float, float]:
@@ -155,7 +155,7 @@ def backward_transfer() -> list[float]:
 def zero_accuracy_census() -> tuple[int, int, int]:
     """(n_zero_cells, n_total_cells, n_zero_that_are_fully_unparseable)."""
     total = zero = fully = 0
-    for p in sorted((results_dir() / "nmi_new_causal").glob("*.json")):
+    for p in sorted((results_dir() / "interventions").glob("*.json")):
         d = json.loads(p.read_text())
         for kind in ("before_cells", "after_cells"):
             for c in d.get(kind, []) or []:

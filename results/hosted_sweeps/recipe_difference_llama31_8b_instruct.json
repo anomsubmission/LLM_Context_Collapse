@@ -8,7 +8,7 @@
     "mnli",
     "qnli",
     "imdb",
-    "amazon_electronics_sentiment",
+    "product_electronics_sentiment",
     "dbpedia",
     "tweet_emotion"
   ],
@@ -1183,7 +1183,7 @@
       "elapsed_sec": 392.9
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 0,
       "seed": 0,
       "accuracy": 0.945,
@@ -1195,7 +1195,7 @@
       "elapsed_sec": 34.3
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 0,
       "seed": 1,
       "accuracy": 0.945,
@@ -1207,7 +1207,7 @@
       "elapsed_sec": 18.4
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 0,
       "seed": 2,
       "accuracy": 0.945,
@@ -1219,7 +1219,7 @@
       "elapsed_sec": 14.5
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 1,
       "seed": 0,
       "accuracy": 0.94,
@@ -1231,7 +1231,7 @@
       "elapsed_sec": 11.9
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 1,
       "seed": 1,
       "accuracy": 0.94,
@@ -1243,7 +1243,7 @@
       "elapsed_sec": 11.7
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 1,
       "seed": 2,
       "accuracy": 0.935,
@@ -1255,7 +1255,7 @@
       "elapsed_sec": 8.8
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 2,
       "seed": 0,
       "accuracy": 0.93,
@@ -1267,7 +1267,7 @@
       "elapsed_sec": 8.7
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 2,
       "seed": 1,
       "accuracy": 0.93,
@@ -1279,7 +1279,7 @@
       "elapsed_sec": 8.9
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 2,
       "seed": 2,
       "accuracy": 0.915,
@@ -1291,7 +1291,7 @@
       "elapsed_sec": 7.6
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 4,
       "seed": 0,
       "accuracy": 0.94,
@@ -1303,7 +1303,7 @@
       "elapsed_sec": 6.9
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 4,
       "seed": 1,
       "accuracy": 0.935,
@@ -1315,7 +1315,7 @@
       "elapsed_sec": 6.9
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 4,
       "seed": 2,
       "accuracy": 0.93,
@@ -1327,7 +1327,7 @@
       "elapsed_sec": 6.8
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 8,
       "seed": 0,
       "accuracy": 0.945,
@@ -1339,7 +1339,7 @@
       "elapsed_sec": 6.8
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 8,
       "seed": 1,
       "accuracy": 0.945,
@@ -1351,7 +1351,7 @@
       "elapsed_sec": 6.0
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 8,
       "seed": 2,
       "accuracy": 0.945,
@@ -1363,7 +1363,7 @@
       "elapsed_sec": 5.9
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 16,
       "seed": 0,
       "accuracy": 0.925,
@@ -1375,7 +1375,7 @@
       "elapsed_sec": 23.4
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 16,
       "seed": 1,
       "accuracy": 0.955,
@@ -1387,7 +1387,7 @@
       "elapsed_sec": 34.4
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 16,
       "seed": 2,
       "accuracy": 0.92,
@@ -1399,7 +1399,7 @@
       "elapsed_sec": 33.6
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 32,
       "seed": 0,
       "accuracy": 0.87,
@@ -1411,7 +1411,7 @@
       "elapsed_sec": 63.5
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 32,
       "seed": 1,
       "accuracy": 0.85,
@@ -1423,7 +1423,7 @@
       "elapsed_sec": 65.8
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 32,
       "seed": 2,
       "accuracy": 0.87,
@@ -1435,7 +1435,7 @@
       "elapsed_sec": 65.4
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 64,
       "seed": 0,
       "accuracy": 0.575,
@@ -1447,7 +1447,7 @@
       "elapsed_sec": 126.9
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 64,
       "seed": 1,
       "accuracy": 0.585,
@@ -1459,7 +1459,7 @@
       "elapsed_sec": 128.1
     },
     {
-      "task": "amazon_electronics_sentiment",
+      "task": "product_electronics_sentiment",
       "k": 64,
       "seed": 2,
       "accuracy": 0.67,

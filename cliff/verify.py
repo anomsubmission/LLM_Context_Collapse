@@ -24,7 +24,7 @@ def _preflight() -> None:
     every claim as an individual failure."""
     from .paths import results_dir
     rd = results_dir()
-    needed = ["nmi_hosted", "nmi_new_causal", "exp1a_complete.csv"]
+    needed = ["hosted_sweeps", "interventions", "exp1a_complete.csv"]
     missing = [n for n in needed if not (rd / n).exists()]
     if not rd.exists() or missing:
         raise SystemExit(
