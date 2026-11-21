@@ -1,0 +1,1423 @@
+{
+  "A_cells": [
+    {
+      "model": "A",
+      "block": 0,
+      "readout": "generated_label",
+      "K": 0,
+      "accuracy": 0,
+      "correct": 0,
+      "invalid": 200,
+      "actual_query_context_records": 200,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "standard_error": 0.0,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 1,
+      "readout": "generated_label",
+      "K": 0,
+      "accuracy": 0,
+      "correct": 0,
+      "invalid": 200,
+      "actual_query_context_records": 200,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "standard_error": 0.0,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 2,
+      "readout": "generated_label",
+      "K": 0,
+      "accuracy": 0,
+      "correct": 0,
+      "invalid": 200,
+      "actual_query_context_records": 200,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "standard_error": 0.0,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": "equal_weight_all_three",
+      "readout": "generated_label",
+      "K": 0,
+      "accuracy": 0,
+      "unique_queries": 200,
+      "training_blocks": 3,
+      "actual_query_context_records_all_three": 600,
+      "invalid_all_three": 600,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.0,
+        "ci_low": 0.0,
+        "ci_high": 0.0,
+        "standard_error": 0.0,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 0,
+      "readout": "generated_label",
+      "K": 16,
+      "accuracy": 0.874,
+      "correct": 874,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.874,
+        "ci_low": 0.821,
+        "ci_high": 0.922,
+        "standard_error": 0.025554821452119868,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 1,
+      "readout": "generated_label",
+      "K": 16,
+      "accuracy": 0.912,
+      "correct": 912,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.912,
+        "ci_low": 0.873,
+        "ci_high": 0.949,
+        "standard_error": 0.019396884474411267,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 2,
+      "readout": "generated_label",
+      "K": 16,
+      "accuracy": 0.895,
+      "correct": 895,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.895,
+        "ci_low": 0.856,
+        "ci_high": 0.9310249999999999,
+        "standard_error": 0.019221458925940595,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": "equal_weight_all_three",
+      "readout": "generated_label",
+      "K": 16,
+      "accuracy": 0.8936666666666667,
+      "unique_queries": 200,
+      "training_blocks": 3,
+      "actual_query_context_records_all_three": 3000,
+      "invalid_all_three": 0,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.8936666666666667,
+        "ci_low": 0.8456583333333334,
+        "ci_high": 0.9336749999999999,
+        "standard_error": 0.02191755656187116,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 0,
+      "readout": "raw_complete_label_likelihood",
+      "K": 0,
+      "accuracy": 0.89,
+      "correct": 178,
+      "invalid": 0,
+      "actual_query_context_records": 200,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.89,
+        "ci_low": 0.845,
+        "ci_high": 0.93,
+        "standard_error": 0.0217133906994701,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 1,
+      "readout": "raw_complete_label_likelihood",
+      "K": 0,
+      "accuracy": 0.885,
+      "correct": 177,
+      "invalid": 0,
+      "actual_query_context_records": 200,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.885,
+        "ci_low": 0.84,
+        "ci_high": 0.93,
+        "standard_error": 0.022323262844665355,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 2,
+      "readout": "raw_complete_label_likelihood",
+      "K": 0,
+      "accuracy": 0.87,
+      "correct": 174,
+      "invalid": 0,
+      "actual_query_context_records": 200,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.87,
+        "ci_low": 0.82,
+        "ci_high": 0.915,
+        "standard_error": 0.024021738529111113,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": "equal_weight_all_three",
+      "readout": "raw_complete_label_likelihood",
+      "K": 0,
+      "accuracy": 0.8816666666666667,
+      "unique_queries": 200,
+      "training_blocks": 3,
+      "actual_query_context_records_all_three": 600,
+      "invalid_all_three": 0,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.8816666666666667,
+        "ci_low": 0.8383333333333334,
+        "ci_high": 0.925,
+        "standard_error": 0.022553491756530132,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 0,
+      "readout": "raw_complete_label_likelihood",
+      "K": 16,
+      "accuracy": 0.874,
+      "correct": 874,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.874,
+        "ci_low": 0.821,
+        "ci_high": 0.922,
+        "standard_error": 0.025554821452119868,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 1,
+      "readout": "raw_complete_label_likelihood",
+      "K": 16,
+      "accuracy": 0.912,
+      "correct": 912,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.912,
+        "ci_low": 0.873,
+        "ci_high": 0.949,
+        "standard_error": 0.019396884474411267,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 2,
+      "readout": "raw_complete_label_likelihood",
+      "K": 16,
+      "accuracy": 0.895,
+      "correct": 895,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.895,
+        "ci_low": 0.856,
+        "ci_high": 0.9310249999999999,
+        "standard_error": 0.019221458925940595,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": "equal_weight_all_three",
+      "readout": "raw_complete_label_likelihood",
+      "K": 16,
+      "accuracy": 0.8936666666666667,
+      "unique_queries": 200,
+      "training_blocks": 3,
+      "actual_query_context_records_all_three": 3000,
+      "invalid_all_three": 0,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.8936666666666667,
+        "ci_low": 0.8456583333333334,
+        "ci_high": 0.9336749999999999,
+        "standard_error": 0.02191755656187116,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 0,
+      "readout": "calibrated_complete_label_likelihood",
+      "K": 0,
+      "accuracy": 0.87,
+      "correct": 174,
+      "invalid": 0,
+      "actual_query_context_records": 200,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.87,
+        "ci_low": 0.825,
+        "ci_high": 0.9151249999999993,
+        "standard_error": 0.023561465814665873,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 1,
+      "readout": "calibrated_complete_label_likelihood",
+      "K": 0,
+      "accuracy": 0.845,
+      "correct": 169,
+      "invalid": 0,
+      "actual_query_context_records": 200,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.845,
+        "ci_low": 0.795,
+        "ci_high": 0.895,
+        "standard_error": 0.02519231879885676,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 2,
+      "readout": "calibrated_complete_label_likelihood",
+      "K": 0,
+      "accuracy": 0.835,
+      "correct": 167,
+      "invalid": 0,
+      "actual_query_context_records": 200,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.835,
+        "ci_low": 0.78,
+        "ci_high": 0.885,
+        "standard_error": 0.026213022265052417,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": "equal_weight_all_three",
+      "readout": "calibrated_complete_label_likelihood",
+      "K": 0,
+      "accuracy": 0.85,
+      "unique_queries": 200,
+      "training_blocks": 3,
+      "actual_query_context_records_all_three": 600,
+      "invalid_all_three": 0,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.85,
+        "ci_low": 0.7966666666666666,
+        "ci_high": 0.9,
+        "standard_error": 0.026164979927664485,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 0,
+      "readout": "calibrated_complete_label_likelihood",
+      "K": 16,
+      "accuracy": 0.889,
+      "correct": 889,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.889,
+        "ci_low": 0.831,
+        "ci_high": 0.938,
+        "standard_error": 0.027148070218862796,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 1,
+      "readout": "calibrated_complete_label_likelihood",
+      "K": 16,
+      "accuracy": 0.889,
+      "correct": 889,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.889,
+        "ci_low": 0.84,
+        "ci_high": 0.931,
+        "standard_error": 0.023255042431680282,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": 2,
+      "readout": "calibrated_complete_label_likelihood",
+      "K": 16,
+      "accuracy": 0.909,
+      "correct": 909,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.909,
+        "ci_low": 0.873,
+        "ci_high": 0.9430249999999998,
+        "standard_error": 0.01810273245151421,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "model": "A",
+      "block": "equal_weight_all_three",
+      "readout": "calibrated_complete_label_likelihood",
+      "K": 16,
+      "accuracy": 0.8956666666666667,
+      "unique_queries": 200,
+      "training_blocks": 3,
+      "actual_query_context_records_all_three": 3000,
+      "invalid_all_three": 0,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.8956666666666667,
+        "ci_low": 0.8506583333333334,
+        "ci_high": 0.936,
+        "standard_error": 0.022022423464148625,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "contrast": "A_calibrated_minus_raw_K16",
+      "role": "prespecified_primary",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.002,
+        "ci_low": -0.030666666666666665,
+        "ci_high": 0.041666666666666664,
+        "standard_error": 0.017963393130095807,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      },
+      "each_fixed_block": [
+        {
+          "block": 0,
+          "estimate": 0.015
+        },
+        {
+          "block": 1,
+          "estimate": -0.023
+        },
+        {
+          "block": 2,
+          "estimate": 0.014
+        }
+      ]
+    },
+    {
+      "contrast": "A_calibrated_minus_raw_K0",
+      "role": "prespecified_secondary",
+      "interval": {
+        "estimand": "value",
+        "estimate": -0.03166666666666667,
+        "ci_low": -0.065,
+        "ci_high": 0.0033333333333333335,
+        "standard_error": 0.01758374034492703,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      },
+      "each_fixed_block": [
+        {
+          "block": 0,
+          "estimate": -0.02
+        },
+        {
+          "block": 1,
+          "estimate": -0.04
+        },
+        {
+          "block": 2,
+          "estimate": -0.035
+        }
+      ]
+    },
+    {
+      "contrast": "A_calibration_K0_adjusted_K16",
+      "role": "prespecified_secondary",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.033666666666666664,
+        "ci_low": -0.007008333333333319,
+        "ci_high": 0.07866666666666666,
+        "standard_error": 0.02155911027478041,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      },
+      "each_fixed_block": [
+        {
+          "block": 0,
+          "estimate": 0.035
+        },
+        {
+          "block": 1,
+          "estimate": 0.017
+        },
+        {
+          "block": 2,
+          "estimate": 0.049
+        }
+      ]
+    },
+    {
+      "contrast": "generated_label_A_minus_untreated_K16",
+      "role": "prespecified_paired_base_comparison",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.43066666666666664,
+        "ci_low": 0.30666666666666664,
+        "ci_high": 0.5723416666666666,
+        "standard_error": 0.06840265563606211,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      },
+      "each_fixed_block": [
+        {
+          "block": 0,
+          "estimate": 0.411
+        },
+        {
+          "block": 1,
+          "estimate": 0.449
+        },
+        {
+          "block": 2,
+          "estimate": 0.432
+        }
+      ]
+    },
+    {
+      "contrast": "generated_label_A_minus_untreated_K0",
+      "role": "required_paired_K0_change",
+      "interval": {
+        "estimand": "value",
+        "estimate": -0.85,
+        "ci_low": -0.9,
+        "ci_high": -0.795,
+        "standard_error": 0.025705650939922196,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      },
+      "each_fixed_block": [
+        {
+          "block": 0,
+          "estimate": -0.85
+        },
+        {
+          "block": 1,
+          "estimate": -0.85
+        },
+        {
+          "block": 2,
+          "estimate": -0.85
+        }
+      ]
+    },
+    {
+      "contrast": "generated_label_A_minus_untreated_K0_adjusted_K16",
+      "role": "prespecified_secondary_interaction",
+      "interval": {
+        "estimand": "value",
+        "estimate": 1.2806666666666666,
+        "ci_low": 1.1399916666666665,
+        "ci_high": 1.4366750000000001,
+        "standard_error": 0.07612682851724076,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      },
+      "each_fixed_block": [
+        {
+          "block": 0,
+          "estimate": 1.261
+        },
+        {
+          "block": 1,
+          "estimate": 1.299
+        },
+        {
+          "block": 2,
+          "estimate": 1.282
+        }
+      ]
+    },
+    {
+      "contrast": "raw_complete_label_likelihood_A_minus_untreated_K16",
+      "role": "prespecified_paired_base_comparison",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.5866666666666667,
+        "ci_low": 0.512,
+        "ci_high": 0.665,
+        "standard_error": 0.039232807431062014,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      },
+      "each_fixed_block": [
+        {
+          "block": 0,
+          "estimate": 0.567
+        },
+        {
+          "block": 1,
+          "estimate": 0.605
+        },
+        {
+          "block": 2,
+          "estimate": 0.588
+        }
+      ]
+    },
+    {
+      "contrast": "raw_complete_label_likelihood_A_minus_untreated_K0",
+      "role": "required_paired_K0_change",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.041666666666666664,
+        "ci_low": 0.011666666666666667,
+        "ci_high": 0.07666666666666666,
+        "standard_error": 0.016980605040961053,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      },
+      "each_fixed_block": [
+        {
+          "block": 0,
+          "estimate": 0.05
+        },
+        {
+          "block": 1,
+          "estimate": 0.045
+        },
+        {
+          "block": 2,
+          "estimate": 0.03
+        }
+      ]
+    },
+    {
+      "contrast": "raw_complete_label_likelihood_A_minus_untreated_K0_adjusted_K16",
+      "role": "prespecified_secondary_interaction",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.545,
+        "ci_low": 0.4573333333333333,
+        "ci_high": 0.6270249999999998,
+        "standard_error": 0.04311363047272279,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      },
+      "each_fixed_block": [
+        {
+          "block": 0,
+          "estimate": 0.517
+        },
+        {
+          "block": 1,
+          "estimate": 0.56
+        },
+        {
+          "block": 2,
+          "estimate": 0.558
+        }
+      ]
+    },
+    {
+      "contrast": "calibrated_complete_label_likelihood_A_minus_untreated_K16",
+      "role": "prespecified_paired_base_comparison",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.16266666666666665,
+        "ci_low": 0.09499166666666668,
+        "ci_high": 0.23934166666666662,
+        "standard_error": 0.037226800829733876,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      },
+      "each_fixed_block": [
+        {
+          "block": 0,
+          "estimate": 0.156
+        },
+        {
+          "block": 1,
+          "estimate": 0.156
+        },
+        {
+          "block": 2,
+          "estimate": 0.176
+        }
+      ]
+    },
+    {
+      "contrast": "calibrated_complete_label_likelihood_A_minus_untreated_K0",
+      "role": "required_paired_K0_change",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.035,
+        "ci_low": 0.005,
+        "ci_high": 0.06833333333333333,
+        "standard_error": 0.01602598833963891,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      },
+      "each_fixed_block": [
+        {
+          "block": 0,
+          "estimate": 0.055
+        },
+        {
+          "block": 1,
+          "estimate": 0.03
+        },
+        {
+          "block": 2,
+          "estimate": 0.02
+        }
+      ]
+    },
+    {
+      "contrast": "calibrated_complete_label_likelihood_A_minus_untreated_K0_adjusted_K16",
+      "role": "prespecified_secondary_interaction",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.12766666666666668,
+        "ci_low": 0.05266666666666667,
+        "ci_high": 0.21201666666666658,
+        "standard_error": 0.041178945583091646,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 3,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws",
+          "paired_adapter_blocks"
+        ],
+        "training_inference": "independent_adapter_blocks_caller_verified",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      },
+      "each_fixed_block": [
+        {
+          "block": 0,
+          "estimate": 0.101
+        },
+        {
+          "block": 1,
+          "estimate": 0.126
+        },
+        {
+          "block": 2,
+          "estimate": 0.156
+        }
+      ]
+    }
+  ],
+  "bootstrap_policy": {
+    "resamples": 2000,
+    "seed": 2026110499,
+    "dimensions": [
+      "same200_queries",
+      "same5_draws",
+      "same3_paired_training_blocks"
+    ],
+    "per_block_intervals": "conditional query/draw intervals; no training-block resampling within one block",
+    "K0": "One actual evaluation/query/model; same contribution held across draw resamples",
+    "shared_base": "Each base prediction shared across training blocks; never an independent baseline replicate",
+    "readouts": "Separate outcomes of the same200queries; do not add independent samples",
+    "limits": "Pointwise percentile intervals with only3training/5drawclusters; no familywise, power, noninferiority or universal-preservation guarantee."
+  },
+  "interpretation_limits": [
+    "Complete-label likelihood measures restricted task discrimination, not unconstrained instruction-following",
+    "Strict generated-label invalid outputs retain their fixed zero-credit endpoint; no alternate parsing is substituted",
+    "Different readout values and context priors do not alone identify the internal mechanism or prove localization"
+  ]
+}

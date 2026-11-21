@@ -1,0 +1,94 @@
+\begin{table}[htbp]\centering\color{blue}\footnotesize
+\caption{Common-prompt accuracy and validity (\%). Each checkpoint has 200 queries, three nonzero-$K$ draws, and zero-shot once.}
+\label{stab:shared_readouts}
+\begin{tabular}{lrrrrr}
+\toprule
+Checkpoint & $K$ & Raw & Calibrated & Generated & Valid \\
+\midrule
+Base & 0 & 66.00 & 81.00 & 22.50 & 27.50 \\
+Base & 4 & 87.17 & 87.50 & 0.00 & 0.00 \\
+Base & 16 & 87.67 & 90.67 & 0.00 & 0.00 \\
+Base & 32 & 88.17 & 90.00 & 0.00 & 0.00 \\
+Instruct & 0 & 82.50 & 79.50 & 0.00 & 0.00 \\
+Instruct & 4 & 86.50 & 85.83 & 0.00 & 0.00 \\
+Instruct & 16 & 88.83 & 88.83 & 0.00 & 0.00 \\
+Instruct & 32 & 88.67 & 89.17 & 0.00 & 0.00 \\
+Hermes & 0 & 89.00 & 88.00 & 0.00 & 0.00 \\
+Hermes & 4 & 88.83 & 88.83 & 0.00 & 0.00 \\
+Hermes & 16 & 88.00 & 87.33 & 0.00 & 0.00 \\
+Hermes & 32 & 88.83 & 89.00 & 0.00 & 0.00 \\
+T\"ulu SFT & 0 & 86.50 & 83.50 & 86.50 & 100.00 \\
+T\"ulu SFT & 4 & 88.50 & 88.67 & 88.50 & 100.00 \\
+T\"ulu SFT & 16 & 89.17 & 90.83 & 82.00 & 91.83 \\
+T\"ulu SFT & 32 & 87.33 & 89.67 & 34.67 & 39.67 \\
+T\"ulu DPO & 0 & 87.00 & 81.50 & 87.00 & 100.00 \\
+T\"ulu DPO & 4 & 89.17 & 88.67 & 89.17 & 100.00 \\
+T\"ulu DPO & 16 & 90.33 & 90.67 & 90.33 & 100.00 \\
+T\"ulu DPO & 32 & 88.67 & 90.17 & 85.83 & 96.17 \\
+T\"ulu final & 0 & 87.00 & 82.50 & 87.00 & 100.00 \\
+T\"ulu final & 4 & 88.67 & 88.67 & 88.67 & 100.00 \\
+T\"ulu final & 16 & 90.00 & 90.17 & 90.00 & 99.83 \\
+T\"ulu final & 32 & 88.50 & 90.00 & 88.50 & 99.83 \\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[htbp]\centering\color{blue}\footnotesize
+\caption{Every regional fit and parent (\%). Columns give generated accuracy and validity at zero-shot and the model endpoint. Seed indexes jointly vary calibration and initialization.}
+\label{stab:regional_detail}
+\begin{tabular}{lllrrrr}
+\toprule
+Model & Band & Seed & $a(0)$ & $a(K)$ & Valid 0 & Valid K \\
+\midrule
+Llama-3.1 & parent & 0 & 88.50 & 28.50 & 100.00 & 100.00 \\
+Llama-3.1 & early & 0 & 0.00 & 81.50 & 0.00 & 100.00 \\
+Llama-3.1 & early & 1 & 0.50 & 91.33 & 1.50 & 100.00 \\
+Llama-3.1 & early & 2 & 0.50 & 89.00 & 0.50 & 100.00 \\
+Llama-3.1 & middle & 0 & 0.00 & 88.33 & 0.00 & 100.00 \\
+Llama-3.1 & middle & 1 & 0.50 & 82.33 & 0.50 & 100.00 \\
+Llama-3.1 & middle & 2 & 2.50 & 85.00 & 2.50 & 100.00 \\
+Llama-3.1 & late & 0 & 83.00 & 81.33 & 93.00 & 100.00 \\
+Llama-3.1 & late & 1 & 78.50 & 60.50 & 86.00 & 99.17 \\
+Llama-3.1 & late & 2 & 88.50 & 76.83 & 99.50 & 98.83 \\
+DeepSeek-7B & parent & 0 & 34.00 & 54.33 & 36.00 & 97.33 \\
+DeepSeek-7B & early & 0 & 32.00 & 85.33 & 94.00 & 100.00 \\
+DeepSeek-7B & middle & 0 & 0.00 & 85.33 & 0.00 & 100.00 \\
+DeepSeek-7B & late & 0 & 67.00 & 80.33 & 81.00 & 100.00 \\
+Mistral & parent & 0 & 76.00 & 18.67 & 96.50 & 19.67 \\
+Mistral & early & 0 & 0.00 & 91.17 & 0.00 & 100.00 \\
+Mistral & middle & 0 & 11.50 & 90.33 & 12.00 & 100.00 \\
+Mistral & late & 0 & 88.50 & 89.83 & 100.00 & 100.00 \\
+InternLM & parent & 0 & 75.00 & 76.00 & 100.00 & 100.00 \\
+InternLM & early & 0 & 74.00 & 0.33 & 89.00 & 0.67 \\
+InternLM & middle & 0 & 1.00 & 0.00 & 1.00 & 0.00 \\
+InternLM & late & 0 & 24.00 & 0.00 & 27.00 & 0.00 \\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[htbp]\centering\color{blue}\footnotesize
+\caption{All direct paired regional generated-accuracy endpoint contrasts (percentage points). Pointwise 95\% intervals; other checkpoint intervals condition on one fit. All validity and gap contrasts accompany the data.}
+\label{stab:regional_pairs}
+\begin{tabular}{llrr}
+\toprule
+Model & Contrast & Difference & 95\% interval \\
+\midrule
+llama31 & early\_minus\_late\_K0 & -83.00 & [-89.33, -76.00] \\
+llama31 & early\_minus\_late\_K16 & +14.39 & [-1.67, 33.00] \\
+llama31 & middle\_minus\_late\_K0 & -82.33 & [-88.00, -76.00] \\
+llama31 & middle\_minus\_late\_K16 & +12.33 & [1.50, 30.56] \\
+llama31 & early\_minus\_middle\_K0 & -0.67 & [-2.67, 0.67] \\
+llama31 & early\_minus\_middle\_K16 & +2.06 & [-9.11, 13.56] \\
+deepseek7b & early\_minus\_late\_K0 & -35.00 & [-46.00, -24.00] \\
+deepseek7b & early\_minus\_late\_K16 & +5.00 & [-3.33, 15.01] \\
+deepseek7b & middle\_minus\_late\_K0 & -67.00 & [-76.00, -57.00] \\
+deepseek7b & middle\_minus\_late\_K16 & +5.00 & [-6.33, 18.00] \\
+deepseek7b & early\_minus\_middle\_K0 & +32.00 & [23.00, 41.00] \\
+deepseek7b & early\_minus\_middle\_K16 & +0.00 & [-6.33, 6.00] \\
+mistral7b & early\_minus\_late\_K0 & -88.50 & [-92.50, -84.00] \\
+mistral7b & early\_minus\_late\_K32 & +1.33 & [-1.50, 4.50] \\
+mistral7b & middle\_minus\_late\_K0 & -77.00 & [-83.00, -70.50] \\
+mistral7b & middle\_minus\_late\_K32 & +0.50 & [-2.00, 3.33] \\
+mistral7b & early\_minus\_middle\_K0 & -11.50 & [-16.00, -7.49] \\
+mistral7b & early\_minus\_middle\_K32 & +0.83 & [-1.00, 3.00] \\
+internlm25 & early\_minus\_late\_K0 & +50.00 & [39.00, 61.00] \\
+internlm25 & early\_minus\_late\_K64 & +0.33 & [0.00, 2.00] \\
+internlm25 & middle\_minus\_late\_K0 & -23.00 & [-31.02, -15.00] \\
+internlm25 & middle\_minus\_late\_K64 & +0.00 & [0.00, 0.00] \\
+internlm25 & early\_minus\_middle\_K0 & +73.00 & [64.00, 82.00] \\
+internlm25 & early\_minus\_middle\_K64 & +0.33 & [0.00, 2.00] \\
+\bottomrule\end{tabular}\end{table}

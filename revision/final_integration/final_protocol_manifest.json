@@ -1,0 +1,142 @@
+{
+  "scope": "Controlled fixed-band adaptation, behavioural confirmation, likelihood readouts, full curves, checkpoint/format comparison and SST2 transfer",
+  "models": [
+    {
+      "model_id": "meta-llama/Llama-3.1-8B-Instruct",
+      "resolved_model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "resolved_tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "actual_dtype": "torch.bfloat16",
+      "tokenizer_template_sha256": "d0b129cc03d84ae721ec4551e0a79836fdbc58364bf194da373d285717f7e979",
+      "note": "Native and neutral common formats are both evaluated."
+    },
+    {
+      "model_id": "NousResearch/Hermes-3-Llama-3.1-8B",
+      "resolved_model_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+      "resolved_tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+      "actual_dtype": "torch.bfloat16",
+      "tokenizer_template_sha256": "3ccbf80edf21fdf9ed7668c4fb93fef854262eec3f7a5025246710e03846e277",
+      "note": "Native and neutral common formats are both evaluated."
+    },
+    {
+      "model_id": "meta-llama/Llama-3.1-8B",
+      "resolved_model_revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+      "resolved_tokenizer_revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+      "actual_dtype": "torch.bfloat16",
+      "tokenizer_template_sha256": "20ee078086be55f092810f1c7237d579512963e532c4da3a23bf5c0ac6bb8c5f",
+      "note": "Base checkpoint uses the neutral common format in the reported comparison."
+    }
+  ],
+  "datasets": [
+    {
+      "dataset_id": "fancyzhx/ag_news",
+      "subset": null,
+      "requested_revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+      "train_split": "train",
+      "test_split": "test"
+    },
+    {
+      "id": "glue",
+      "subset": "sst2",
+      "revision": "bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c",
+      "train_split": "train",
+      "query_split": "validation"
+    }
+  ],
+  "software": {
+    "python": "3.12.14",
+    "torch": "2.14.0",
+    "transformers": "4.49.0",
+    "peft": "0.21.0",
+    "datasets": "5.0.1",
+    "numpy": "2.5.3",
+    "tokenizers": "0.21.4"
+  },
+  "inference": {
+    "device": "Apple Metal (MPS)",
+    "dtype": "BF16",
+    "quantization": null,
+    "generation": "greedy",
+    "maximum_new_tokens": 10,
+    "overflow": "reject without truncation",
+    "parser": "strict complete-output label parser",
+    "likelihood": "full permitted label string summed token log probabilities, no length normalization"
+  },
+  "training": {
+    "model": "meta-llama/Llama-3.1-8B-Instruct",
+    "task": "AG News",
+    "zero_based_inclusive_blocks": [
+      12,
+      19
+    ],
+    "module_count": 32,
+    "projections": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ],
+    "trainable_parameters": 3407872,
+    "LoRA_rank": 16,
+    "LoRA_alpha": 32,
+    "paired_independent_calibration_training_blocks": 3,
+    "calibration_queries_per_block": 500,
+    "epochs": 2,
+    "optimizer_updates": 250,
+    "learning_rate": 0.0002,
+    "gradient_accumulation": 4
+  },
+  "cohorts": {
+    "behavioural_confirmation": {
+      "queries": 500,
+      "draws": 5
+    },
+    "controlled_primary": {
+      "queries": 200,
+      "draws": 5
+    },
+    "descriptive_full_curves": {
+      "development_queries": 100,
+      "draws": 3
+    },
+    "SST2_transfer": {
+      "validation_queries": 100,
+      "draws": 3
+    }
+  },
+  "development_selection": {
+    "queries": 100,
+    "selected_K": 16,
+    "minimum_absolute_decline": 0.1,
+    "minimum_relative_decline": 0.2,
+    "earliest_crossing": true,
+    "relative_reference": "development peak accuracy",
+    "scope": "selection of fixed evaluation K, not a multi-model prevalence rule"
+  },
+  "bootstrap": {
+    "resamples": 2000,
+    "method": "crossed percentile bootstrap, pointwise 95%",
+    "behavioural_seed": 20261101,
+    "controlled_seed": 2026110499,
+    "controlled_dimensions": [
+      "queries",
+      "demonstration draws",
+      "paired training blocks"
+    ],
+    "behavioural_dimensions": [
+      "queries",
+      "demonstration draws"
+    ]
+  },
+  "metadata_source_sha256": {
+    "revision/four_day_revision/preparation/five_format_streams_20261106T043531Z/outputs/scientific/instruct_native/manifest.json": "0ade9b393edec788f2304dfa47c4a8212a9bc28ecdc7cc0cd0bc264e8fc5119e",
+    "revision/four_day_revision/preparation/five_format_streams_20261106T043531Z/outputs/scientific/instruct_native/loaded_model_audit.json": "2606936f59b162436761b4ca74134c9971bb4f463e4af0a1491d1f3b2a04a664",
+    "revision/four_day_revision/preparation/five_format_streams_20261106T043531Z/outputs/scientific/hermes_native/manifest.json": "877d4f629ccaa9dbb8c8883e54e222c385345e92627589744d4e0a9e4e02922d",
+    "revision/four_day_revision/preparation/five_format_streams_20261106T043531Z/outputs/scientific/hermes_native/loaded_model_audit.json": "d5bd165a8ae549d84b22f546a60ffab7f01399a253686fcee69cf63116eeb113",
+    "revision/four_day_revision/preparation/five_format_streams_20261106T043531Z/outputs/scientific/base_common/manifest.json": "a5f1588023d5e0d26154285f33370d9e18502a527cd8b477934f83f98a5b813b",
+    "revision/four_day_revision/preparation/five_format_streams_20261106T043531Z/outputs/scientific/base_common/loaded_model_audit.json": "a48cd2883c57fa18aefa1a2710f16528e5fab3d26bd1016954b90a6b78fdff25",
+    "revision/four_day_revision/runs/20261106T021055Z-57101819f2/manifest.json": "be6460e758b5e1b1aa63da78db2578948c869e1ab3a4ac2dafa429bb7449c0fd",
+    "revision/four_day_revision/preparation/sst2_transfer_20261106T043949Z/scientific_A_block_0_config.json": "d598e7be4a190149145adc16128baf8aaf9649dc8c4d5783aada8c7197af03dc",
+    "code/configs/revision/w2_llama31_8b_agnews_development_registered.json": "eeebab621696f66338fe9c5f9242b0e385d77072c0d76ae5e930c74c695cf7a3",
+    "code/environment/revision-tested-lock.txt": "3e34e20463fbed3a23daf92b32f484f2fa715fee8aa5963308a4f3fa2cee600f"
+  }
+}

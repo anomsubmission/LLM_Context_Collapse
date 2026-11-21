@@ -1,0 +1,109 @@
+\section*{\textcolor{blue}{Supplementary Note 8: controlled adaptation and held-out evaluations}}
+\addcontentsline{toc}{section}{Note 8: controlled adaptation and held-out evaluations}
+\label{snote:controlled}
+
+\textcolor{blue}{On the 100-query AG News development panel, the earliest tested $K$ with
+both an absolute decline of at least $0.10$ and a decline of at least $20\%$ relative
+to the development peak is $K=16$. This fixes the controlled evaluation point;
+the rule does not classify the multi-model panel and is not reapplied to select an
+endpoint on the held-out 200-query results.}
+
+\textcolor{blue}{A separate 500-query AG News behavioural panel confirms the native-template
+decline in the untreated Llama-3.1-8B-Instruct checkpoint
+(Table~\ref{stab:baseline500}). With five demonstration draws, accuracy is $83.00\%$
+at zero shot and $38.20\%$ at $K=16$, a $44.80$-point decline with 95\% crossed
+query/draw bootstrap interval $[34.92,55.12]$. The empirical majority baseline is
+$28.60\%$. Only $24/18,000$ outputs across its full curve are invalid, with no
+truncation or rejection. This behavioural confirmation cohort is separate from the
+200-query controlled evaluation and the 100-query development analyses below.}
+
+\textcolor{blue}{The controlled study fixes Llama-3.1-8B-Instruct, AG News and attention-only
+LoRA in zero-based blocks 12--19 inclusive. All 32 query/key/value/output projections
+are adapted (rank 16, $\alpha=32$; 3,407,872 trainable parameters). Each of three
+independent calibration/training blocks samples 500 calibration queries and trains four
+arms for two epochs, 250 optimizer updates, learning rate $2\times10^{-4}$ and gradient
+accumulation four. Arm A uses eight correctly labelled demonstrations and whole-prompt
+next-token loss. B uses the same contextual input with loss restricted to the gold query
+label; C uses gold query-label loss without demonstrations. D uses contextual input
+and shuffled query targets, preserving target-label marginals and allowing chance-correct
+assignments; its demonstrations remain correctly labelled. B and C match query-label
+presentations and optimizer updates, not input-token exposure. A supervises substantially
+more tokens than the label-only arms. Calibration sampling and initialization vary
+together across blocks, so their variance components are not separately identified.}
+
+\textcolor{blue}{The primary evaluation shares 200 held-out AG News queries and five demonstration
+draws at $K=16$ across all arms, with one zero-shot output per query and adapter.
+Query, calibration, demonstration and technical-validation roles are disjoint by
+recorded identity and text hash; the 200 queries also exclude the separate 500-query
+behavioural confirmation panel. The primary panel's majority-class baseline is
+$27.50\%$ (uniform-label chance $25.00\%$). Inference uses native chat formatting, BF16, greedy
+generation and a ten-new-token cap. Overflowing prompts are rejected without
+truncation. The complete-output parser accepts only a permitted label; additional
+continuation is invalid and receives zero credit. Table~\ref{stab:final_training}
+shows all twelve adapters and the shared untreated baseline, and
+Table~\ref{stab:final_training_contrasts} reports paired effects. Pointwise 95\%
+intervals use 2,000 crossed percentile bootstrap resamples of query identities,
+demonstration draws and paired training blocks. Shared baseline predictions are not
+independent training replicas. With only three training blocks and five draws,
+interval coverage is limited; the analysis does not establish noninferiority,
+familywise significance or population-wide preservation.}
+
+\textcolor{blue}{B exceeds the demonstration-free task-learning control C at $K=16$ by
+$39.17$ percentage points $[20.63,56.30]$, and the shuffled-target control D by
+$64.80$ $[57.63,71.63]$. All three blocks favor B in both contrasts.
+These results distinguish contextual adaptation from the matched zero-shot objective
+in this setting, without localizing the original deficit. A reaches $89.37\%$ at
+$K=16$ but has entirely invalid zero-shot output in all three blocks: it emits a
+label followed by additional example text. We retain the strict zero-credit endpoint.
+Complete-label likelihood gives A $88.17\%$ at $K=0$, demonstrating restricted-label
+discrimination despite this output-format cost; it does not establish unconstrained
+instruction following or general knowledge preservation (Table~\ref{stab:final_readouts}).}
+
+\textcolor{blue}{Untreated generation concentrates on World at high $K$: $761/1,000$ outputs
+at $K=16$ and $744/1,000$ at $K=32$, versus $50/200$ at zero shot. The gold World
+share is $55/200$. Table~\ref{stab:final_confusions} gives the full confusion matrices;
+the concentration supports examining label bias rather than inferring a unique
+capacity mechanism from accuracy alone.}
+
+\textcolor{blue}{The likelihood and content-free calibration definitions are those in Note~7,
+with priors computed separately for the untreated model and each A adapter. On the
+200-query panel, untreated calibrated likelihood is $73.30\%$ at $K=16$, versus
+$30.70\%$ raw likelihood, a $42.60$-point gain $[33.40,51.50]$. Calibrated accuracy
+is nevertheless below its $81.50\%$ zero-shot value, by $8.20$ points $[1.10,15.80]$;
+at $K=32$ the deficit is $16.20$ $[6.90,24.20]$. Calibration therefore mitigates rather
+than eliminates the decline. For A the primary calibrated-minus-raw contrast at
+$K=16$ is $+0.20$ points $[-3.07,4.17]$; the distinct calibrated A-minus-untreated
+contrast is $+16.27$ $[9.50,23.93]$. A positive between-model comparison does not
+substitute for the within-model calibration contrast.}
+
+\textcolor{blue}{Full curves for the untreated model and all three A adapters use a separate
+100-query AG News development panel and three demonstration draws
+(Table~\ref{stab:final_curves}). They show recovery at $K\geq8$, severe small-$K$
+formatting costs, and between-block variation at larger $K$; they are not independent
+primary confirmation or evidence of uniform repair. The checkpoint/template
+comparison uses the same primary 200 queries, five draws and $K=0,16,32$
+(Table~\ref{stab:final_formats}). Its neutral common format has identical text and
+input token IDs across Instruct, Hermes-3 and their base checkpoint. Under the strict
+generation readout, the common-format cells are largely or entirely invalid. They
+do not distinguish which post-training stage changes the cliff, or separate semantic
+capacity from prompt-format compatibility. Native-format differences remain a
+checkpoint/template association.}
+
+\textcolor{blue}{SST2 transfer uses all twelve AG News-trained adapters and the untreated model,
+100 validation queries and three shared demonstration draws at $K=16$
+(Table~\ref{stab:final_transfer}). SST2 demonstrations come from a separate training
+pool. B's mean accuracy is $89.67\%$ at $K=0$ and $89.78\%$ at $K=16$, versus
+$90.00\%$ and $83.67\%$ untreated. A's mean zero-shot accuracy is $27.67\%$, with
+$69.00\%$ invalid output and substantial block variation. These transfer results
+document benefits and collateral costs on one additional task; they do not establish
+general retention. Complete condition-level accuracies, invalidity, confusion matrices
+and paired effects are available with the numerical source manifest
+\path{revision/final_integration/supplement_table_sources.json}.}
+
+\textcolor{blue}{Model and tokenizer revisions are fixed: Instruct commit
+\texttt{0e9e39f2}, Hermes-3 \texttt{896ea440}, and base \texttt{d04e592b}.
+Full commit identifiers, AG News and GLUE/SST2 dataset revisions, template hashes,
+cohort definitions and optimizer settings are supplied in
+\path{revision/final_integration/final_protocol_manifest.json}.
+The software environment uses Python 3.12.14, PyTorch 2.14.0, Transformers 4.49.0,
+PEFT 0.21.0, Datasets 5.0.1 and NumPy 2.5.3.}

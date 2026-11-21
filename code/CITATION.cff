@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this code or the results, please cite the paper."
+title: "Characterizing and mitigating the in-context cliff: a complementary learning systems perspective on fast and slow learning in large language models"
+abstract: >-
+  Reproducible measurements and analyses of many-shot classification, common-prompt
+  likelihood and output compliance, released post-training stages, count/length
+  controls, state transfer and regional adaptation. All completed final outcomes
+  are retained, including null and adverse results. Whole-prompt regional adaptation
+  can damage zero-shot output compliance and does not localize the original deficit.
+  Contextual query-label training is evaluated separately from whole-prompt training.
+version: 2.0.0
+authors:
+  - family-names: Rostami
+    given-names: Mohammad
+repository-code: "https://github.com/anomsubmission/LLM_Context_Collapse"
+license: MIT
+type: software
+keywords:
+  - in-context learning
+  - complementary learning systems
+  - many-shot prompting
+  - mechanistic interpretability
+  - continual learning

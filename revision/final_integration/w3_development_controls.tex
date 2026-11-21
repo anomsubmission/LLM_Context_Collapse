@@ -1,0 +1,25 @@
+% Descriptive order-control table; numerical cells retained from the reviewed development analysis.
+\begin{table}[h]
+\centering\color{blue}
+\caption{\textcolor{blue}{\textbf{Llama-3.1/AG News development controls.} Accuracy uses 100 development queries and three shared draws; $K{=}0$ is one common reference. Generation and label-likelihood readouts are separate. Lower rows give changes in the assigned label's generated output frequency for cyclic final-class assignment versus random order at $K{=}16$, averaging two fixed last-example choices. Intervals are exploratory pointwise 95\% query/draw bootstrap intervals; rotations change the complete order. Full condition and paired-effect CSVs are companion records, not additional independent samples.}}
+\label{stab:w3}
+\footnotesize
+\begin{tabular}{llccc}
+\toprule
+$K$ & Order & Generation & Raw likelihood & Calibrated likelihood \\
+\midrule
+0 & shared reference & 0.8700 & 0.8600 & 0.8100 \\
+8 & random & 0.7600 & 0.6533 & 0.8367 \\
+16 & random & 0.4967 & 0.3767 & 0.7700 \\
+16 & blocked & 0.5300 & 0.4333 & 0.7133 \\
+16 & interleaved & 0.5133 & 0.4233 & 0.5367 \\
+32 & random & 0.5700 & 0.3733 & 0.5867 \\
+\midrule
+Assigned final class & \multicolumn{2}{c}{Output-frequency change} & \multicolumn{2}{c}{Pointwise 95\% interval} \\
+Business & \multicolumn{2}{c}{$+0.0383$} & \multicolumn{2}{c}{$[-0.2350,0.2650]$} \\
+Sci/Tech & \multicolumn{2}{c}{$+0.0117$} & \multicolumn{2}{c}{$[-0.2150,0.1650]$} \\
+Sports & \multicolumn{2}{c}{$0.0000$} & \multicolumn{2}{c}{$[0.0000,0.0000]$} \\
+World & \multicolumn{2}{c}{$+0.1800$} & \multicolumn{2}{c}{$[-0.1533,0.6450]$} \\
+\bottomrule
+\end{tabular}
+\end{table}

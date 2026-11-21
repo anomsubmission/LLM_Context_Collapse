@@ -1,0 +1,375 @@
+{
+  "entries": [
+    {
+      "key": "mcclelland1995cls",
+      "status": "retained",
+      "source": "https://doi.org/10.1037/0033-295X.102.3.419",
+      "fields_changed": {}
+    },
+    {
+      "key": "kumaran2016cls",
+      "status": "retained",
+      "source": "https://doi.org/10.1016/j.tics.2016.05.004",
+      "fields_changed": {}
+    },
+    {
+      "key": "oreilly2014cls",
+      "status": "retained",
+      "source": "https://doi.org/10.1111/j.1551-6709.2011.01214.x",
+      "fields_changed": {}
+    },
+    {
+      "key": "diekelmann2010sleep",
+      "status": "retained",
+      "source": "https://doi.org/10.1038/nrn2762",
+      "fields_changed": {}
+    },
+    {
+      "key": "liao2024hippocampus",
+      "status": "updated",
+      "source": "https://doi.org/10.1146/annurev-neuro-102423-100258",
+      "fields_changed": {
+        "author": "Liao, Zhenrui and Losonczy, Attila",
+        "doi": "10.1146/annurev-neuro-102423-100258",
+        "pages": "187--209"
+      }
+    },
+    {
+      "key": "durstewitz2025neuroai",
+      "status": "removed_uncited",
+      "reason": "Not cited by the current paper or supplement; original entry preserved in backup."
+    },
+    {
+      "key": "kudithipudi2022biological",
+      "status": "removed_uncited",
+      "reason": "Not cited by the current paper or supplement; original entry preserved in backup."
+    },
+    {
+      "key": "kirkpatrick2017ewc",
+      "status": "retained",
+      "source": "https://doi.org/10.1073/pnas.1611835114",
+      "fields_changed": {}
+    },
+    {
+      "key": "zenke2017si",
+      "status": "updated",
+      "source": "https://proceedings.mlr.press/v70/zenke17a.html",
+      "fields_changed": {
+        "pages": "3987--3995",
+        "volume": "70",
+        "url": "https://proceedings.mlr.press/v70/zenke17a.html"
+      }
+    },
+    {
+      "key": "lopezpaz2017gem",
+      "status": "updated",
+      "source": "https://proceedings.neurips.cc/paper/2017/hash/f87522788a2be2d171666752f97ddebb-Abstract.html",
+      "fields_changed": {
+        "url": "https://proceedings.neurips.cc/paper/2017/hash/f87522788a2be2d171666752f97ddebb-Abstract.html"
+      }
+    },
+    {
+      "key": "shin2017dgr",
+      "status": "updated",
+      "source": "https://proceedings.neurips.cc/paper_files/paper/2017/hash/0efbe98067c6c73dba1250d2beaa81f9-Abstract.html",
+      "fields_changed": {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2017/hash/0efbe98067c6c73dba1250d2beaa81f9-Abstract.html"
+      }
+    },
+    {
+      "key": "vandeven2020brainreplay",
+      "status": "retained",
+      "source": "https://doi.org/10.1038/s41467-020-17866-2",
+      "fields_changed": {}
+    },
+    {
+      "key": "arani2022clser",
+      "status": "updated",
+      "source": "https://openreview.net/references/pdf?id=BN26ICNKlc",
+      "fields_changed": {
+        "url": "https://openreview.net/references/pdf?id=BN26ICNKlc"
+      }
+    },
+    {
+      "key": "pham2021dualnet",
+      "status": "updated",
+      "source": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/86a1fa88adb5c33bd7a68ac2f9f3f96b-Abstract.html",
+      "fields_changed": {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2021/hash/86a1fa88adb5c33bd7a68ac2f9f3f96b-Abstract.html"
+      }
+    },
+    {
+      "key": "hu2022lora",
+      "status": "updated",
+      "source": "https://openreview.net/pdf?id=nZeVKeeFYf9",
+      "fields_changed": {
+        "url": "https://openreview.net/pdf?id=nZeVKeeFYf9"
+      }
+    },
+    {
+      "key": "tiwari2026fastslow",
+      "status": "updated",
+      "source": "https://arxiv.org/abs/2605.12484",
+      "fields_changed": {
+        "url": "https://arxiv.org/abs/2605.12484"
+      }
+    },
+    {
+      "key": "brown2020gpt3",
+      "status": "updated",
+      "source": "https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html",
+      "fields_changed": {
+        "url": "https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html"
+      }
+    },
+    {
+      "key": "garg2022transformers",
+      "status": "updated",
+      "source": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/c529dba08a146ea8d6cf715ae8930cbe-Abstract-Conference.html",
+      "fields_changed": {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2022/hash/c529dba08a146ea8d6cf715ae8930cbe-Abstract-Conference.html"
+      }
+    },
+    {
+      "key": "xie2022bayesian",
+      "status": "updated",
+      "source": "https://openreview.net/pdf?id=RdJVFCHjUMI",
+      "fields_changed": {
+        "url": "https://openreview.net/pdf?id=RdJVFCHjUMI"
+      }
+    },
+    {
+      "key": "akyurek2023icl",
+      "status": "updated",
+      "source": "https://openreview.net/references/pdf?id=f1j4iM16D",
+      "fields_changed": {
+        "url": "https://openreview.net/references/pdf?id=f1j4iM16D"
+      }
+    },
+    {
+      "key": "bertsch2025longicl",
+      "status": "updated",
+      "source": "https://aclanthology.org/2025.naacl-long.605/",
+      "fields_changed": {
+        "journal": "Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+        "doi": "10.18653/v1/2025.naacl-long.605",
+        "pages": "12119--12149",
+        "url": "https://aclanthology.org/2025.naacl-long.605/"
+      }
+    },
+    {
+      "key": "jian2024icl",
+      "status": "updated",
+      "source": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/0ba385c3ea3bb417ac6d6a33e24411bc-Abstract-Conference.html",
+      "fields_changed": {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/0ba385c3ea3bb417ac6d6a33e24411bc-Abstract-Conference.html"
+      }
+    },
+    {
+      "key": "russin2025iclinweight",
+      "status": "updated",
+      "source": "https://doi.org/10.1073/pnas.2510270122",
+      "fields_changed": {
+        "title": "Parallel trade-offs in human cognition and neural networks: The dynamic interplay between in-context and in-weight learning",
+        "doi": "10.1073/pnas.2510270122",
+        "volume": "122",
+        "number": "35",
+        "pages": "e2510270122"
+      }
+    },
+    {
+      "key": "lampinen2025latent",
+      "status": "updated",
+      "source": "https://arxiv.org/abs/2509.16189",
+      "fields_changed": {
+        "url": "https://arxiv.org/abs/2509.16189"
+      }
+    },
+    {
+      "key": "xu2026memo",
+      "status": "updated",
+      "source": "https://arxiv.org/abs/2604.27707",
+      "fields_changed": {
+        "url": "https://arxiv.org/abs/2604.27707"
+      }
+    },
+    {
+      "key": "pan2023whaticllearns",
+      "status": "retained",
+      "source": "https://doi.org/10.18653/v1/2023.findings-acl.527",
+      "fields_changed": {}
+    },
+    {
+      "key": "tang2025overprompting",
+      "status": "updated",
+      "source": "https://ieeexplore.ieee.org/document/11391015",
+      "fields_changed": {
+        "journal": "2025 3rd International Conference on Foundation and Large Language Models (FLLM)",
+        "pages": "134--141",
+        "doi": "10.1109/FLLM67465.2025.11391015",
+        "url": "https://ieeexplore.ieee.org/document/11391015"
+      }
+    },
+    {
+      "key": "zhang2025moreisnotbetter",
+      "status": "updated",
+      "source": "https://aclanthology.org/2025.acl-long.1475/",
+      "fields_changed": {
+        "journal": "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "doi": "10.18653/v1/2025.acl-long.1475",
+        "pages": "30539--30552",
+        "url": "https://aclanthology.org/2025.acl-long.1475/"
+      }
+    },
+    {
+      "key": "zou2025manyiclbench",
+      "status": "updated",
+      "source": "https://aclanthology.org/2025.acl-long.1245/",
+      "fields_changed": {
+        "doi": "10.18653/v1/2025.acl-long.1245",
+        "pages": "25605--25639",
+        "url": "https://aclanthology.org/2025.acl-long.1245/"
+      }
+    },
+    {
+      "key": "wei2023largericldifferently",
+      "status": "updated",
+      "source": "https://arxiv.org/abs/2303.03846",
+      "fields_changed": {
+        "url": "https://arxiv.org/abs/2303.03846"
+      }
+    },
+    {
+      "key": "agarwal2024manyshot",
+      "status": "updated",
+      "source": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/8cb564df771e9eacbfe9d72bd46a24a9-Abstract-Conference.html",
+      "fields_changed": {
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/8cb564df771e9eacbfe9d72bd46a24a9-Abstract-Conference.html"
+      }
+    },
+    {
+      "key": "jiao2026logitlens",
+      "status": "retained",
+      "source": "https://arxiv.org/abs/2603.04464",
+      "fields_changed": {}
+    },
+    {
+      "key": "wang2023labelanchors",
+      "status": "retained",
+      "source": "https://aclanthology.org/2023.emnlp-main.609/",
+      "fields_changed": {}
+    },
+    {
+      "key": "lu2022orderedprompts",
+      "status": "retained",
+      "source": "https://aclanthology.org/2022.acl-long.556/",
+      "fields_changed": {}
+    },
+    {
+      "key": "min2022demonstrations",
+      "status": "retained",
+      "source": "https://aclanthology.org/2022.emnlp-main.759/",
+      "fields_changed": {}
+    },
+    {
+      "key": "zhao2021calibrate",
+      "status": "retained",
+      "source": "https://proceedings.mlr.press/v139/zhao21c.html",
+      "fields_changed": {}
+    },
+    {
+      "key": "halawi2024overthinking",
+      "status": "updated",
+      "source": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/bb63841e1ad12370a34504f15c60db4f-Abstract-Conference.html",
+      "fields_changed": {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/bb63841e1ad12370a34504f15c60db4f-Abstract-Conference.html"
+      }
+    },
+    {
+      "key": "li2025longiclbench",
+      "status": "retained",
+      "source": "https://openreview.net/pdf?id=Cw2xlg0e46",
+      "fields_changed": {}
+    },
+    {
+      "key": "chan2022distributional",
+      "status": "retained",
+      "source": "https://proceedings.neurips.cc/paper_files/paper/2022/file/77c6ccacfd9962e2307fc64680fc5ace-Paper-Conference.pdf",
+      "fields_changed": {}
+    },
+    {
+      "key": "singh2023transient",
+      "status": "retained",
+      "source": "https://proceedings.neurips.cc/paper_files/paper/2023/file/58692a1701314e09cbd7a5f5f3871cc9-Paper-Conference.pdf",
+      "fields_changed": {}
+    },
+    {
+      "key": "belrose2023tunedlens",
+      "status": "updated",
+      "source": "https://arxiv.org/abs/2303.08112v6",
+      "fields_changed": {
+        "note": null,
+        "url": "https://arxiv.org/abs/2303.08112v6"
+      }
+    },
+    {
+      "key": "meng2022causaltracing",
+      "status": "retained",
+      "source": "https://proceedings.neurips.cc/paper_files/paper/2022/file/6f1d43d5a82a37e89b0665b33bf3a182-Paper-Conference.pdf",
+      "fields_changed": {}
+    },
+    {
+      "key": "cowan2001capacity",
+      "status": "updated",
+      "source": "https://memory.psych.missouri.edu/assets/doc/articles/2001/cowan-bbs-2001.pdf",
+      "fields_changed": {
+        "doi": "10.1017/S0140525X01003922"
+      }
+    },
+    {
+      "key": "olsson2022induction",
+      "status": "updated",
+      "source": "https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html",
+      "fields_changed": {
+        "url": "https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html"
+      }
+    },
+    {
+      "key": "nostalgebraist2020logit",
+      "status": "updated",
+      "source": "https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens",
+      "fields_changed": {
+        "url": "https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens"
+      }
+    },
+    {
+      "key": "tse2007schemas",
+      "status": "removed_uncited",
+      "reason": "Not cited by the current paper or supplement; original entry preserved in backup."
+    },
+    {
+      "key": "hendel2023taskvectors",
+      "status": "updated",
+      "source": "https://aclanthology.org/2023.findings-emnlp.624/",
+      "fields_changed": {
+        "doi": "10.18653/v1/2023.findings-emnlp.624",
+        "pages": "9318--9333",
+        "url": "https://aclanthology.org/2023.findings-emnlp.624/"
+      }
+    },
+    {
+      "key": "todd2024functionvectors",
+      "status": "updated",
+      "source": "https://openreview.net/pdf?id=AwyxtyMwaG",
+      "fields_changed": {
+        "url": "https://openreview.net/pdf?id=AwyxtyMwaG"
+      }
+    },
+    {
+      "key": "rostami2026vlmcollapse",
+      "status": "removed_uncited",
+      "reason": "Not cited by the current paper or supplement; original entry preserved in backup."
+    }
+  ],
+  "scope": "Reference-by-reference identity/publication check using publisher/proceedings/arXiv records. Crossref title candidates were not accepted automatically; mismatches and 429 responses remain in the raw audit. Original uncited entries are backed up. Preprints without a verified matching published version retain their preprint citation."
+}

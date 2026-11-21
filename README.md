@@ -1,54 +1,27 @@
-# Running the code
+# Characterizing and mitigating the in-context cliff
 
-Install the package:
+This repository contains the current paper, supplement, measured evidence and CPU
+reproduction code. The analysis parses 53,200 final evaluations and checks 658
+estimates/confidence intervals against the independently validated analyses.
+Null results, invalid outputs and adverse adaptation outcomes remain included.
 
 ```bash
+cd code
 python -m pip install -e .
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m publication.rebuild
+python -m unittest publication.test_integrity
 ```
 
-Install the optional experiment dependencies:
+Add `--compile` to rebuild the paper and supplement with Tectonic. See
+[the analysis README](code/README.md) for protocols, limits and data provenance.
+The current main sources are `article_cac.tex` and `supplementary_ncs.tex`.
 
-```bash
-python -m pip install -e ".[experiments]"
-```
+This release replaces obsolete public drivers and drafts with the validated
+reproduction tree. Previous releases remain in Git history; original frozen model
+execution records and adapters remain in the research archive. This is reanalysis
+of saved measurements, not a fresh training/inference run. Some ancillary figures
+retain vector artwork because query-level source records are unavailable.
 
-Run the environment check:
-
-```bash
-cliff doctor
-```
-
-Verify the archived results:
-
-```bash
-cliff verify
-```
-
-Regenerate figures:
-
-```bash
-cliff figures
-```
-
-Run the offline smoke test:
-
-```bash
-cliff sweep --backend echo --model echo --ks 0,1,4 --seeds 0 --n-test 20
-```
-
-Run all tests:
-
-```bash
-python -m pytest
-```
-
-Run an experiment:
-
-```bash
-cliff sweep --model meta-llama/Llama-3.1-8B-Instruct
-cliff intervene --model meta-llama/Llama-3.1-8B-Instruct --arm remove --region mid
-cliff mechanism --model meta-llama/Llama-3.1-8B-Instruct --task ag_news --k 16
-cliff audit --model google/gemma-3-4b-it
-```
-
-Set output locations with `CLIFF_RESULTS`, `CLIFF_FIGURES`, and `CLIFF_OUTPUTS`.
+Llama-3.2 regional and hosted DeepSeek-V3.2 zero-shot measurements are unavailable
+and are not silently substituted. Private reviewer correspondence and author
+comment threads are not part of this public code release.

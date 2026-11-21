@@ -1,0 +1,1635 @@
+{
+  "cells": [
+    {
+      "readout": "generated_label",
+      "K": 0,
+      "accuracy": 0.85,
+      "correct": 170,
+      "invalid": 0,
+      "actual_query_context_records": 200,
+      "unique_queries": 200,
+      "draws_actually_measured": 1,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.85,
+        "ci_low": 0.8,
+        "ci_high": 0.895,
+        "standard_error": 0.024929085892019913,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "readout": "generated_label",
+      "K": 16,
+      "accuracy": 0.463,
+      "correct": 463,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "draws_actually_measured": 5,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.463,
+        "ci_low": 0.3309750000000001,
+        "ci_high": 0.5910249999999998,
+        "standard_error": 0.06779820452835483,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "readout": "generated_label",
+      "K": 32,
+      "accuracy": 0.318,
+      "correct": 318,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "draws_actually_measured": 5,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.318,
+        "ci_low": 0.251,
+        "ci_high": 0.395,
+        "standard_error": 0.03706696153677536,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "readout": "raw_complete_label_likelihood",
+      "K": 0,
+      "accuracy": 0.84,
+      "correct": 168,
+      "invalid": 0,
+      "actual_query_context_records": 200,
+      "unique_queries": 200,
+      "draws_actually_measured": 1,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.84,
+        "ci_low": 0.785,
+        "ci_high": 0.89,
+        "standard_error": 0.02553173865190725,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "readout": "raw_complete_label_likelihood",
+      "K": 16,
+      "accuracy": 0.307,
+      "correct": 307,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "draws_actually_measured": 5,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.307,
+        "ci_low": 0.235,
+        "ci_high": 0.3810249999999999,
+        "standard_error": 0.03770113629041961,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "readout": "raw_complete_label_likelihood",
+      "K": 32,
+      "accuracy": 0.263,
+      "correct": 263,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "draws_actually_measured": 5,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.263,
+        "ci_low": 0.205,
+        "ci_high": 0.3270249999999999,
+        "standard_error": 0.03219886581045581,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "readout": "calibrated_complete_label_likelihood",
+      "K": 0,
+      "accuracy": 0.815,
+      "correct": 163,
+      "invalid": 0,
+      "actual_query_context_records": 200,
+      "unique_queries": 200,
+      "draws_actually_measured": 1,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.815,
+        "ci_low": 0.755,
+        "ci_high": 0.865,
+        "standard_error": 0.027511677906129323,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "readout": "calibrated_complete_label_likelihood",
+      "K": 16,
+      "accuracy": 0.733,
+      "correct": 733,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "draws_actually_measured": 5,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.733,
+        "ci_low": 0.657,
+        "ci_high": 0.8060249999999999,
+        "standard_error": 0.038374786017005044,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "readout": "calibrated_complete_label_likelihood",
+      "K": 32,
+      "accuracy": 0.653,
+      "correct": 653,
+      "invalid": 0,
+      "actual_query_context_records": 1000,
+      "unique_queries": 200,
+      "draws_actually_measured": 5,
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.653,
+        "ci_low": 0.572,
+        "ci_high": 0.739,
+        "standard_error": 0.041789843206784395,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "contrast": "calibrated_minus_raw_K16",
+      "role": "prespecified_primary",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.426,
+        "ci_low": 0.334,
+        "ci_high": 0.515,
+        "standard_error": 0.04727883673697568,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "contrast": "calibrated_minus_raw_K0",
+      "role": "prespecified_secondary",
+      "interval": {
+        "estimand": "value",
+        "estimate": -0.025,
+        "ci_low": -0.07,
+        "ci_high": 0.015,
+        "standard_error": 0.022105628766483455,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "contrast": "calibration_K0_adjusted_K16",
+      "role": "prespecified_secondary",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.451,
+        "ci_low": 0.359,
+        "ci_high": 0.535,
+        "standard_error": 0.04435803495853589,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "contrast": "generated_label_K16_minus_K32",
+      "role": "residual_decline_secondary_or_descriptive",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.145,
+        "ci_low": -0.002024999999999956,
+        "ci_high": 0.282,
+        "standard_error": 0.07420967343659304,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "contrast": "generated_label_K0_minus_K16",
+      "role": "descriptive_fixed_grid",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.387,
+        "ci_low": 0.25197500000000006,
+        "ci_high": 0.5280249999999999,
+        "standard_error": 0.07182679654628243,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "contrast": "generated_label_K0_minus_K32",
+      "role": "descriptive_fixed_grid",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.532,
+        "ci_low": 0.439,
+        "ci_high": 0.614,
+        "standard_error": 0.0447765087056364,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "contrast": "raw_complete_label_likelihood_K16_minus_K32",
+      "role": "residual_decline_secondary_or_descriptive",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.044,
+        "ci_low": -0.006024999999999956,
+        "ci_high": 0.10502499999999985,
+        "standard_error": 0.028479312304981706,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "contrast": "raw_complete_label_likelihood_K0_minus_K16",
+      "role": "descriptive_fixed_grid",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.533,
+        "ci_low": 0.445,
+        "ci_high": 0.623,
+        "standard_error": 0.04604635891777755,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "contrast": "raw_complete_label_likelihood_K0_minus_K32",
+      "role": "descriptive_fixed_grid",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.577,
+        "ci_low": 0.492,
+        "ci_high": 0.657,
+        "standard_error": 0.04194405573684819,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "contrast": "calibrated_complete_label_likelihood_K16_minus_K32",
+      "role": "residual_decline_secondary_or_descriptive",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.08,
+        "ci_low": -0.007049999999999912,
+        "ci_high": 0.17502499999999985,
+        "standard_error": 0.0465447309691494,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "contrast": "calibrated_complete_label_likelihood_K0_minus_K16",
+      "role": "descriptive_fixed_grid",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.082,
+        "ci_low": 0.010975000000000044,
+        "ci_high": 0.158,
+        "standard_error": 0.03714506410875908,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    },
+    {
+      "contrast": "calibrated_complete_label_likelihood_K0_minus_K32",
+      "role": "descriptive_fixed_grid",
+      "interval": {
+        "estimand": "value",
+        "estimate": 0.162,
+        "ci_low": 0.06897500000000005,
+        "ci_high": 0.24202499999999985,
+        "standard_error": 0.04515699554746127,
+        "confidence": 0.95,
+        "n_resamples": 2000,
+        "seed": 2026110499,
+        "method": "crossed_cluster_percentile_bootstrap",
+        "n_query_ids": 200,
+        "n_draw_ids": 5,
+        "n_recorded_adapter_blocks": 1,
+        "resampled_dimensions": [
+          "queries",
+          "demonstration_draws"
+        ],
+        "training_inference": "conditional_on_observed_model_or_adapters",
+        "singleton_dimensions": [],
+        "limitations": [
+          "Few clusters can yield unreliable percentile coverage; this interval is not a power guarantee.",
+          "Shared base predictions remain shared across adapters and conditions.",
+          "Independent training replicates cannot be inferred from draw IDs or adapter labels."
+        ]
+      }
+    }
+  ],
+  "confusions": [
+    {
+      "readout": "generated_label",
+      "K": 0,
+      "counts": [
+        {
+          "gold": "World",
+          "prediction": "World",
+          "n": 45
+        },
+        {
+          "gold": "World",
+          "prediction": "Sports",
+          "n": 6
+        },
+        {
+          "gold": "World",
+          "prediction": "Business",
+          "n": 1
+        },
+        {
+          "gold": "World",
+          "prediction": "Sci/Tech",
+          "n": 3
+        },
+        {
+          "gold": "World",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "World",
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sports",
+          "n": 45
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Business",
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sci/Tech",
+          "n": 1
+        },
+        {
+          "gold": "Sports",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "World",
+          "n": 3
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "Business",
+          "n": 44
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sci/Tech",
+          "n": 2
+        },
+        {
+          "gold": "Business",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "World",
+          "n": 2
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Business",
+          "n": 12
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sci/Tech",
+          "n": 36
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": null,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "readout": "generated_label",
+      "K": 16,
+      "counts": [
+        {
+          "gold": "World",
+          "prediction": "World",
+          "n": 269
+        },
+        {
+          "gold": "World",
+          "prediction": "Sports",
+          "n": 4
+        },
+        {
+          "gold": "World",
+          "prediction": "Business",
+          "n": 0
+        },
+        {
+          "gold": "World",
+          "prediction": "Sci/Tech",
+          "n": 2
+        },
+        {
+          "gold": "World",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "World",
+          "n": 193
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sports",
+          "n": 34
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Business",
+          "n": 1
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sci/Tech",
+          "n": 2
+        },
+        {
+          "gold": "Sports",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "World",
+          "n": 175
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "Business",
+          "n": 65
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sci/Tech",
+          "n": 5
+        },
+        {
+          "gold": "Business",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "World",
+          "n": 124
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Business",
+          "n": 31
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sci/Tech",
+          "n": 95
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": null,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "readout": "generated_label",
+      "K": 32,
+      "counts": [
+        {
+          "gold": "World",
+          "prediction": "World",
+          "n": 220
+        },
+        {
+          "gold": "World",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "World",
+          "prediction": "Business",
+          "n": 54
+        },
+        {
+          "gold": "World",
+          "prediction": "Sci/Tech",
+          "n": 1
+        },
+        {
+          "gold": "World",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "World",
+          "n": 180
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sports",
+          "n": 1
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Business",
+          "n": 46
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sci/Tech",
+          "n": 3
+        },
+        {
+          "gold": "Sports",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "World",
+          "n": 190
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "Business",
+          "n": 49
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sci/Tech",
+          "n": 6
+        },
+        {
+          "gold": "Business",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "World",
+          "n": 154
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Business",
+          "n": 48
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sci/Tech",
+          "n": 48
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": null,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "readout": "raw_complete_label_likelihood",
+      "K": 0,
+      "counts": [
+        {
+          "gold": "World",
+          "prediction": "World",
+          "n": 38
+        },
+        {
+          "gold": "World",
+          "prediction": "Sports",
+          "n": 6
+        },
+        {
+          "gold": "World",
+          "prediction": "Business",
+          "n": 3
+        },
+        {
+          "gold": "World",
+          "prediction": "Sci/Tech",
+          "n": 8
+        },
+        {
+          "gold": "World",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "World",
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sports",
+          "n": 45
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Business",
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sci/Tech",
+          "n": 1
+        },
+        {
+          "gold": "Sports",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "World",
+          "n": 3
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "Business",
+          "n": 44
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sci/Tech",
+          "n": 2
+        },
+        {
+          "gold": "Business",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "World",
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Business",
+          "n": 9
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sci/Tech",
+          "n": 41
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": null,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "readout": "raw_complete_label_likelihood",
+      "K": 16,
+      "counts": [
+        {
+          "gold": "World",
+          "prediction": "World",
+          "n": 32
+        },
+        {
+          "gold": "World",
+          "prediction": "Sports",
+          "n": 1
+        },
+        {
+          "gold": "World",
+          "prediction": "Business",
+          "n": 0
+        },
+        {
+          "gold": "World",
+          "prediction": "Sci/Tech",
+          "n": 242
+        },
+        {
+          "gold": "World",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "World",
+          "n": 10
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sports",
+          "n": 16
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Business",
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sci/Tech",
+          "n": 204
+        },
+        {
+          "gold": "Sports",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "World",
+          "n": 6
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "Business",
+          "n": 10
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sci/Tech",
+          "n": 229
+        },
+        {
+          "gold": "Business",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "World",
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Business",
+          "n": 1
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sci/Tech",
+          "n": 249
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": null,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "readout": "raw_complete_label_likelihood",
+      "K": 32,
+      "counts": [
+        {
+          "gold": "World",
+          "prediction": "World",
+          "n": 14
+        },
+        {
+          "gold": "World",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "World",
+          "prediction": "Business",
+          "n": 0
+        },
+        {
+          "gold": "World",
+          "prediction": "Sci/Tech",
+          "n": 261
+        },
+        {
+          "gold": "World",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "World",
+          "n": 8
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Business",
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sci/Tech",
+          "n": 222
+        },
+        {
+          "gold": "Sports",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "World",
+          "n": 15
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "Business",
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sci/Tech",
+          "n": 230
+        },
+        {
+          "gold": "Business",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "World",
+          "n": 1
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Business",
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sci/Tech",
+          "n": 249
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": null,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "readout": "calibrated_complete_label_likelihood",
+      "K": 0,
+      "counts": [
+        {
+          "gold": "World",
+          "prediction": "World",
+          "n": 43
+        },
+        {
+          "gold": "World",
+          "prediction": "Sports",
+          "n": 6
+        },
+        {
+          "gold": "World",
+          "prediction": "Business",
+          "n": 4
+        },
+        {
+          "gold": "World",
+          "prediction": "Sci/Tech",
+          "n": 2
+        },
+        {
+          "gold": "World",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "World",
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sports",
+          "n": 46
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Business",
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sci/Tech",
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "World",
+          "n": 3
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "Business",
+          "n": 44
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sci/Tech",
+          "n": 2
+        },
+        {
+          "gold": "Business",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "World",
+          "n": 1
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sports",
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Business",
+          "n": 19
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sci/Tech",
+          "n": 30
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": null,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "readout": "calibrated_complete_label_likelihood",
+      "K": 16,
+      "counts": [
+        {
+          "gold": "World",
+          "prediction": "World",
+          "n": 186
+        },
+        {
+          "gold": "World",
+          "prediction": "Sports",
+          "n": 77
+        },
+        {
+          "gold": "World",
+          "prediction": "Business",
+          "n": 5
+        },
+        {
+          "gold": "World",
+          "prediction": "Sci/Tech",
+          "n": 7
+        },
+        {
+          "gold": "World",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "World",
+          "n": 1
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sports",
+          "n": 229
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Business",
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sci/Tech",
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "World",
+          "n": 20
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sports",
+          "n": 29
+        },
+        {
+          "gold": "Business",
+          "prediction": "Business",
+          "n": 189
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sci/Tech",
+          "n": 7
+        },
+        {
+          "gold": "Business",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "World",
+          "n": 19
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sports",
+          "n": 28
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Business",
+          "n": 74
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sci/Tech",
+          "n": 129
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": null,
+          "n": 0
+        }
+      ]
+    },
+    {
+      "readout": "calibrated_complete_label_likelihood",
+      "K": 32,
+      "counts": [
+        {
+          "gold": "World",
+          "prediction": "World",
+          "n": 185
+        },
+        {
+          "gold": "World",
+          "prediction": "Sports",
+          "n": 33
+        },
+        {
+          "gold": "World",
+          "prediction": "Business",
+          "n": 38
+        },
+        {
+          "gold": "World",
+          "prediction": "Sci/Tech",
+          "n": 19
+        },
+        {
+          "gold": "World",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": "World",
+          "n": 19
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sports",
+          "n": 209
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Business",
+          "n": 2
+        },
+        {
+          "gold": "Sports",
+          "prediction": "Sci/Tech",
+          "n": 0
+        },
+        {
+          "gold": "Sports",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Business",
+          "prediction": "World",
+          "n": 111
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sports",
+          "n": 3
+        },
+        {
+          "gold": "Business",
+          "prediction": "Business",
+          "n": 105
+        },
+        {
+          "gold": "Business",
+          "prediction": "Sci/Tech",
+          "n": 26
+        },
+        {
+          "gold": "Business",
+          "prediction": null,
+          "n": 0
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "World",
+          "n": 64
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sports",
+          "n": 3
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Business",
+          "n": 29
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": "Sci/Tech",
+          "n": 154
+        },
+        {
+          "gold": "Sci/Tech",
+          "prediction": null,
+          "n": 0
+        }
+      ]
+    }
+  ],
+  "bootstrap_policy": {
+    "resamples": 2000,
+    "seed": 2026110499,
+    "dimensions": [
+      "shared_queries200",
+      "shared_draws5"
+    ],
+    "K0": "One measured record per query/readout; contribution broadcast unchanged over draw resamples, adding no independent evidence",
+    "limits": "Pointwise intervals, only five draw clusters; no familywise, power, noninferiority or broad-preservation guarantee."
+  }
+}

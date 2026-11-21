@@ -1,0 +1,1596 @@
+{
+  "status": "passed",
+  "observed_at": "2026-11-04T14:22:17.478859+00:00",
+  "source_run_id": "20261104T025155Z-6ad0f197fb",
+  "run_status": "complete",
+  "finished_at": "2026-11-04T11:31:17.866827+00:00",
+  "method": "Independent CPU-only JSON/hash validation, literal strict output normalization, exact query/draw grid reconstruction, per-K confusion/count recomputation, and independent fixed crossed bootstrap; no project analysis function imported.",
+  "scientific_outcomes_access": "Completed run only; no partial experiment outputs accessed.",
+  "models_loaded": 0,
+  "experiments_launched": 0,
+  "credentials_read": false,
+  "source_files_modified": false,
+  "record_count": 18000,
+  "n_queries": 500,
+  "demonstration_draws": [
+    100,
+    101,
+    102,
+    103,
+    104
+  ],
+  "query_label_counts": {
+    "Business": 117,
+    "Sci/Tech": 119,
+    "Sports": 143,
+    "World": 121
+  },
+  "strict_invalid_total": 24,
+  "curve": [
+    {
+      "k": 0,
+      "n_predictions": 500,
+      "n_queries": 500,
+      "draw_counts": {
+        "100": 500
+      },
+      "n_correct": 415,
+      "accuracy": 0.83,
+      "n_invalid": 0,
+      "invalid_fraction": 0.0,
+      "balanced_accuracy": 0.8227133828738107,
+      "predicted_counts": {
+        "Business": 150,
+        "Sci/Tech": 86,
+        "Sports": 146,
+        "World": 118,
+        "__invalid__": 0
+      },
+      "confusion": {
+        "Business": {
+          "Business": 99,
+          "Sci/Tech": 12,
+          "Sports": 0,
+          "World": 6,
+          "__invalid__": 0
+        },
+        "Sci/Tech": {
+          "Business": 43,
+          "Sci/Tech": 71,
+          "Sports": 3,
+          "World": 2,
+          "__invalid__": 0
+        },
+        "Sports": {
+          "Business": 0,
+          "Sci/Tech": 0,
+          "Sports": 139,
+          "World": 4,
+          "__invalid__": 0
+        },
+        "World": {
+          "Business": 8,
+          "Sci/Tech": 3,
+          "Sports": 4,
+          "World": 106,
+          "__invalid__": 0
+        }
+      },
+      "draw_accuracies": {
+        "100": 0.83
+      }
+    },
+    {
+      "k": 1,
+      "n_predictions": 2500,
+      "n_queries": 500,
+      "draw_counts": {
+        "100": 500,
+        "101": 500,
+        "102": 500,
+        "103": 500,
+        "104": 500
+      },
+      "n_correct": 2045,
+      "accuracy": 0.818,
+      "n_invalid": 3,
+      "invalid_fraction": 0.0012,
+      "balanced_accuracy": 0.8129148629148629,
+      "predicted_counts": {
+        "Business": 720,
+        "Sci/Tech": 541,
+        "Sports": 708,
+        "World": 528,
+        "__invalid__": 3
+      },
+      "confusion": {
+        "Business": {
+          "Business": 478,
+          "Sci/Tech": 73,
+          "Sports": 8,
+          "World": 26,
+          "__invalid__": 0
+        },
+        "Sci/Tech": {
+          "Business": 148,
+          "Sci/Tech": 425,
+          "Sports": 15,
+          "World": 7,
+          "__invalid__": 0
+        },
+        "Sports": {
+          "Business": 43,
+          "Sci/Tech": 3,
+          "Sports": 658,
+          "World": 11,
+          "__invalid__": 0
+        },
+        "World": {
+          "Business": 51,
+          "Sci/Tech": 40,
+          "Sports": 27,
+          "World": 484,
+          "__invalid__": 3
+        }
+      },
+      "draw_accuracies": {
+        "100": 0.828,
+        "101": 0.844,
+        "102": 0.85,
+        "103": 0.776,
+        "104": 0.792
+      }
+    },
+    {
+      "k": 2,
+      "n_predictions": 2500,
+      "n_queries": 500,
+      "draw_counts": {
+        "100": 500,
+        "101": 500,
+        "102": 500,
+        "103": 500,
+        "104": 500
+      },
+      "n_correct": 1821,
+      "accuracy": 0.7284,
+      "n_invalid": 8,
+      "invalid_fraction": 0.0032,
+      "balanced_accuracy": 0.7246621768012143,
+      "predicted_counts": {
+        "Business": 744,
+        "Sci/Tech": 699,
+        "Sports": 635,
+        "World": 414,
+        "__invalid__": 8
+      },
+      "confusion": {
+        "Business": {
+          "Business": 443,
+          "Sci/Tech": 111,
+          "Sports": 6,
+          "World": 25,
+          "__invalid__": 0
+        },
+        "Sci/Tech": {
+          "Business": 148,
+          "Sci/Tech": 421,
+          "Sports": 19,
+          "World": 5,
+          "__invalid__": 2
+        },
+        "Sports": {
+          "Business": 78,
+          "Sci/Tech": 46,
+          "Sports": 582,
+          "World": 9,
+          "__invalid__": 0
+        },
+        "World": {
+          "Business": 75,
+          "Sci/Tech": 121,
+          "Sports": 28,
+          "World": 375,
+          "__invalid__": 6
+        }
+      },
+      "draw_accuracies": {
+        "100": 0.694,
+        "101": 0.812,
+        "102": 0.774,
+        "103": 0.572,
+        "104": 0.79
+      }
+    },
+    {
+      "k": 4,
+      "n_predictions": 2500,
+      "n_queries": 500,
+      "draw_counts": {
+        "100": 500,
+        "101": 500,
+        "102": 500,
+        "103": 500,
+        "104": 500
+      },
+      "n_correct": 1975,
+      "accuracy": 0.79,
+      "n_invalid": 10,
+      "invalid_fraction": 0.004,
+      "balanced_accuracy": 0.7869160845096674,
+      "predicted_counts": {
+        "Business": 631,
+        "Sci/Tech": 511,
+        "Sports": 632,
+        "World": 716,
+        "__invalid__": 10
+      },
+      "confusion": {
+        "Business": {
+          "Business": 439,
+          "Sci/Tech": 68,
+          "Sports": 0,
+          "World": 77,
+          "__invalid__": 1
+        },
+        "Sci/Tech": {
+          "Business": 146,
+          "Sci/Tech": 404,
+          "Sports": 13,
+          "World": 28,
+          "__invalid__": 4
+        },
+        "Sports": {
+          "Business": 20,
+          "Sci/Tech": 14,
+          "Sports": 601,
+          "World": 80,
+          "__invalid__": 0
+        },
+        "World": {
+          "Business": 26,
+          "Sci/Tech": 25,
+          "Sports": 18,
+          "World": 531,
+          "__invalid__": 5
+        }
+      },
+      "draw_accuracies": {
+        "100": 0.786,
+        "101": 0.694,
+        "102": 0.838,
+        "103": 0.816,
+        "104": 0.816
+      }
+    },
+    {
+      "k": 8,
+      "n_predictions": 2500,
+      "n_queries": 500,
+      "draw_counts": {
+        "100": 500,
+        "101": 500,
+        "102": 500,
+        "103": 500,
+        "104": 500
+      },
+      "n_correct": 1525,
+      "accuracy": 0.61,
+      "n_invalid": 0,
+      "invalid_fraction": 0.0,
+      "balanced_accuracy": 0.6189913176544193,
+      "predicted_counts": {
+        "Business": 478,
+        "Sci/Tech": 554,
+        "Sports": 304,
+        "World": 1164,
+        "__invalid__": 0
+      },
+      "confusion": {
+        "Business": {
+          "Business": 319,
+          "Sci/Tech": 61,
+          "Sports": 1,
+          "World": 204,
+          "__invalid__": 0
+        },
+        "Sci/Tech": {
+          "Business": 121,
+          "Sci/Tech": 351,
+          "Sports": 9,
+          "World": 114,
+          "__invalid__": 0
+        },
+        "Sports": {
+          "Business": 27,
+          "Sci/Tech": 127,
+          "Sports": 285,
+          "World": 276,
+          "__invalid__": 0
+        },
+        "World": {
+          "Business": 11,
+          "Sci/Tech": 15,
+          "Sports": 9,
+          "World": 570,
+          "__invalid__": 0
+        }
+      },
+      "draw_accuracies": {
+        "100": 0.528,
+        "101": 0.36,
+        "102": 0.784,
+        "103": 0.814,
+        "104": 0.564
+      }
+    },
+    {
+      "k": 16,
+      "n_predictions": 2500,
+      "n_queries": 500,
+      "draw_counts": {
+        "100": 500,
+        "101": 500,
+        "102": 500,
+        "103": 500,
+        "104": 500
+      },
+      "n_correct": 955,
+      "accuracy": 0.382,
+      "n_invalid": 3,
+      "invalid_fraction": 0.0012,
+      "balanced_accuracy": 0.3979283046127966,
+      "predicted_counts": {
+        "Business": 475,
+        "Sci/Tech": 190,
+        "Sports": 12,
+        "World": 1820,
+        "__invalid__": 3
+      },
+      "confusion": {
+        "Business": {
+          "Business": 197,
+          "Sci/Tech": 18,
+          "Sports": 0,
+          "World": 370,
+          "__invalid__": 0
+        },
+        "Sci/Tech": {
+          "Business": 138,
+          "Sci/Tech": 166,
+          "Sports": 1,
+          "World": 287,
+          "__invalid__": 3
+        },
+        "Sports": {
+          "Business": 124,
+          "Sci/Tech": 0,
+          "Sports": 10,
+          "World": 581,
+          "__invalid__": 0
+        },
+        "World": {
+          "Business": 16,
+          "Sci/Tech": 6,
+          "Sports": 1,
+          "World": 582,
+          "__invalid__": 0
+        }
+      },
+      "draw_accuracies": {
+        "100": 0.406,
+        "101": 0.472,
+        "102": 0.25,
+        "103": 0.274,
+        "104": 0.508
+      }
+    },
+    {
+      "k": 32,
+      "n_predictions": 2500,
+      "n_queries": 500,
+      "draw_counts": {
+        "100": 500,
+        "101": 500,
+        "102": 500,
+        "103": 500,
+        "104": 500
+      },
+      "n_correct": 956,
+      "accuracy": 0.3824,
+      "n_invalid": 0,
+      "invalid_fraction": 0.0,
+      "balanced_accuracy": 0.3978297994340775,
+      "predicted_counts": {
+        "Business": 20,
+        "Sci/Tech": 838,
+        "Sports": 0,
+        "World": 1642,
+        "__invalid__": 0
+      },
+      "confusion": {
+        "Business": {
+          "Business": 15,
+          "Sci/Tech": 218,
+          "Sports": 0,
+          "World": 352,
+          "__invalid__": 0
+        },
+        "Sci/Tech": {
+          "Business": 5,
+          "Sci/Tech": 371,
+          "Sports": 0,
+          "World": 219,
+          "__invalid__": 0
+        },
+        "Sports": {
+          "Business": 0,
+          "Sci/Tech": 214,
+          "Sports": 0,
+          "World": 501,
+          "__invalid__": 0
+        },
+        "World": {
+          "Business": 0,
+          "Sci/Tech": 35,
+          "Sports": 0,
+          "World": 570,
+          "__invalid__": 0
+        }
+      },
+      "draw_accuracies": {
+        "100": 0.438,
+        "101": 0.426,
+        "102": 0.36,
+        "103": 0.242,
+        "104": 0.446
+      }
+    },
+    {
+      "k": 64,
+      "n_predictions": 2500,
+      "n_queries": 500,
+      "draw_counts": {
+        "100": 500,
+        "101": 500,
+        "102": 500,
+        "103": 500,
+        "104": 500
+      },
+      "n_correct": 740,
+      "accuracy": 0.296,
+      "n_invalid": 0,
+      "invalid_fraction": 0.0,
+      "balanced_accuracy": 0.3100288897080341,
+      "predicted_counts": {
+        "Business": 981,
+        "Sci/Tech": 89,
+        "Sports": 0,
+        "World": 1430,
+        "__invalid__": 0
+      },
+      "confusion": {
+        "Business": {
+          "Business": 265,
+          "Sci/Tech": 10,
+          "Sports": 0,
+          "World": 310,
+          "__invalid__": 0
+        },
+        "Sci/Tech": {
+          "Business": 235,
+          "Sci/Tech": 72,
+          "Sports": 0,
+          "World": 288,
+          "__invalid__": 0
+        },
+        "Sports": {
+          "Business": 282,
+          "Sci/Tech": 4,
+          "Sports": 0,
+          "World": 429,
+          "__invalid__": 0
+        },
+        "World": {
+          "Business": 199,
+          "Sci/Tech": 3,
+          "Sports": 0,
+          "World": 403,
+          "__invalid__": 0
+        }
+      },
+      "draw_accuracies": {
+        "100": 0.444,
+        "101": 0.242,
+        "102": 0.25,
+        "103": 0.242,
+        "104": 0.302
+      }
+    }
+  ],
+  "primary_contrast": {
+    "estimate": 0.44799999999999995,
+    "ci_low": 0.34919,
+    "ci_high": 0.55121,
+    "standard_error": 0.05227858869956427,
+    "n_resamples": 2000,
+    "seed": 20261101
+  },
+  "checks": {
+    "artifact_analysis_code_hash_agrees": true,
+    "analysis_source_hash_lists_agree": true,
+    "manifest_predictions_hash_agrees": true,
+    "manifest_metrics_hash_agrees": true,
+    "manifest_validation_hash_agrees": true,
+    "manifest_snapshot_hash_agrees": true,
+    "dependency_in_snapshot_cliff/backends/hf_local.py": true,
+    "dependency_in_snapshot_cliff/data.py": true,
+    "dependency_in_snapshot_cliff/experiments/revision_behaviour.py": true,
+    "dependency_in_snapshot_cliff/prompting.py": true,
+    "dependency_in_snapshot_cliff/revision_behaviour_analysis.py": true,
+    "dependency_in_snapshot_cliff/revision_confirmation.py": true,
+    "dependency_in_snapshot_cliff/revision_metrics.py": true,
+    "dependency_in_snapshot_cliff/revision_records.py": true,
+    "dependency_in_snapshot_cliff/revision_runtime.py": true,
+    "manifest_configuration_exactly_registered": true,
+    "manifest_configuration_content_hash": true,
+    "runtime_validation_passed": true,
+    "manifest_and_validation_gates_agree": true,
+    "no_continuation": true,
+    "500_unique_registered_queries": true,
+    "five_registered_draws": true,
+    "eight_registered_K_values": true,
+    "query_role_final_test": true,
+    "query_gold_counts_match_design": true,
+    "prediction_payload_hash_matches": true,
+    "complete_unique_18000_record_grid": true,
+    "record_metadata_and_saved_fields_consistent": true,
+    "K0_n_predictions_reproduced": true,
+    "K0_accuracy_reproduced": true,
+    "K0_n_invalid_reproduced": true,
+    "K0_invalid_fraction_reproduced": true,
+    "K0_balanced_accuracy_reproduced": true,
+    "K0_predicted_counts_reproduced": true,
+    "K0_confusion_reproduced": true,
+    "K0_draw_accuracies_reproduced": true,
+    "K1_n_predictions_reproduced": true,
+    "K1_accuracy_reproduced": true,
+    "K1_n_invalid_reproduced": true,
+    "K1_invalid_fraction_reproduced": true,
+    "K1_balanced_accuracy_reproduced": true,
+    "K1_predicted_counts_reproduced": true,
+    "K1_confusion_reproduced": true,
+    "K1_draw_accuracies_reproduced": true,
+    "K2_n_predictions_reproduced": true,
+    "K2_accuracy_reproduced": true,
+    "K2_n_invalid_reproduced": true,
+    "K2_invalid_fraction_reproduced": true,
+    "K2_balanced_accuracy_reproduced": true,
+    "K2_predicted_counts_reproduced": true,
+    "K2_confusion_reproduced": true,
+    "K2_draw_accuracies_reproduced": true,
+    "K4_n_predictions_reproduced": true,
+    "K4_accuracy_reproduced": true,
+    "K4_n_invalid_reproduced": true,
+    "K4_invalid_fraction_reproduced": true,
+    "K4_balanced_accuracy_reproduced": true,
+    "K4_predicted_counts_reproduced": true,
+    "K4_confusion_reproduced": true,
+    "K4_draw_accuracies_reproduced": true,
+    "K8_n_predictions_reproduced": true,
+    "K8_accuracy_reproduced": true,
+    "K8_n_invalid_reproduced": true,
+    "K8_invalid_fraction_reproduced": true,
+    "K8_balanced_accuracy_reproduced": true,
+    "K8_predicted_counts_reproduced": true,
+    "K8_confusion_reproduced": true,
+    "K8_draw_accuracies_reproduced": true,
+    "K16_n_predictions_reproduced": true,
+    "K16_accuracy_reproduced": true,
+    "K16_n_invalid_reproduced": true,
+    "K16_invalid_fraction_reproduced": true,
+    "K16_balanced_accuracy_reproduced": true,
+    "K16_predicted_counts_reproduced": true,
+    "K16_confusion_reproduced": true,
+    "K16_draw_accuracies_reproduced": true,
+    "K32_n_predictions_reproduced": true,
+    "K32_accuracy_reproduced": true,
+    "K32_n_invalid_reproduced": true,
+    "K32_invalid_fraction_reproduced": true,
+    "K32_balanced_accuracy_reproduced": true,
+    "K32_predicted_counts_reproduced": true,
+    "K32_confusion_reproduced": true,
+    "K32_draw_accuracies_reproduced": true,
+    "K64_n_predictions_reproduced": true,
+    "K64_accuracy_reproduced": true,
+    "K64_n_invalid_reproduced": true,
+    "K64_invalid_fraction_reproduced": true,
+    "K64_balanced_accuracy_reproduced": true,
+    "K64_predicted_counts_reproduced": true,
+    "K64_confusion_reproduced": true,
+    "K64_draw_accuracies_reproduced": true,
+    "primary_contrast_estimate_reproduced": true,
+    "primary_contrast_ci_low_reproduced": true,
+    "primary_contrast_ci_high_reproduced": true,
+    "primary_contrast_standard_error_reproduced": true,
+    "registered_practical_confirmation_criterion": true
+  },
+  "record_metadata_errors": {},
+  "hash_check_count": 138,
+  "hash_checks": [
+    {
+      "category": "analysis_artifact",
+      "path": "llm_comm_AI/code/analysis/revision/w2_confirmation_20261104T025155Z-6ad0f197fb/analysis.json",
+      "expected": "9ce6ed2d94686cfe4e9461ee8c5b85923777b83c9e95e0759239c1c9c6ada03c",
+      "observed": "9ce6ed2d94686cfe4e9461ee8c5b85923777b83c9e95e0759239c1c9c6ada03c",
+      "passed": true
+    },
+    {
+      "category": "analysis_artifact",
+      "path": "llm_comm_AI/code/analysis/revision/w2_confirmation_20261104T025155Z-6ad0f197fb/analysis_source.py",
+      "expected": "b34cbe7c09eac80e5edba79fbb1d15b535f7f5d7fa3cc9bc47dc8d2a3bc54f45",
+      "observed": "b34cbe7c09eac80e5edba79fbb1d15b535f7f5d7fa3cc9bc47dc8d2a3bc54f45",
+      "passed": true
+    },
+    {
+      "category": "source_artifact",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/design.json",
+      "expected": "61390bd95f411c23ff29db469c2608d9730b71e6de9fa8ebe770f89c77aced04",
+      "observed": "61390bd95f411c23ff29db469c2608d9730b71e6de9fa8ebe770f89c77aced04",
+      "passed": true
+    },
+    {
+      "category": "source_artifact",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/manifest.json",
+      "expected": "df1c05a511d4c327e44ce40b266c8cee1359535d99c16cfd211a5ddffd8ed834",
+      "observed": "df1c05a511d4c327e44ce40b266c8cee1359535d99c16cfd211a5ddffd8ed834",
+      "passed": true
+    },
+    {
+      "category": "source_artifact",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/metrics.json",
+      "expected": "f93d263f89d6339d38b474d971c2c1b2ad2eaecc10964ad8c9a3c21909414834",
+      "observed": "f93d263f89d6339d38b474d971c2c1b2ad2eaecc10964ad8c9a3c21909414834",
+      "passed": true
+    },
+    {
+      "category": "source_artifact",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/validation.json",
+      "expected": "f946ab3fa91a7f4e75adaa4ace4eda75ea664972e6977fe8819b2ac1bd738ca6",
+      "observed": "f946ab3fa91a7f4e75adaa4ace4eda75ea664972e6977fe8819b2ac1bd738ca6",
+      "passed": true
+    },
+    {
+      "category": "snapshot_manifest",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/source_manifest.json",
+      "expected": "2f0cd4e92df41af270cd5c0a093e065bae3ee96537ecaf5dcaebc3c5e98d204b",
+      "observed": "2f0cd4e92df41af270cd5c0a093e065bae3ee96537ecaf5dcaebc3c5e98d204b",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/__init__.py",
+      "expected": "21d114451ce64868ccd91923c4ccb7fe19626a98cc2191deb5faeb368a985564",
+      "observed": "21d114451ce64868ccd91923c4ccb7fe19626a98cc2191deb5faeb368a985564",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/__main__.py",
+      "expected": "f35124e530c67e144b61bdfca212301084982fc1408a2315f382617faa6e920f",
+      "observed": "f35124e530c67e144b61bdfca212301084982fc1408a2315f382617faa6e920f",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/backends/__init__.py",
+      "expected": "ce0795156eb09e748f199384dccc3e3433021c9819836c4720e0d55ced50dcd0",
+      "observed": "ce0795156eb09e748f199384dccc3e3433021c9819836c4720e0d55ced50dcd0",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/backends/base.py",
+      "expected": "998fc236443840f84898302fffed84e06b566a9d954a959e881872ab1a0dc503",
+      "observed": "998fc236443840f84898302fffed84e06b566a9d954a959e881872ab1a0dc503",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/backends/echo.py",
+      "expected": "9e37cbfbe81e85e7b23147063777093b0cb368dc0c952e835c9ae0cae24ddfa6",
+      "observed": "9e37cbfbe81e85e7b23147063777093b0cb368dc0c952e835c9ae0cae24ddfa6",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/backends/hf_local.py",
+      "expected": "94def8560be2d7d9c9b689ed6230aa6c2ec4516be5735a03979011e79f579c95",
+      "observed": "94def8560be2d7d9c9b689ed6230aa6c2ec4516be5735a03979011e79f579c95",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/backends/openai_compat.py",
+      "expected": "2da2537db17f2fc5c70b185bb45d215b88832e8104a07285968c3b0d06aa1097",
+      "observed": "2da2537db17f2fc5c70b185bb45d215b88832e8104a07285968c3b0d06aa1097",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/claims.py",
+      "expected": "c5d140886c8fb11f68a4e80cf8b38f362f8366783fe264c25b99bec1478f198d",
+      "observed": "c5d140886c8fb11f68a4e80cf8b38f362f8366783fe264c25b99bec1478f198d",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/cli.py",
+      "expected": "d7db36834f5d262dc4ea3f22a21296624a968a79fefab78f140b11205493bda4",
+      "observed": "d7db36834f5d262dc4ea3f22a21296624a968a79fefab78f140b11205493bda4",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/data.py",
+      "expected": "a49c29f24d525610578962aa79bbee760498044c1a907e48c4e8f67a0f3e8986",
+      "observed": "a49c29f24d525610578962aa79bbee760498044c1a907e48c4e8f67a0f3e8986",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/doctor.py",
+      "expected": "5519e29a2b22f05d2dfc0f9d552a078ec489a9ae13d2b5995e2fd27588808706",
+      "observed": "5519e29a2b22f05d2dfc0f9d552a078ec489a9ae13d2b5995e2fd27588808706",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/experiments/__init__.py",
+      "expected": "cabaae0640e2540de25c8215d350364571e561edabf3711ba9677d87d4b458b1",
+      "observed": "cabaae0640e2540de25c8215d350364571e561edabf3711ba9677d87d4b458b1",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/experiments/behavioural.py",
+      "expected": "0b784fcade48d4545323cce7d3bd6f8a832bac6d30488d91acdace43aa49a6b0",
+      "observed": "0b784fcade48d4545323cce7d3bd6f8a832bac6d30488d91acdace43aa49a6b0",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/experiments/induce_audit.py",
+      "expected": "efabfada45b5023148b01fc51b4dae1071aca37b7c05f83fad832da1d5c27550",
+      "observed": "efabfada45b5023148b01fc51b4dae1071aca37b7c05f83fad832da1d5c27550",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/experiments/intervention.py",
+      "expected": "2d00bc50a8df7593eee4ac5775e05ef0f414fc18717c38fa923f784a19eaee59",
+      "observed": "2d00bc50a8df7593eee4ac5775e05ef0f414fc18717c38fa923f784a19eaee59",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/experiments/mechanism.py",
+      "expected": "d47feab0b3839e668b8830ce908e3d21be9e67e7bdbc14d53a8ab93f3f0582c1",
+      "observed": "d47feab0b3839e668b8830ce908e3d21be9e67e7bdbc14d53a8ab93f3f0582c1",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/experiments/revision_adapter_eval.py",
+      "expected": "9155b4d01e85ad8541b2daaa6043ed1c6a73077c50e46c520a44b695c2da07db",
+      "observed": "9155b4d01e85ad8541b2daaa6043ed1c6a73077c50e46c520a44b695c2da07db",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/experiments/revision_behaviour.py",
+      "expected": "435069a98fce00398fdf4ee4bdfc43879fae9f31b4f674609d3e9210737a9606",
+      "observed": "435069a98fce00398fdf4ee4bdfc43879fae9f31b4f674609d3e9210737a9606",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/experiments/revision_causal.py",
+      "expected": "db0867204cda6be381bd9cd7df9975a52ae5d3459d1c71537fd3bd2843ce9765",
+      "observed": "db0867204cda6be381bd9cd7df9975a52ae5d3459d1c71537fd3bd2843ce9765",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/experiments/revision_length.py",
+      "expected": "7e5cb2dc8de50c2c26aeaef6a6f5378c041e23c98aa6cc71c1dd425a42fc048c",
+      "observed": "7e5cb2dc8de50c2c26aeaef6a6f5378c041e23c98aa6cc71c1dd425a42fc048c",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/experiments/revision_lens.py",
+      "expected": "8dfc8128d15f0804c83bb147eac721e381dfe1516f5bdb85056c6f2210fa7962",
+      "observed": "8dfc8128d15f0804c83bb147eac721e381dfe1516f5bdb85056c6f2210fa7962",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/experiments/revision_stream.py",
+      "expected": "824fde71ba450d2fe402f54d3fbc864e43164ee5716a35125b0ae62d6a3ee6a8",
+      "observed": "824fde71ba450d2fe402f54d3fbc864e43164ee5716a35125b0ae62d6a3ee6a8",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/figures.py",
+      "expected": "2a24d3a98b4d9d2b427e477816d6d25a64d5868bbc144677fe455e1b38931b10",
+      "observed": "2a24d3a98b4d9d2b427e477816d6d25a64d5868bbc144677fe455e1b38931b10",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/loaders.py",
+      "expected": "720157886f0dc41ff47d4ae3a79e8d8f6080e877c01cf62e95e3fb454e05b7e9",
+      "observed": "720157886f0dc41ff47d4ae3a79e8d8f6080e877c01cf62e95e3fb454e05b7e9",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/paths.py",
+      "expected": "1721a3e91e1fd53e3bad4d0bc2db765a1d14efea56be024862be045bbf163a46",
+      "observed": "1721a3e91e1fd53e3bad4d0bc2db765a1d14efea56be024862be045bbf163a46",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/prompting.py",
+      "expected": "b3c0c50a5e830c670486a4533fd7a7d660b648abf0d717f4f699134354e3d1b1",
+      "observed": "b3c0c50a5e830c670486a4533fd7a7d660b648abf0d717f4f699134354e3d1b1",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_adaptation_queue.py",
+      "expected": "cfc2bb2c1351fc3e8303a2a2ed43606300c58ec235efc608e82f7c9e41bd68c2",
+      "observed": "cfc2bb2c1351fc3e8303a2a2ed43606300c58ec235efc608e82f7c9e41bd68c2",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_adaptation_registration.py",
+      "expected": "27e00ac4f0c97dc43124a33f91c273a3c9b370a1718b690ecdebe089418aaf0e",
+      "observed": "27e00ac4f0c97dc43124a33f91c273a3c9b370a1718b690ecdebe089418aaf0e",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_archive.py",
+      "expected": "040d37b4ba0246e71fd41e1a90b8b64a02718a55bb208a45e370ae06dd34026d",
+      "observed": "040d37b4ba0246e71fd41e1a90b8b64a02718a55bb208a45e370ae06dd34026d",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_archive_atlas.py",
+      "expected": "6ef3886438b74f8537cc32820ad095f8e091f6c5e6cceb3161324deb3cfbab2d",
+      "observed": "6ef3886438b74f8537cc32820ad095f8e091f6c5e6cceb3161324deb3cfbab2d",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_baseline_analysis.py",
+      "expected": "a31cc7d4bdde2c9454e78b1fb27e974ad12b92d71b0d6c867ca548f1b7766f1f",
+      "observed": "a31cc7d4bdde2c9454e78b1fb27e974ad12b92d71b0d6c867ca548f1b7766f1f",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_behaviour_analysis.py",
+      "expected": "b84e5d4c8cd0b97dec26fde91d029bf614780d237741b88b5507bfc9d62653de",
+      "observed": "b84e5d4c8cd0b97dec26fde91d029bf614780d237741b88b5507bfc9d62653de",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_benchmark.py",
+      "expected": "7c6b532027a232fea38d57152df35b2d88ef28a615fec4d6cf518889486b4aa0",
+      "observed": "7c6b532027a232fea38d57152df35b2d88ef28a615fec4d6cf518889486b4aa0",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_confirmation.py",
+      "expected": "b34cbe7c09eac80e5edba79fbb1d15b535f7f5d7fa3cc9bc47dc8d2a3bc54f45",
+      "observed": "b34cbe7c09eac80e5edba79fbb1d15b535f7f5d7fa3cc9bc47dc8d2a3bc54f45",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_figures.py",
+      "expected": "f04d8d1c99864fc04f26c41dedbb1f13458ffe7950e0ef53fd2291b36dc47f1b",
+      "observed": "f04d8d1c99864fc04f26c41dedbb1f13458ffe7950e0ef53fd2291b36dc47f1b",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_jobs.py",
+      "expected": "b884a33804b92d92a3e714a02d3745ca5337d8cc93d4b9e5d1a565f0d23381a8",
+      "observed": "b884a33804b92d92a3e714a02d3745ca5337d8cc93d4b9e5d1a565f0d23381a8",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_language_probe.py",
+      "expected": "3d52ce47f14c4d13a360643c07e7f87b71bf48fffd026ae010382290a0cc74c2",
+      "observed": "3d52ce47f14c4d13a360643c07e7f87b71bf48fffd026ae010382290a0cc74c2",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_mechanism_figure.py",
+      "expected": "ea5c30a745ffa3a4cfbf97b67b8e1153222c5ef45f9e29205c40d5ea935d0179",
+      "observed": "ea5c30a745ffa3a4cfbf97b67b8e1153222c5ef45f9e29205c40d5ea935d0179",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_metrics.py",
+      "expected": "cb81326843b55e5673433220e1711fcb3da2fd937a6c8c65adbf0d4f689892dd",
+      "observed": "cb81326843b55e5673433220e1711fcb3da2fd937a6c8c65adbf0d4f689892dd",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_parameter_matching.py",
+      "expected": "bf7c19db9fc940cf31ca7799446c6ccddc3c6318b37899689aea2d5dca46e34c",
+      "observed": "bf7c19db9fc940cf31ca7799446c6ccddc3c6318b37899689aea2d5dca46e34c",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_records.py",
+      "expected": "d54aba62b3160255532b34d5b68ebfc6b407e99eeb9fcf74b0c6c92bdb23ffff",
+      "observed": "d54aba62b3160255532b34d5b68ebfc6b407e99eeb9fcf74b0c6c92bdb23ffff",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_regional_figure.py",
+      "expected": "e844d1fb323bca7bf21354e99c4f03e9305abb3a61e6aecbdef1167a9b6ada61",
+      "observed": "e844d1fb323bca7bf21354e99c4f03e9305abb3a61e6aecbdef1167a9b6ada61",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_runtime.py",
+      "expected": "e51fd65de028c5807584d49f39dc101c86d68b9192bd18f562ea4b1346bbdd07",
+      "observed": "e51fd65de028c5807584d49f39dc101c86d68b9192bd18f562ea4b1346bbdd07",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_target_contract.py",
+      "expected": "bcf521da6467a1bc9c23b6703c1d200e10b7e21f480f5952306d6ee42f53300c",
+      "observed": "bcf521da6467a1bc9c23b6703c1d200e10b7e21f480f5952306d6ee42f53300c",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_training_study_analysis.py",
+      "expected": "2bfa56477676a14f8d628f4cdedb630e51401fdbc40d058ddeb90ecbe30b813e",
+      "observed": "2bfa56477676a14f8d628f4cdedb630e51401fdbc40d058ddeb90ecbe30b813e",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/revision_tuning.py",
+      "expected": "7e6c8fcaecac1790206f063394ee8b353ee8b1070c643d5e6344aecbce92f86f",
+      "observed": "7e6c8fcaecac1790206f063394ee8b353ee8b1070c643d5e6344aecbce92f86f",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/cliff/verify.py",
+      "expected": "a169c6524332f98dd2f94fba957b0159688886d3adae230e872d4afc8a5323e2",
+      "observed": "a169c6524332f98dd2f94fba957b0159688886d3adae230e872d4afc8a5323e2",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/label_cache_validation_float32.json",
+      "expected": "4ab8b47503894427ab2d936f0daec28a0d7660825d5c06b3858f1265986f339f",
+      "observed": "4ab8b47503894427ab2d936f0daec28a0d7660825d5c06b3858f1265986f339f",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w10_hermes3_8b_agnews_evaluate.json",
+      "expected": "1c77a7786f33b8a0cc070b1d3fe6509805b88cff744cc1a8a8979ebf0fb7859e",
+      "observed": "1c77a7786f33b8a0cc070b1d3fe6509805b88cff744cc1a8a8979ebf0fb7859e",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w10_hermes3_8b_fit.json",
+      "expected": "2520f899c2e79700cae6a6bce5e11ff2071b7cde415093181c38ae304b040335",
+      "observed": "2520f899c2e79700cae6a6bce5e11ff2071b7cde415093181c38ae304b040335",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w10_llama31_8b_agnews_evaluate.json",
+      "expected": "f326f72c71b0e5380fdddead2a30397c574bc45cf9ddb0823f904ec3b5d3af6d",
+      "observed": "f326f72c71b0e5380fdddead2a30397c574bc45cf9ddb0823f904ec3b5d3af6d",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w10_llama31_8b_fit.json",
+      "expected": "5356e0936c34fcf01f36eb56648fcf038f06cfd7a48b0cb10ea5dad0ced8e3b9",
+      "observed": "5356e0936c34fcf01f36eb56648fcf038f06cfd7a48b0cb10ea5dad0ced8e3b9",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w11_llama31_8b_early.json",
+      "expected": "3d85b8dfe187596e79a58092c60849bdb1e06f2d1e971e165916266c42c51791",
+      "observed": "3d85b8dfe187596e79a58092c60849bdb1e06f2d1e971e165916266c42c51791",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w11_llama31_8b_late.json",
+      "expected": "f5ac30303d585a8677738c930794c2bc4b231f1bdc3639163ee75f216f69140e",
+      "observed": "f5ac30303d585a8677738c930794c2bc4b231f1bdc3639163ee75f216f69140e",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w11_llama31_8b_mid.json",
+      "expected": "9aff121d8a6d5dee8f707d83d1e905a5d8a56d53e086383e23e818c476f7465b",
+      "observed": "9aff121d8a6d5dee8f707d83d1e905a5d8a56d53e086383e23e818c476f7465b",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w2_llama31_8b_agnews_development.json",
+      "expected": "4d66e6e26b33872964cf15aecc98d456711b80773ddcc765e512e827877a9926",
+      "observed": "4d66e6e26b33872964cf15aecc98d456711b80773ddcc765e512e827877a9926",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w2_llama31_8b_agnews_development_registered.json",
+      "expected": "eeebab621696f66338fe9c5f9242b0e385d77072c0d76ae5e930c74c695cf7a3",
+      "observed": "eeebab621696f66338fe9c5f9242b0e385d77072c0d76ae5e930c74c695cf7a3",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w2_llama31_8b_agnews_final.json",
+      "expected": "9ca55b7c9deeb0e3fc14510064709365732c7a69fd689c009803c51ec15c20eb",
+      "observed": "9ca55b7c9deeb0e3fc14510064709365732c7a69fd689c009803c51ec15c20eb",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w2_llama31_8b_agnews_final_registered.json",
+      "expected": "b37c457bf5121f632fc78274bc6c413bde353bd76fafaa9bb87ad76324f91d46",
+      "observed": "b37c457bf5121f632fc78274bc6c413bde353bd76fafaa9bb87ad76324f91d46",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w2_llama31_8b_agnews_final_registered_v2.json",
+      "expected": "43d095104b8b3a89eb9776740136be97d1bf0b1712cd8cb7ac19ecc2d6621340",
+      "observed": "43d095104b8b3a89eb9776740136be97d1bf0b1712cd8cb7ac19ecc2d6621340",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w2_llama31_8b_agnews_pilot.json",
+      "expected": "ddc5d47cf9bc4dc02332a3b0465320b3ef07d3b1d7c729a4b73c0ac8021169f3",
+      "observed": "ddc5d47cf9bc4dc02332a3b0465320b3ef07d3b1d7c729a4b73c0ac8021169f3",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w3_hermes3_8b_agnews.json",
+      "expected": "b6029938da2f2dd074d39f17084b50b24a0295b845ede38e948e3b51476a1fdf",
+      "observed": "b6029938da2f2dd074d39f17084b50b24a0295b845ede38e948e3b51476a1fdf",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w3_llama31_8b_agnews.json",
+      "expected": "1dc38e3be421780f9590d033d373b12ae586887e948ff23f65793853b7dfc172",
+      "observed": "1dc38e3be421780f9590d033d373b12ae586887e948ff23f65793853b7dfc172",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w3_llama31_8b_agnews_development_registered.json",
+      "expected": "c93929124b81707c4f0aabdfd25ce193a192c0c13cb7f27d6a1d9cc8eafc711b",
+      "observed": "c93929124b81707c4f0aabdfd25ce193a192c0c13cb7f27d6a1d9cc8eafc711b",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w3_llama31_8b_sst2.json",
+      "expected": "91742129b8818a2baed88532b434a9feef5e4ee48444f60292f2903e3d907e7f",
+      "observed": "91742129b8818a2baed88532b434a9feef5e4ee48444f60292f2903e3d907e7f",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w3_llama32_3b_agnews.json",
+      "expected": "59b3153eec14c08b7320f8bf66a71dce39faf60b95911a7eceffa5700cd78a74",
+      "observed": "59b3153eec14c08b7320f8bf66a71dce39faf60b95911a7eceffa5700cd78a74",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w4_hermes3_8b_agnews.json",
+      "expected": "6dddab93d9abeb946365d25127ccef48ccee5329cdc328039e617a51da1e5f14",
+      "observed": "6dddab93d9abeb946365d25127ccef48ccee5329cdc328039e617a51da1e5f14",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w4_internlm25_7b_agnews.json",
+      "expected": "c3366a1c67b4135ae0677dd9bcd9d65e3de087d6433d9c41df9baa67b4ae524e",
+      "observed": "c3366a1c67b4135ae0677dd9bcd9d65e3de087d6433d9c41df9baa67b4ae524e",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w4_llama31_8b_agnews.json",
+      "expected": "817c4b7fbb0bc7069340c0d5785be5eb386c0b70ea67354a8b4ff07d08ad4259",
+      "observed": "817c4b7fbb0bc7069340c0d5785be5eb386c0b70ea67354a8b4ff07d08ad4259",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w5_checkpoint_template_matrix.json",
+      "expected": "5b0f96482bdcba526c694ef6d0e298c9af95ea6f88eb8b0d401694ee9a8854f0",
+      "observed": "5b0f96482bdcba526c694ef6d0e298c9af95ea6f88eb8b0d401694ee9a8854f0",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w6_sources.json",
+      "expected": "387a7e0f91d610c62843d04d419df6a9873075991398987698ca85370fe56c98",
+      "observed": "387a7e0f91d610c62843d04d419df6a9873075991398987698ca85370fe56c98",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w6_training_controls.json",
+      "expected": "9776c4f8bd1e24496a4f06fa951b7734fb21f0249cfef017e477fc02ebbe42ec",
+      "observed": "9776c4f8bd1e24496a4f06fa951b7734fb21f0249cfef017e477fc02ebbe42ec",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w7_checkpoint_replication.json",
+      "expected": "8e42e8ccad9d83c58a29197f9927c29efac3ac825d3d183ac8922451ad932f29",
+      "observed": "8e42e8ccad9d83c58a29197f9927c29efac3ac825d3d183ac8922451ad932f29",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w7_depth_profile.json",
+      "expected": "8125144fa4b9a0878691c3abea57fad7abd4aa3fdac2341dcba738e8d938f69c",
+      "observed": "8125144fa4b9a0878691c3abea57fad7abd4aa3fdac2341dcba738e8d938f69c",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w8a_within_model_patching.json",
+      "expected": "b1147dd532dbee5f52e21e0a0b0ec6dbf87a2c29a2a8a42acfaf29c85b3c67ad",
+      "observed": "b1147dd532dbee5f52e21e0a0b0ec6dbf87a2c29a2a8a42acfaf29c85b3c67ad",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w8b_cross_checkpoint.json",
+      "expected": "a444651a00bfd3169da09da1bbb0762d0512e0fc0ac7837465035eff288a3f4a",
+      "observed": "a444651a00bfd3169da09da1bbb0762d0512e0fc0ac7837465035eff288a3f4a",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w8c_attention_edges.json",
+      "expected": "23bcd404a0fcac7b5ddb2cb512de9ff4815a5f884a97a2352e77955a1b6644a6",
+      "observed": "23bcd404a0fcac7b5ddb2cb512de9ff4815a5f884a97a2352e77955a1b6644a6",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w8d_reciprocal_splicing.json",
+      "expected": "2a54848e840d6d45d6e633b8e5ccc98a02b510b446175f7f84535aa4e9ee4818",
+      "observed": "2a54848e840d6d45d6e633b8e5ccc98a02b510b446175f7f84535aa4e9ee4818",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w8e_weight_differences.json",
+      "expected": "64d77ea62b390a68c05482bb327b809fb39a9e81ea1c6998343522b4e893d24d",
+      "observed": "64d77ea62b390a68c05482bb327b809fb39a9e81ea1c6998343522b4e893d24d",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/configs/revision/w9_reverse_diagnostics.json",
+      "expected": "19c0dfe4c32b0c6da31b57fb1f7547557be1bc73db83c8f92e238e659852fcd9",
+      "observed": "19c0dfe4c32b0c6da31b57fb1f7547557be1bc73db83c8f92e238e659852fcd9",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/pyproject.toml",
+      "expected": "22428b23a8bdd92f6361730d6514e74c2933549804904ab48364766972c1029d",
+      "observed": "22428b23a8bdd92f6361730d6514e74c2933549804904ab48364766972c1029d",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_backends.py",
+      "expected": "6ba479e3da67b222cc05b980f6c1792e08c93387f5c196e1c9539edf594e60db",
+      "observed": "6ba479e3da67b222cc05b980f6c1792e08c93387f5c196e1c9539edf594e60db",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_claims.py",
+      "expected": "567c6c67f4e98c04b06af37fb18a291cdfed7585904634f9b9e65221613442cf",
+      "observed": "567c6c67f4e98c04b06af37fb18a291cdfed7585904634f9b9e65221613442cf",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_prompting.py",
+      "expected": "9d06f7cc3fdf48b39158e9c6b699acf85ef18cf69de82846695758056ded3ba4",
+      "observed": "9d06f7cc3fdf48b39158e9c6b699acf85ef18cf69de82846695758056ded3ba4",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_regions.py",
+      "expected": "e834fe1f1d1a49e859779e73b7a1c6997b76304be66e3f154274accf83ff85c3",
+      "observed": "e834fe1f1d1a49e859779e73b7a1c6997b76304be66e3f154274accf83ff85c3",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_adaptation_queue.py",
+      "expected": "8e2b24f2ffd8be9f4ec568dca35aa8c97b203e54b87d602f527115fb0c5cf7b2",
+      "observed": "8e2b24f2ffd8be9f4ec568dca35aa8c97b203e54b87d602f527115fb0c5cf7b2",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_adaptation_registration.py",
+      "expected": "76687f8cd2740e760b6f79f85f4065557ffa4c83492e6dd068c9d829f33974b0",
+      "observed": "76687f8cd2740e760b6f79f85f4065557ffa4c83492e6dd068c9d829f33974b0",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_adapter_eval.py",
+      "expected": "16139b8204ee3a6f49dd1078f469b41398ea20c3640b3cb7565ad9b577194d11",
+      "observed": "16139b8204ee3a6f49dd1078f469b41398ea20c3640b3cb7565ad9b577194d11",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_adapter_jobs.py",
+      "expected": "73f0f82858276a1ddc15309ac44a75f2b23cabc65afab9db19d40709b82a47f7",
+      "observed": "73f0f82858276a1ddc15309ac44a75f2b23cabc65afab9db19d40709b82a47f7",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_adapter_precision.py",
+      "expected": "7f54efbd60f509939e729255010a8d17026a1bc22be6cd82e0b1e62f9e9d004f",
+      "observed": "7f54efbd60f509939e729255010a8d17026a1bc22be6cd82e0b1e62f9e9d004f",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_archive.py",
+      "expected": "a809f50cab8f2dfac42bdd9f7a1a6fd6580da1e746763f6a030e771bcf19ad52",
+      "observed": "a809f50cab8f2dfac42bdd9f7a1a6fd6580da1e746763f6a030e771bcf19ad52",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_backend_loading.py",
+      "expected": "bc151aef58021a8d9da88fc9de2c83eef58169871e3dd99c939b08c541e1c691",
+      "observed": "bc151aef58021a8d9da88fc9de2c83eef58169871e3dd99c939b08c541e1c691",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_baseline_analysis.py",
+      "expected": "0bb99ff7efa9735d9e4418f3b58667039e6b29b8a5ed8f9ecc09ef70580436c0",
+      "observed": "0bb99ff7efa9735d9e4418f3b58667039e6b29b8a5ed8f9ecc09ef70580436c0",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_behaviour.py",
+      "expected": "64976e862e8261f5cd36cef7b0b17ca15376abe22b3529d2f59712f20084a37c",
+      "observed": "64976e862e8261f5cd36cef7b0b17ca15376abe22b3529d2f59712f20084a37c",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_behaviour_analysis.py",
+      "expected": "b34be68413ce5d482161ec1660eaf55edbd84300bda4a327b61daed1960b1b8a",
+      "observed": "b34be68413ce5d482161ec1660eaf55edbd84300bda4a327b61daed1960b1b8a",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_causal.py",
+      "expected": "480e2807978019026362f7fb273cc2741056828ce0bf373f5984fa58e462037f",
+      "observed": "480e2807978019026362f7fb273cc2741056828ce0bf373f5984fa58e462037f",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_confirmation.py",
+      "expected": "ac11c6cf507de6755ec30af6ced85ef04141fe87528cddb1c50c6170d48396b0",
+      "observed": "ac11c6cf507de6755ec30af6ced85ef04141fe87528cddb1c50c6170d48396b0",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_evaluation.py",
+      "expected": "3efd650068af8ff7bd69ea1a137a7a1630445eaecb191c61d07732349577bd4c",
+      "observed": "3efd650068af8ff7bd69ea1a137a7a1630445eaecb191c61d07732349577bd4c",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_integration_audit.py",
+      "expected": "527bdab35b8b963d9d4c5bd1b94d46a8331f210804ec2b5eff853064f4e44e1e",
+      "observed": "527bdab35b8b963d9d4c5bd1b94d46a8331f210804ec2b5eff853064f4e44e1e",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_jobs.py",
+      "expected": "f55dc9af9e9b920e913bf2e95f6f89ae5e324cdf0eed9ee6eb8d9b57dcedaae1",
+      "observed": "f55dc9af9e9b920e913bf2e95f6f89ae5e324cdf0eed9ee6eb8d9b57dcedaae1",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_language_probe.py",
+      "expected": "8c4dd53222bc32c5c781842f738388577a13ee4e0ac4e27b50b7331fbc48069f",
+      "observed": "8c4dd53222bc32c5c781842f738388577a13ee4e0ac4e27b50b7331fbc48069f",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_length.py",
+      "expected": "3d057c3444727e9aeca8e60f6574f42bc0450c2db30613d55e2e1a18cd70859d",
+      "observed": "3d057c3444727e9aeca8e60f6574f42bc0450c2db30613d55e2e1a18cd70859d",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_lens.py",
+      "expected": "77511860bb45102527dce0f5b7b36ca22f9723164717b7180e587fb27f5d290c",
+      "observed": "77511860bb45102527dce0f5b7b36ca22f9723164717b7180e587fb27f5d290c",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_metrics.py",
+      "expected": "a11717c7abb3124a3dd21d899403b6a7a5f051297d09d61485dd80036a134bef",
+      "observed": "a11717c7abb3124a3dd21d899403b6a7a5f051297d09d61485dd80036a134bef",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_parameter_matching.py",
+      "expected": "130f9c488954f383e6ec869ca2873f8ba196771f03104bfa1adb358f550665ce",
+      "observed": "130f9c488954f383e6ec869ca2873f8ba196771f03104bfa1adb358f550665ce",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_parameter_matching_independent.py",
+      "expected": "91a1706bf7ecd876cfa092ddb4a6f2014fc637aa8cbe4a3708d7cf1c545fda2b",
+      "observed": "91a1706bf7ecd876cfa092ddb4a6f2014fc637aa8cbe4a3708d7cf1c545fda2b",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_records.py",
+      "expected": "71f76b208ab1656e3b8a8a6921d76dfdd6b0b8c58ba3be70ee3c6e208ca65359",
+      "observed": "71f76b208ab1656e3b8a8a6921d76dfdd6b0b8c58ba3be70ee3c6e208ca65359",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_runtime.py",
+      "expected": "b644b6546b1c9efb7d9e0cd75f111ea22204d29cbd47ad75cb676faece9ea971",
+      "observed": "b644b6546b1c9efb7d9e0cd75f111ea22204d29cbd47ad75cb676faece9ea971",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_stream.py",
+      "expected": "aba5fba78b19b781143ce53cac29c26ed737ecd68298cdba758dfdebe20cd38f",
+      "observed": "aba5fba78b19b781143ce53cac29c26ed737ecd68298cdba758dfdebe20cd38f",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_target_contract.py",
+      "expected": "cef4bddfad14e47cabbbad700b03d4e2287f06587306c288df1a6ed64bd2f29d",
+      "observed": "cef4bddfad14e47cabbbad700b03d4e2287f06587306c288df1a6ed64bd2f29d",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_training.py",
+      "expected": "993d62b973f24d95c4d38cf873abc833ff4b13ce3c7acd8ce966b26acf9922b2",
+      "observed": "993d62b973f24d95c4d38cf873abc833ff4b13ce3c7acd8ce966b26acf9922b2",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_training_study_analysis.py",
+      "expected": "33d5494ff585ecd1abb82b1dd6131e5deeedd3f6da34820ceda6040e5e3fca9d",
+      "observed": "33d5494ff585ecd1abb82b1dd6131e5deeedd3f6da34820ceda6040e5e3fca9d",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_revision_tuning.py",
+      "expected": "1f017d9a1de2cd162fa92c7849ba6cc491587eb7da6054dd5a60121b5fc504c0",
+      "observed": "1f017d9a1de2cd162fa92c7849ba6cc491587eb7da6054dd5a60121b5fc504c0",
+      "passed": true
+    },
+    {
+      "category": "snapshot_source",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/source_snapshot/tests/test_smoke_pipeline.py",
+      "expected": "3b0fdb3c258c6c2f93c6b949f0e5de34a8df587ddd45c9d862093f897b0163c9",
+      "observed": "3b0fdb3c258c6c2f93c6b949f0e5de34a8df587ddd45c9d862093f897b0163c9",
+      "passed": true
+    },
+    {
+      "category": "current_analysis_dependency",
+      "path": "llm_comm_AI/code/cliff/backends/hf_local.py",
+      "expected": "94def8560be2d7d9c9b689ed6230aa6c2ec4516be5735a03979011e79f579c95",
+      "observed": "94def8560be2d7d9c9b689ed6230aa6c2ec4516be5735a03979011e79f579c95",
+      "passed": true
+    },
+    {
+      "category": "current_analysis_dependency",
+      "path": "llm_comm_AI/code/cliff/data.py",
+      "expected": "a49c29f24d525610578962aa79bbee760498044c1a907e48c4e8f67a0f3e8986",
+      "observed": "a49c29f24d525610578962aa79bbee760498044c1a907e48c4e8f67a0f3e8986",
+      "passed": true
+    },
+    {
+      "category": "current_analysis_dependency",
+      "path": "llm_comm_AI/code/cliff/experiments/revision_behaviour.py",
+      "expected": "435069a98fce00398fdf4ee4bdfc43879fae9f31b4f674609d3e9210737a9606",
+      "observed": "435069a98fce00398fdf4ee4bdfc43879fae9f31b4f674609d3e9210737a9606",
+      "passed": true
+    },
+    {
+      "category": "current_analysis_dependency",
+      "path": "llm_comm_AI/code/cliff/prompting.py",
+      "expected": "b3c0c50a5e830c670486a4533fd7a7d660b648abf0d717f4f699134354e3d1b1",
+      "observed": "b3c0c50a5e830c670486a4533fd7a7d660b648abf0d717f4f699134354e3d1b1",
+      "passed": true
+    },
+    {
+      "category": "current_analysis_dependency",
+      "path": "llm_comm_AI/code/cliff/revision_behaviour_analysis.py",
+      "expected": "b84e5d4c8cd0b97dec26fde91d029bf614780d237741b88b5507bfc9d62653de",
+      "observed": "b84e5d4c8cd0b97dec26fde91d029bf614780d237741b88b5507bfc9d62653de",
+      "passed": true
+    },
+    {
+      "category": "current_analysis_dependency",
+      "path": "llm_comm_AI/code/cliff/revision_confirmation.py",
+      "expected": "b34cbe7c09eac80e5edba79fbb1d15b535f7f5d7fa3cc9bc47dc8d2a3bc54f45",
+      "observed": "b34cbe7c09eac80e5edba79fbb1d15b535f7f5d7fa3cc9bc47dc8d2a3bc54f45",
+      "passed": true
+    },
+    {
+      "category": "current_analysis_dependency",
+      "path": "llm_comm_AI/code/cliff/revision_metrics.py",
+      "expected": "cb81326843b55e5673433220e1711fcb3da2fd937a6c8c65adbf0d4f689892dd",
+      "observed": "cb81326843b55e5673433220e1711fcb3da2fd937a6c8c65adbf0d4f689892dd",
+      "passed": true
+    },
+    {
+      "category": "current_analysis_dependency",
+      "path": "llm_comm_AI/code/cliff/revision_records.py",
+      "expected": "d54aba62b3160255532b34d5b68ebfc6b407e99eeb9fcf74b0c6c92bdb23ffff",
+      "observed": "d54aba62b3160255532b34d5b68ebfc6b407e99eeb9fcf74b0c6c92bdb23ffff",
+      "passed": true
+    },
+    {
+      "category": "current_analysis_dependency",
+      "path": "llm_comm_AI/code/cliff/revision_runtime.py",
+      "expected": "e51fd65de028c5807584d49f39dc101c86d68b9192bd18f562ea4b1346bbdd07",
+      "observed": "e51fd65de028c5807584d49f39dc101c86d68b9192bd18f562ea4b1346bbdd07",
+      "passed": true
+    },
+    {
+      "category": "configuration",
+      "path": "llm_comm_AI/code/configs/revision/w2_llama31_8b_agnews_final_registered_v2.json",
+      "expected": "43d095104b8b3a89eb9776740136be97d1bf0b1712cd8cb7ac19ecc2d6621340",
+      "observed": "43d095104b8b3a89eb9776740136be97d1bf0b1712cd8cb7ac19ecc2d6621340",
+      "passed": true
+    },
+    {
+      "category": "preflight",
+      "path": "llm_comm_AI/code/analysis/revision/author_approved_confirmation_20261031T220350Z/design.json",
+      "expected": "a6c44d174fb80366967b70738fbf88da86f53516f65b0c461e1560ea7b3c634e",
+      "observed": "a6c44d174fb80366967b70738fbf88da86f53516f65b0c461e1560ea7b3c634e",
+      "passed": true
+    },
+    {
+      "category": "preflight",
+      "path": "llm_comm_AI/code/analysis/revision/author_approved_confirmation_20261031T220350Z/preflight.json",
+      "expected": "851c9b3ef3a2efc64f22d5e55e99dc8259a9392bf5be56e6006156c6f4dc1e56",
+      "observed": "851c9b3ef3a2efc64f22d5e55e99dc8259a9392bf5be56e6006156c6f4dc1e56",
+      "passed": true
+    },
+    {
+      "category": "preflight",
+      "path": "llm_comm_AI/code/analysis/revision/author_approved_confirmation_20261031T220350Z/prompt_budgets.csv",
+      "expected": "28331ed26d1c2311f7bf61f01161b54260d8cebc501cc81e6594d662c8f4b105",
+      "observed": "28331ed26d1c2311f7bf61f01161b54260d8cebc501cc81e6594d662c8f4b105",
+      "passed": true
+    },
+    {
+      "category": "dataset_payload",
+      "path": "llm_comm_AI/code/.cache/revision/datasets/fancyzhx___ag_news/default/0.0.0/eb185aade064a813bc0b7f42de02595523103ca4/ag_news-test.arrow",
+      "expected": "33cbb4fa4de197827f77ea4ce4e06d6fbeac710480c8156b34543bebd461ea94",
+      "observed": "33cbb4fa4de197827f77ea4ce4e06d6fbeac710480c8156b34543bebd461ea94",
+      "passed": true
+    },
+    {
+      "category": "dataset_payload",
+      "path": "llm_comm_AI/code/.cache/revision/datasets/fancyzhx___ag_news/default/0.0.0/eb185aade064a813bc0b7f42de02595523103ca4/ag_news-train.arrow",
+      "expected": "b3eec28c0aed7d6616f047cf5148d94aba4f475f3b905b3dc9d331fa3435d16d",
+      "observed": "b3eec28c0aed7d6616f047cf5148d94aba4f475f3b905b3dc9d331fa3435d16d",
+      "passed": true
+    },
+    {
+      "category": "tokenizer_config",
+      "path": "llm_comm_AI/code/.cache/revision/hub/models--meta-llama--Llama-3.1-8B-Instruct/snapshots/0e9e39f249a16976918f6564b8830bc894c89659/tokenizer_config.json",
+      "expected": "177c7b61e616fecb84c17ce0591acb92c6c4d60e9ac5ababfb940ff23bbcd424",
+      "observed": "177c7b61e616fecb84c17ce0591acb92c6c4d60e9ac5ababfb940ff23bbcd424",
+      "passed": true
+    },
+    {
+      "category": "source_artifact_streamed_with_reparse",
+      "path": "llm_comm_AI/code/outputs/revision/w2_baseline/20261104T025155Z-6ad0f197fb/predictions.jsonl",
+      "expected": "4e5bb390cdcf8a9a4b7f696580a857a6334419a32625fd3287bd2521600a7531",
+      "observed": "4e5bb390cdcf8a9a4b7f696580a857a6334419a32625fd3287bd2521600a7531",
+      "passed": true
+    }
+  ],
+  "issues": [],
+  "limitations": [
+    "One checkpoint, AG News, native template, BF16 and greedy generated-label readout; does not independently confirm calibration or order-factor effects.",
+    "Five demonstration draws limit uncertainty precision; the result does not establish causal localization, broad task generality, or adaptation efficacy.",
+    "Recorded shared-machine pause affects wall/per-query runtime; raw elapsed time must not be treated as uninterrupted throughput.",
+    "This audit verifies stored dataset payload hashes and row metadata, not a fresh model rerun or independent label annotation."
+  ],
+  "elapsed_audit_seconds": 2.2922562088351697
+}

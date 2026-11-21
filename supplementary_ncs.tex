@@ -1,0 +1,588 @@
+%% Supplementary Information accompanying article_cac.tex.
+%% Standalone document; source provenance and limitations are in Note 6.
+\documentclass[11pt]{article}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\setlength{\parindent}{0pt}
+
+\renewcommand{\thefigure}{S\arabic{figure}}
+\renewcommand{\thetable}{S\arabic{table}}
+
+\title{Supplementary Information\\[4pt]
+\large Characterizing and mitigating the in-context cliff:
+a complementary learning systems perspective on fast and slow learning in large language models}
+\author{Anonymous}
+\date{}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+\bigskip
+\hrule
+
+% =====================================================================
+\section*{Supplementary Note 1: prompt template and evaluation}
+\addcontentsline{toc}{section}{Note 1: prompt template and evaluation}
+\label{snote:prompt}
+
+The prompt concatenates a fixed task instruction, demonstrations drawn from a
+\textcolor{blue}{disjoint} pool, and a single query, rendered with the model's native chat template.
+\textcolor{blue}{The panel sampler uses} a per-class quota of
+\textcolor{blue}{$\max(1,\lfloor K/C\rfloor)$} for a $C$-class task \textcolor{blue}{and then slices to requested} $K$\textcolor{blue}{.
+With sufficient class supplies, at requested} $K{=}64$ this supplies 64 demonstrations for
+four-class ag\_news, 63 for three-class MNLI and 60 for six-class trec\textcolor{blue}{; when $K<C$ it can
+still return $K$ demonstrations, without class balance}. Within a
+cell all queries share one demonstration draw. \textcolor{blue}{In the descriptive regional panel,
+seed-to-seed spread is variability across demonstration draws; independent training
+blocks in the controlled study are defined separately in Note~8.}
+
+\textcolor{blue}{Recorded query counts vary: the selected Llama and Mistral regional runs use 200 queries
+per draw, whereas DeepSeek and InternLM2.5 use 100 (Table}~\textcolor{blue}{\ref{stab:protocols}}\textcolor{blue}{); the
+mechanistic run also uses 100.} Query sets are \textcolor{blue}{not necessarily class-balanced,} and \textcolor{blue}{exact
+query identities, prompt lengths and common hosted decoding settings for the panel} are not
+\textcolor{blue}{uniformly recorded}. Outputs are mapped to the label set by constrained string matching;
+a response matching no label is counted \emph{unparseable} and scored as incorrect.
+\textcolor{blue}{Total} accuracy \textcolor{blue}{includes these errors; accuracy conditional on valid labels uses} a \textcolor{blue}{selected
+denominator. Neither parseability nor a parseable mistake identifies a} content\textcolor{blue}{-integration
+mechanism} (Supplementary Note~4).
+
+% =====================================================================
+\section*{Supplementary Note 2: the fast path leaves no trace across prompts}
+\addcontentsline{toc}{section}{Note 2: statelessness of the fast path}
+\label{snote:stateless}
+
+To summarize cross-prompt consistency, we evaluate a fixed query
+set for task~A, run a $K{=}16$ in-context episode on a different task~B, then re-evaluate
+the identical task-A query set. Backward transfer is the change in task-A accuracy between
+the two evaluations. Across 50 task-pair/seed combinations the change lies within $-0.040$ to $+0.020$,
+with a mean of $-0.003$\textcolor{blue}{; these aggregate differences do not establish persistent state.}
+
+We stress that this outcome is expected \emph{by construction}: a frozen model carries no
+state between forward passes, so no residue is possible. We report it because the mapping
+in Table~1 of the main text asserts statelessness as a property of the fast path, and it
+is \textcolor{blue}{a consistency check rather than} an empirical discovery\textcolor{blue}{. Identical deterministic inputs
+would give identical outputs;} the \textcolor{blue}{aggregate differences do not establish a carry-over
+effect or show} that \textcolor{blue}{weight learning is necessary for} durable \textcolor{blue}{adaptation.}
+
+% =====================================================================
+\section*{Supplementary Note 3: the synthetic\textcolor{blue}{-rule} probe was uninformative}
+\addcontentsline{toc}{section}{Note 3: the synthetic-rule probe (negative result)}
+\label{snote:synthetic}
+
+Synthetic rule-classification tasks probe the distinction between in-context \emph{learning}
+and in-context \emph{retrieval}, \textcolor{blue}{with rules intended to reduce direct benchmark
+contamination}. Each task pairs a fixed vocabulary of surface tokens with an
+arbitrary deterministic rule (for \texttt{rule\_v1}, a binary task: the label is
+determined by whether the final word contains more than two vowels). \textcolor{blue}{The mapping is
+intended to require inference from examples, but} above-chance accuracy
+\textcolor{blue}{alone would not distinguish rule inference from other uses of prior knowledge.}
+
+\textbf{The probe \textcolor{blue}{did not establish} the \textcolor{blue}{intended distinction.}} \textcolor{blue}{Some reported means exceed
+$0.50$, including $0.572$ for Gemma-3-27B} at \textcolor{blue}{$K{=}64$} (Table~\ref{stab:synth})\textcolor{blue}{; we do not
+claim that every result is at chance}. First, \textcolor{blue}{Llama-3.1-8B} scores
+\emph{higher} than \textcolor{blue}{Gemma-3-4B} at every \textcolor{blue}{measured many-shot} $K$: Llama-3.1-8B sits at
+$0.517$--$0.543$ while Gemma-3-4B sits at $0.480$--$0.512$, against a chance level of
+$0.50$. Second, zero-shot accuracy \textcolor{blue}{in the separate sweep} is already
+$0.440$--$0.547$, \textcolor{blue}{overlapping} many-shot values\textcolor{blue}{. These summaries do not supply a
+validated within-pipeline learning-versus-retrieval test.}
+
+We therefore draw no learning-versus-retrieval conclusion, and we note that a synthetic
+probe on which at least one model demonstrably learns the rule is a prerequisite for
+testing that distinction. We consider the most likely explanation to be that the rules are
+too far outside the distribution of formats these models were aligned on to be learnable
+from tens of examples, rather than that no model can bind novel input--label mappings; but
+we have not established this, and the released task generators are provided so the
+question can be revisited.
+
+\begin{table}[h]
+\centering
+\caption{\textbf{Accuracy on the synthetic rule task
+(\texttt{rule\_v1}, binary, chance $=0.50$).} Zero-shot values are from the separate
+zero-shot sweep\textcolor{blue}{; they are not a paired treatment baseline. Natural-task regime tags refer
+to the illustrated natural-task curves, not universal} model \textcolor{blue}{properties. The probe} does
+not \textcolor{blue}{establish} the \textcolor{blue}{intended learning-versus-retrieval distinction}.
+Values are means over 10 demonstration draws ($K{\geq}1$) and 3 draws ($K{=}0$).}
+\label{stab:synth}
+\footnotesize
+\begin{tabular}{llccccc}
+\toprule
+Model & Regime & $K{=}0$ & $K{=}1$ & $K{=}4$ & $K{=}16$ & $K{=}64$ \\
+\midrule
+Llama-3.1-8B-Instruct & cliff-prone   & --      & 0.517 & 0.539 & 0.543 & 0.539 \\
+DeepSeek-V3.2         & cliff-prone   & 0.440   & 0.505 & 0.535 & 0.510 & 0.525 \\
+Gemma-3-4B-it         & cliff-immune  & 0.513   & 0.483 & 0.480 & 0.495 & 0.512 \\
+Gemma-3-12B-it        & cliff-immune  & 0.547   & 0.487 & 0.521 & 0.533 & 0.519 \\
+Gemma-3-27B-it        & cliff-immune  & 0.520   & 0.476 & 0.514 & 0.522 & 0.572 \\
+Qwen3-32B             & cliff-immune  & 0.517   & 0.491 & 0.527 & 0.532 & 0.514 \\
+Llama-3.3-70B-Instruct& cliff-immune  & 0.500   & 0.487 & 0.531 & 0.552 & 0.543 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =====================================================================
+\section*{Supplementary Note 4: decode failures and how they are handled}
+\addcontentsline{toc}{section}{Note 4: decode failures}
+\label{snote:decode}
+
+Because unparseable outputs are scored as incorrect, a cell in which the model emits no
+matchable label at all registers \textcolor{blue}{total} accuracy $0.000$\textcolor{blue}{, with conditional valid-label
+accuracy undefined. Across all reported before/after source paths, 299 of 3}{\textcolor{blue}{,}}\textcolor{blue}{222
+query--draw cells have zero accuracy and $200/200$ unparseable outputs. Retaining one
+copy per byte-identical file gives 281 of 2}{\textcolor{blue}{,}}\textcolor{blue}{958 cells; these are} not \textcolor{blue}{independent
+training replicates. The corresponding directory-only counts for
+\path{results/interventions/}} \textcolor{blue}{are} 265 of 3{,}102\textcolor{blue}{. These aggregate cells do not
+identify whether a sequence-budget limit caused an individual failure. The controlled
+study records input lengths and rejects overflowing prompts without truncation (Note~8).}
+
+\textcolor{blue}{Under the nominal late-region fine-tuning on sst2 at $K{=}64$, all five evaluation draws
+produced $200/200$ unparseable outputs. This is a decode failure, without an inference of
+semantic destabilization. Table}~\textcolor{blue}{\ref{stab:region}} \textcolor{blue}{reports descriptive means and draw ranges;
+no training-level Welch tests are reported because independent retraining is unverified.
+Partial invalidity also matters: late trec total accuracy changes $0.302\to0.197$, while
+invalid outputs increase $27/1{,}000\to446/1{,}000$. Pooled valid-label ratios are
+$0.310\to0.356$ on denominators 973 and 554. The surviving subsets differ, so this
+conditional comparison does not establish semantic improvement or impairment.}
+
+% =====================================================================
+\section*{Supplementary Note 5: intervention targeting, objective, and known caveats}
+\addcontentsline{toc}{section}{Note 5: intervention caveats}
+\label{snote:caveats}
+
+\textcolor{blue}{The main regional conclusions use the exact-target, 18-adapter cohort in Note~9. The nominal regional, depth/component, transfer and self-target comparisons in this note and Tables~S5--S12 are retained as descriptive observations with incomplete original targeting provenance. They do not authenticate a regional causal ordering or replace the verified cohort. Differences in query panels, objectives and calibration budgets preclude pooling their means with the main table.}
+
+Three properties of the intervention implementation bound the interpretation of the
+\textcolor{blue}{regional fine-tuning} results\textcolor{blue}{.}
+
+\textbf{\textcolor{blue}{Regional scope.}} \textcolor{blue}{Region and window labels in the descriptive
+panel denote nominal block designs. These aggregate results do not authenticate exact
+module membership or identify causal failure locations. The controlled study separately
+verifies all 32 adapted attention projections in blocks 12--19 and their 3,407,872
+trainable parameters (Note~8).}
+
+\textbf{The objective is whole-prompt language modelling.} The calibration loss is
+next-token prediction over the entire sequence, prompt and demonstrations included, not
+over the label span alone. \textcolor{blue}{The label-only controls in Note~8 separate this objective
+from supervision restricted to the query label. Regional gains measure adaptation
+efficacy} rather than the \textcolor{blue}{original failure's location. We distinguish recovery
+$R(K)=a_{\rm after}(K)-a_{\rm before}(K)$, zero-shot change $R(0)$} and
+\textcolor{blue}{$S(K)=R(K)-R(0)$ (Table}~\textcolor{blue}{\ref{stab:components}}\textcolor{blue}{). Positive specificity alone} does not \textcolor{blue}{establish
+zero-shot preservation; the nominal four-block attention example has $R(16)=+0.407$
+and $R(0)=-0.165$.}
+
+\textbf{\textcolor{blue}{Reverse-direction supervision audit.}} The \textcolor{blue}{selected}
+reverse-direction supervision target is the label the model itself emits with no demonstrations.
+When that zero-shot generation fails to parse, \texttt{\_k0\_prediction} falls back to the
+first label in the task's label set (``World'' for ag\_news). A high fallback rate would
+train the band toward a near-constant label and would supply an explanation for the observed
+zero-shot decrement ($0.78\rightarrow0.45$) that does not require the early band to be
+specifically implicated.
+
+\textcolor{blue}{The audit evaluates a seeded} calibration \textcolor{blue}{draw} on the base model\textcolor{blue}{,} before \textcolor{blue}{an}
+adapter is attached, and re-\textcolor{blue}{scores} zero-shot \textcolor{blue}{predictions} for 500 examples.
+\textbf{The fallback fired 0 times in 500}
+(Table~\ref{stab:fallback}). The targets are moreover well distributed across the four
+classes, with a maximum class share of $36.8\%$ against a gold share of $27.2\%$, and they
+agree with the gold label on $81.6\%$ of examples, consistent with this model's $0.78$--$0.785$
+zero-shot accuracy on ag\_news. \textcolor{blue}{This audit addresses the fallback mechanism;
+it does not authenticate the targets of every reverse protocol or
+exclude other optimization,} calibration \textcolor{blue}{or precision effects.}
+
+The \textcolor{blue}{selected early protocol changes ag\_}\textcolor{blue}{news zero-shot accuracy $0.78\to0.45$, with} a
+\textcolor{blue}{$-0.018$ change at $K{=}16$;} the late \textcolor{blue}{zero-shot change is} $+0.025$\textcolor{blue}{, without an equivalence
+test. The sst2 transfer result also shows collateral damage. This selected arm does not
+confirm induction of a new many-shot cliff}, and \textcolor{blue}{all measured variants, including a
+different nominal four-block Gemma candidate,} are \textcolor{blue}{retained (Note}~\textcolor{blue}{6)}. \textcolor{blue}{The recorded supervision audit is supplied as \path{results/interventions/induce_fallback_audit.json}, with its source identity in the complete inventory. The current reproduction entry point is \path{python -m publication.rebuild}; the original supervision audit remains a measured diagnostic rather than a new inference run.}
+\textcolor{blue}{The audit records a SHA-256 of the target-construction source; its scope is
+the measured supervision audit rather than authentication of every trained adapter.}
+
+\begin{table}[h]
+\centering
+\caption{\textbf{\textcolor{blue}{Audit} of the \textcolor{blue}{selected} reverse-direction supervision target.} All 500 calibration examples
+\textcolor{blue}{sampled with a fixed seed and scored} on the base Gemma-3-4B-it checkpoint. The
+default-label fallback never fired, so the supervision signal is the model's own zero-shot
+label throughout \textcolor{blue}{this audit; the result does not identify the targets of every reverse variant.}}
+\label{stab:fallback}
+\footnotesize
+\begin{tabular}{lc}
+\toprule
+Quantity & Value \\
+\midrule
+Calibration examples                                   & 500 \\
+Generations that parsed to a label                     & 500 (100.0\%) \\
+Times the default-label fallback fired                 & \textbf{0 (0.0\%)} \\
+Targets agreeing with the gold label                   & 408 (81.6\%) \\
+Most common target class share (\emph{Business})       & 36.8\% \\
+Most common gold class share (\emph{Business})          & 27.2\% \\
+Target distribution (World / Sports / Business / Sci-Tech) & 134 / 120 / 184 / 62 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{\textcolor{blue}{Precision and quantization.}} \textcolor{blue}{The controlled study and checkpoint/template
+comparison use BF16 without quantization. Precision is not uniformly documented for the
+descriptive panel, so the panel does not support an effect attributed to quantization or
+a precision-matched comparison. Available per-cell settings are in the companion inventory.}
+
+% =====================================================================
+\section*{Supplementary Note 6: data provenance for every reported value}
+\addcontentsline{toc}{section}{Note 6: data provenance}
+\label{snote:prov}
+
+\textcolor{blue}{Numerical summaries are derived within each source protocol;}
+Table~\ref{stab:prov} maps each class to its source.
+The behavioural panel and the \textcolor{blue}{regional fine-tuning} panel come from different pipelines with
+slightly different zero-shot values for the same model and task (for Llama-3.1-8B on
+ag\_news: $0.810$ hosted, $0.850$ self-hosted at $n{=}200$, $0.870$ in the mechanism run
+at $n{=}100$). No quantity in the paper is computed by subtracting across pipelines, and
+every before/after difference is within-run.
+
+\begin{sloppypar}
+\textcolor{blue}{The complete companion inventory covers 69 source paths and 63 distinct byte contents,
+including 50 before/after paths with 45 distinct contents. Aliases are retained and counted
+once in content-adjusted summaries; distinct contents are not assumed to be independent
+training. The inventory records available model/band/calibration/task/draw metadata,
+precision availability and nominal targeting, and use in the regional summaries.
+The two nominal two-block versions give $R(16)=+0.585$ and $-0.040$; both are retained
+without selecting by effect size. All 13 reverse paths (11 distinct contents) are likewise
+retained, with full curves and the different four-block Gemma candidate described below. These aggregate comparisons are descriptive; independently trained
+controlled adapters are reported separately in Note~8.
+Companion files are \path{revision/generated/supplementary_run_inventory.csv}}\textcolor{blue}{,
+\path{revision/generated/approved_regional_components.csv}}\textcolor{blue}{,
+\path{revision/generated/approved_variant_protocols.csv}}\textcolor{blue}{,
+\path{revision/generated/approved_variant_curves.csv}} \textcolor{blue}{and
+\path{revision/generated/approved_full_curve_atlas.pdf}}\textcolor{blue}{. The complete dose/depth effect
+table, including four-block and task-transfer protocols, is
+\path{revision/generated/supplementary_dose_depth_effects.csv}}\textcolor{blue}{.}
+\end{sloppypar}
+
+\textcolor{blue}{The Qwen2.5-7B-Instruct no-cliff control uses five evaluation draws.
+On AG News, nominal early-region training changes $K=16$ accuracy
+$0.814\to0.844$, with $R(0)=+0.020$ and $S(16)=+0.010$; the late-region result
+has $R(16)=0$, $R(0)=+0.045$ and $S(16)=-0.045$. This descriptive control
+does not show a generic large early-region gain. Two induction-score comparison
+protocols change Llama-3.1-8B $K=16$ accuracy $0.375\to0.825$ and
+$0.4125\to0.9125$, while early/late induction scores change only $0.0011$--$0.0018$.
+Thus recovery does not establish restoration of the measured induction score.}
+
+\textcolor{blue}{The reverse-direction variants also constrain generality. Qwen2.5-1.5B
+zero-shot AG News accuracy changes $0.755\to0.755$ (early), $0.675$ (middle)
+and $0.785$ (late), with calibration $K=16$. For Qwen2.5-7B, calibration $K=8$
+gives $0.790\to0.800$ (early) and $0.885$ (middle). Gemma-3-4B at calibration
+$K=8$ changes $0.805\to0.840$ (middle) and $0.810$ (late). The large early
+zero-shot decrement in the selected eight-block protocol is therefore observed in
+one of three checkpoints, rather than a common reverse effect. A distinct nominal
+four-block Gemma protocol raises zero-shot accuracy $0.790\to0.895$ while
+lowering $K=16$ accuracy $0.825\to0.2967$; its different protocol and nominal
+targeting do not provide a matched bidirectional causal test. The inventory retains
+all variants and calibration tasks, including SST2/TREC depth and dose protocols.}
+
+\begin{table}[h]
+\centering
+\caption{\textbf{Provenance of reported values.}}
+\label{stab:prov}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.25\textwidth}>{\raggedright\arraybackslash}p{0.56\textwidth}>{\raggedright\arraybackslash}p{0.14\textwidth}@{}}
+\toprule
+Claim class & Source & Pipeline \\
+\midrule
+Behavioural curves with $K{=}0$; recipe dissociation & \textcolor{blue}{\path{results/hosted_sweeps/recipe_difference_*.json}}\textcolor{blue}{, \path{hermes3_full.json}} & hosted API \\
+DeepSeek-V3.2 and full-panel curves ($K{\geq}1$)     & \textcolor{blue}{\path{results/exp1a_complete.csv}} & hosted API \\
+Synthetic-rule zero-shot                             & \textcolor{blue}{\path{results/exp1e_results.json}} & hosted API \\
+Statelessness / backward transfer                    & \textcolor{blue}{\path{results/exp1b_results.json}} & hosted API \\
+Region $\times$ task recovery                        & \textcolor{blue}{\path{results/interventions/remove_llama31_8b_*_results.json}}\textcolor{blue}{; exact rows in companion inventory} & self-hosted \\
+Depth profile (4-block windows)                      & \textcolor{blue}{\path{results/interventions/remove_llama31_8b_blk*_n4_attn_results.json}} & self-hosted \\
+Attention vs MLP component cut                       & \textcolor{blue}{\path{results/interventions/remove_llama31_8b_blk*_n4_*_results.json}}\textcolor{blue}{; selected attention/MLP rows in companion inventory} & self-hosted \\
+Per-projection cut                                   & \textcolor{blue}{\path{results/component_dissociation.csv}} & self-hosted \\
+Cross-\textcolor{blue}{checkpoint regional comparison}                 & \textcolor{blue}{\path{results/interventions/remove_*_results.json}}\textcolor{blue}{; selected rows in companion inventory} & self-hosted \\
+Reverse-direction arm                                & \textcolor{blue}{\path{results/interventions/induce_*_results.json}}\textcolor{blue}{; all protocols retained} & self-hosted \\
+Reverse-direction supervision audit                  & \textcolor{blue}{\path{results/interventions/induce_fallback_audit.json}} & self-hosted \\
+\textcolor{blue}{Mean residual-state replacement}, induction \textcolor{blue}{scores}     & \textcolor{blue}{\path{results/interventions/t5_llama31_8b_ag_news_results.json}} & self-hosted \\
+\textcolor{blue}{Controlled adaptation, readouts, curves, formats and transfer} & \textcolor{blue}{\path{revision/final_integration/supplement_table_sources.json}; Tables~\ref{stab:final_training}--\ref{stab:final_transfer}} & \textcolor{blue}{self-hosted BF16} \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\section*{\textcolor{blue}{Supplementary Note 7: demonstration bias and order controls}}
+\addcontentsline{toc}{section}{Note 7: development bias and order controls}
+\label{snote:w3}
+
+\textcolor{blue}{Llama-3.1-8B-Instruct was evaluated on 100 AG News development queries, with three shared demonstration draws at $K{=}8,16,32$ and one shared zero-shot reference. Random, blocked, interleaved and class-assigned cyclic orders retain each demonstration multiset. Final-class assignments average two fixed last-example choices; these choices are not independent model or draw replicates. Majority-composition controls alter source examples despite length matching. The 29,200 design-query records include 28,900 distinct physical query prompts, with no truncation or rejection.}
+
+\textcolor{blue}{Complete-label log likelihood $\ell_y(x)$ sums token log probabilities for a leading space and the full label, using a common conditioning prefix (and any boundary-retokenized prompt suffix), without length normalization. For the same demonstration context, each of the fixed content-free queries \texttt{N/A}, \texttt{[MASK]} and the empty string supplies a label-normalized probability vector. Their arithmetic mean is the prior $\pi_y$. Calibrated probabilities are
+\[
+ p_{\mathrm{cal}}(y\mid x)=\operatorname{softmax}_{y}\!\left[\ell_y(x)-\log\max(\pi_y,10^{-12})\right].
+\]
+Greedy generation remains a separate readout. The calibration comparison therefore pairs calibrated with raw likelihood, rather than comparing calibrated likelihood with generation. At $K{=}16$ in random order, the likelihood improvement is $+0.3933$ (pointwise 95\% query/draw bootstrap interval $[0.2233,0.5433]$); its zero-shot-adjusted change is $+0.4433$ $[0.2867,0.5900]$. Calibration mitigates this development decline but does not remove all high-$K$ loss: calibrated accuracy is $0.5867$ at $K{=}32$ versus $0.8100$ at $K{=}0$.}
+
+\textcolor{blue}{Table~\ref{stab:w3} supplies selected descriptive results and the four final-class assignment contrasts. The intervals use 2,000 crossed query/draw resamples and average fixed context choices within query/draw cells. There are only three draw clusters, all order contrasts are exploratory and pointwise, and no multiplicity-adjusted or isolated final-token causal claim is made. The complete condition curves, label marginals, confusion matrices and paired contrasts are retained in \path{revision/generated/w3_condition_curves.csv}, \path{revision/generated/w3_label_marginals.csv}, \path{revision/generated/w3_confusions.csv} and \path{revision/generated/w3_paired_effects.csv}. The held-out calibration comparison uses a separate 200-query panel (Note~8); the order contrasts remain development analyses.}
+
+\input{revision/final_integration/final_supplement_note.tex}
+
+% =====================================================================
+\clearpage
+\input{revision/manuscript_20261120/followup_note.tex}
+
+\section*{Supplementary Tables}
+\addcontentsline{toc}{section}{Supplementary Tables}
+
+\begin{table}[h]
+\centering
+\caption{\textbf{\textcolor{blue}{Descriptive summary of} the eight-model panel.} \textcolor{blue}{Descriptive summary tags}
+(P, cliff-prone; I, cliff-immune) \textcolor{blue}{describe illustrated} natural\textcolor{blue}{-task curves, not universal
+model properties. The tags do not define a population prevalence or a universal threshold}.
+Llama-3.2-3B has \textcolor{blue}{three recorded self-hosted tasks and} no hosted \textcolor{blue}{seven-task} sweep\textcolor{blue}{.}}
+\label{stab:grid}
+\footnotesize
+\begin{tabular}{llccl}
+\toprule
+Model & Provider & Scale & \textcolor{blue}{Curve tag} & \textcolor{blue}{Coverage / note} \\
+\midrule
+Llama-3.2-3B-Instruct   & Meta     & 3B    & P & \textcolor{blue}{ag\_}\textcolor{blue}{news, sst2, trec;} self-hosted \\
+Gemma-3-4B-it           & Google   & 4B    & I & \textcolor{blue}{MNLI declines without approaching chance} \\
+Llama-3.1-8B-Instruct   & Meta     & 8B    & P & \textcolor{blue}{illustrated} ag\_news, sst2, MNLI \textcolor{blue}{declines} \\
+Gemma-3-12B-it          & Google   & 12B   & I & \textcolor{blue}{illustrated stable/improving curves} \\
+Gemma-3-27B-it          & Google   & 27B   & I & \textcolor{blue}{illustrated stable/improving curves} \\
+Qwen3-32B               & Alibaba  & 32B   & I & \textcolor{blue}{illustrated stable/improving curves} \\
+Llama-3.3-70B-Instruct  & Meta     & 70B   & I & \textcolor{blue}{illustrated stable/improving curves} \\
+DeepSeek-V3.2           & DeepSeek & 671B  & P & no measured $K{=}0$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{\textbf{Cliff recovery by region and task (Llama-3.1-8B).} Accuracy after minus
+before \textcolor{blue}{nominal} region-restricted \textcolor{blue}{fine-tuning} at each task's \textcolor{blue}{selected} $K$. Five \textcolor{blue}{evaluation
+draws} for early and late, three for mid\textcolor{blue}{; these do not establish independent adapter
+retraining}. ``--'' denotes cells not run. The sst2 late cell produced no parseable output
+in any \textcolor{blue}{draw (}Note~4)\textcolor{blue}{. Means} and \textcolor{blue}{draw ranges are descriptive; no training-level Welch
+tests are reported. Calibration} is \textcolor{blue}{on ag\_}\textcolor{blue}{news (Table}~\textcolor{blue}{\ref{stab:protocols}}\textcolor{blue}{).}}
+\label{stab:region}
+\footnotesize
+\begin{tabular}{lccc}
+\toprule
+\textcolor{blue}{Nominal region} (8 blocks) & ag\_news ($K{=}16$) & sst2 ($K{=}64$) & trec ($K{=}64$) \\
+\midrule
+early (0--7)  & $+0.581$ & $+0.316$ & $+0.213$ \\
+mid (12--19)  & $+0.57$  & --       & --       \\
+late (24--31) & $+0.163$ & decode failure & $-0.105$ \\
+\midrule
+early per-\textcolor{blue}{draw} range & $+0.500$ to $+0.635$ & $+0.210$ to $+0.430$ & $+0.050$ to $+0.345$ \\
+late per-\textcolor{blue}{draw} range  & $+0.040$ to $+0.210$ & --                   & $-0.250$ to $+0.000$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[h]
+\centering
+\caption{\textbf{Depth profile of cliff recovery.} Recovery at the cliff $K{=}16$ on
+ag\_news for \textcolor{blue}{nominal} four-block attention windows on the 32-block stack (\textcolor{blue}{three evaluation
+draws, not verified independent training replicas}). ``n.r.'' denotes windows that were
+not run; they are not interpolated or used to establish a complete depth optimum.}
+\label{stab:depth}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lcccccccc}
+\toprule
+blocks & 0--3 & 4--7 & 8--11 & 12--15 & 16--19 & 20--23 & 24--27 & 28--31 \\
+\midrule
+recovery & $+0.407$ & n.r. & $\mathbf{+0.610}$ & $\mathbf{+0.600}$ & n.r. & $+0.105$ & $+0.082$ & n.r. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{\textbf{Attention-versus-MLP component dissociation.} Cliff recovery at $K{=}16$
+on ag\_news when \textcolor{blue}{nominal} four-block \textcolor{blue}{fine-tuning targets} attention projections or feed-forward
+projections (\textcolor{blue}{three evaluation draws). The reported MLP gain is larger at blocks 0--}3 \textcolor{blue}{and
+similar at blocks 12--15. This compares adaptation efficacy, without demonstrating
+equivalence or identifying a necessary attention/}MLP circuit\textcolor{blue}{.}}
+\label{stab:component}
+\footnotesize
+\begin{tabular}{lcc}
+\toprule
+window & attention-only & MLP-only \\
+\midrule
+blocks 0--3 (early)  & $+0.407$ & $+0.592$ \\
+blocks 12--15        & $+0.600$ & $+0.595$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{\textbf{\textcolor{blue}{Reported per}-projection \textcolor{blue}{adaptation gains and zero-shot changes.}}
+\textcolor{blue}{Recovery} on ag\_news at $K{=}32$ \textcolor{blue}{for the nominal} blocks 8--15 \textcolor{blue}{design}, with zero-shot \textcolor{blue}{changes}
+on the calibration task and a held-out task. \textcolor{blue}{This K=32 measurement is distinct from} the
+\textcolor{blue}{K=16 depth/component profiles. The CSV reports aggregate gains and standard deviations,
+but} no \textcolor{blue}{verified draw/training count or realized target list. Values are descriptive,
+without an equivalence or} culpable\textcolor{blue}{-}projection claim. Baseline before \textcolor{blue}{fine-tuning}:
+ag\_news $K{=}32$ $=0.315$, ag\_news $K{=}0$ $=0.850$, imdb $K{=}0$ $=0.955$.}
+\label{stab:projection}
+\footnotesize
+\begin{tabular}{lcccc}
+\toprule
+Projection & recovery ($K{=}32$) & \textcolor{blue}{reported} s.d. & $\Delta$ ag\_news $K{=}0$ & $\Delta$ imdb $K{=}0$ \\
+\midrule
+query (Q)        & $+0.560$ & 0.035 & \textcolor{blue}{$-0.210$} & \textcolor{blue}{$-0.430$} \\
+key (K)          & $+0.568$ & 0.013 & \textcolor{blue}{$+0.020$} & \textcolor{blue}{$-0.005$} \\
+value (V)        & $+0.492$ & 0.075 & \textcolor{blue}{$+0.025$} & \textcolor{blue}{$-0.455$} \\
+output (O)       & $+0.563$ & 0.010 & \textcolor{blue}{$-0.075$} & \textcolor{blue}{$-0.015$} \\
+MLP gate\,$+$\,up & $+0.600$ & 0.009 & \textcolor{blue}{$-0.060$} & \textcolor{blue}{$-0.245$} \\
+MLP down         & $+0.588$ & 0.010 & \textcolor{blue}{$-0.145$} & \textcolor{blue}{$-0.020$} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{\textbf{Cross-\textcolor{blue}{checkpoint regional fine-tuning comparison.}} \textcolor{blue}{Recovery} at each
+\textcolor{blue}{checkpoint's selected} $K$ on ag\_news, for three \textcolor{blue}{nominal} regions.
+``--'' denotes cells not run. \textcolor{blue}{The five selected checkpoints are listed; other measured
+protocols are retained in} the \textcolor{blue}{companion inventory (Note}~\textcolor{blue}{6). For} Mistral-7B, the late band
+reaches $85\%$ of the best band and the
+ordering is therefore weak, and InternLM2.5-7B, where the \textcolor{blue}{largest reported gain is middle.
+The five checkpoints span three architecture labels, not four independent family-level
+replications. Evaluation-draw counts, calibration K and query counts are in
+Table}~\textcolor{blue}{\ref{stab:protocols}}\textcolor{blue}{; nominal-region summaries are descriptive.}}
+\label{stab:crossfamily}
+\footnotesize
+\begin{tabular}{llcccc}
+\toprule
+Model & Architecture class & \textcolor{blue}{Selected} $K$ & early & mid & late \\
+\midrule
+Llama-3.1-8B            & Llama     & 16 & $+0.581$ & $+0.57$  & $+0.163$ \\
+Llama-3.2-3B            & Llama     & 16 & $+0.581$ & --       & $+0.000$ \\
+DeepSeek-7B-chat        & Llama     & 16 & $+0.423$ & $+0.423$ & $+0.180$ \\
+Mistral-7B-Instruct-v0.3& Mistral   & 32 & $+0.390$ & $+0.390$ & $+0.330$ \\
+InternLM2.5-7B-chat     & InternLM2 & 64 & $-0.017$ & $+0.157$ & $+0.073$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{\textbf{Layer-resolved mechanistic measures (Llama-3.1-8B, ag\_news, $K{=}16$,
+$n{=}100$).} Zero-shot accuracy $0.87$; in-context accuracy at the cliff point $0.36$.
+The \textcolor{blue}{mean residual-state replacement accuracy} tracks the zero-shot baseline through layer~10 and drops to
+$0.39$ at layer~14, then stays low to the end of the stack. The induction-head score is
+diffuse: its \textcolor{blue}{descriptive} mean within blocks 8--15 \textcolor{blue}{is} $0.0327$ \textcolor{blue}{versus $0.0313$} outside\textcolor{blue}{,
+without an equivalence test;} only one of the eight highest-scoring layers falls inside\textcolor{blue}{.
+State replacement differs from a head-output function-vector procedure and may depend on
+recipient compatibility}. Full per-layer values are in the released results\textcolor{blue}{; query-level uncertainty
+is unavailable.}}
+\label{stab:mech}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{lccccccccccccc}
+\toprule
+layer & 0 & 2 & 8 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 20 & 24 & 31 \\
+\midrule
+\textcolor{blue}{State replacement} & 0.87 & 0.88 & 0.88 & 0.85 & 0.78 & 0.73 & 0.75 & \textbf{0.39} & 0.28 & 0.32 & 0.34 & 0.46 & 0.20 \\
+induction score  & 0.007 & \textbf{0.081} & 0.037 & 0.038 & 0.011 & 0.005 & 0.043 & 0.032 & \textbf{0.079} & 0.063 & 0.068 & 0.051 & 0.005 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\input{revision/final_integration/supplementary_consistency_tables.tex}
+\input{revision/final_integration/behavioural_validity_table.tex}
+\input{revision/final_integration/w3_development_controls.tex}
+\input{revision/final_integration/final_supplement_tables.tex}
+
+% =====================================================================
+\clearpage
+\input{code/publication/generated/followup_tables.tex}
+
+\clearpage
+\section*{Supplementary Figures}
+\addcontentsline{toc}{section}{Supplementary Figures}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{revision/final_integration/si_order_final.pdf}
+\caption{\textbf{\textcolor{blue}{Reported blocked/interleaved prompt comparison.}} \textcolor{blue}{Effects differ across
+the illustrated models and conditions; this comparison does not establish invariance} to
+order\textcolor{blue}{,} spacing \textcolor{blue}{or other} prompt \textcolor{blue}{arrangements}. Referenced as Supplementary Fig.~1 in the
+main text.}
+\label{sfig:ordering}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{revision/final_integration/si_readout_final.pdf}
+\caption{\textbf{\textcolor{blue}{Standard and first-token readouts for the illustrated AG News curve.}}
+The \textcolor{blue}{reported absence of unparseable labels addresses total parsing failure in this
+comparison; it does not identify a} content\textcolor{blue}{-}integration \textcolor{blue}{mechanism or exclude label/recency
+bias}. This is distinct from the \textcolor{blue}{entirely invalid} self-hosted \textcolor{blue}{cells} in Note~4\textcolor{blue}{.}}
+\label{sfig:format}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{revision/final_integration/si_task_sequence_final.pdf}
+\caption{\textbf{\textcolor{blue}{Entering-task accuracy across a task sequence.}} \textcolor{blue}{The horizontal axis is
+task-sequence position $T=1,\ldots,8$, not demonstrations per task. Lines use
+$K_{\rm task}=5,10,20$ demonstrations per included task. The entering task changes with
+position, so these curves do not isolate a fixed task's K-dependent cliff or a capacity
+threshold.}}
+\label{sfig:saturation}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig_ed_mnli_entailment.pdf}
+\caption{\textbf{The regime split replicates on natural-language inference (MNLI).}
+Three-class entailment, chance $=0.33$. Llama-3.1-8B-Instruct \textcolor{blue}{starts at $0.620$ at $K{=}0$,} peaks at $K{=}1$ ($0.687$)
+and falls to $0.405$ by $K{=}64$, while Hermes-3-Llama-3.1-8B, which shares its base
+checkpoint, rises from $0.470$ to $0.575$. Not every cliff-immune model gains on this task:
+Gemma-3-4B declines from $0.778$ to $0.708$ across the sweep without approaching chance. \textcolor{blue}{Source-separated curves and denominator metadata are in \protect\path{revision/generated/mnli_absolute_curves.csv} and \protect\path{revision/generated/mnli_absolute_curve_summary.csv}.}}
+\label{sfig:mnli}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.66\textwidth]{figures/revision/si_cross_prompt_transfer_focused_v2.pdf}
+\caption{\textbf{\textcolor{blue}{Reported cross-prompt backward transfer.}} \textcolor{blue}{Amazon denotes Amazon Electronics Sentiment. The illustrated Gemma-3-12B
+summary is a consistency check (Note}~\textcolor{blue}{2), not evidence for a memory mechanism. Frozen,
+stateless inference does not carry adaptation between independent prompts; the aggregate
+results do not establish identical query/prompt identities for each reported comparison.}}
+\label{sfig:stateless}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/revision/si_ft_icl_comparison_focused.pdf}
+\caption{\textbf{\textcolor{blue}{Reported fine-tuning and in-context accuracy.}} \textcolor{blue}{The illustrated comparison
+motivates studying adaptation in weights; it does not establish permanent retention,
+matched exposure/compute or the necessity of continual fine-tuning.}}
+\label{sfig:ftrecovers}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.92\textwidth]{figures/revision/si_context_curve_schematic_focused_v2.pdf}
+\caption{\textbf{\textcolor{blue}{Schematic contrasting accuracy curves.}} \textcolor{blue}{The curves are illustrative,
+not experimental measurements or a biological correspondence. CLS motivates a functional
+comparison between rapid context use and adaptation in weights; this schematic does not
+identify a bounded memory capacity or isolate a post-training recipe effect.}}
+\label{sfig:concept}
+\end{figure}
+
+\end{document}

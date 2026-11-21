@@ -1,43 +1,10 @@
-# Byte-compiled
 __pycache__/
 *.py[cod]
-
-.stage/
-.smoke/
-
-# Orchestration and manuscript files are maintained outside this code release
-paper/
-paper-local-backup/
-runner/
-Makefile
-runner/logs/
-runner/hosts.txt
-
-# Internal notes and provider-specific run artifacts
-derived/
-results/*.md
-results/*.log
-results/nmi_hosted/
-results/nmi_new_causal/
-results/ablations_readout/
-results/nmi_hosted/
-figures/
-scripts/
-
-# LaTeX build products
-paper/*.aux
-paper/*.log
-paper/*.out
-paper/*.blg
-paper/*.bbl
-paper/*.fdb_latexmk
-paper/*.fls
-paper/*.synctex.gz
-
-# OS noise
+.cache/
+.mplconfig/
+.venv/
+.pytest_cache/
+*.egg-info/
+*.log
 .DS_Store
-
-# Model weights and datasets are downloaded, never committed
-*.safetensors
-*.bin
-!data/*.parquet
+revision/manuscript_20261120/build/

@@ -1,0 +1,30 @@
+"""Integrity guards for measurement identity, output validity and contrast retention."""
+import gzip,json,hashlib,tempfile,unittest
+from pathlib import Path
+import numpy as np
+from .reproduce import verify_inputs,load_arrays,interval,compare
+class IntegrityTests(unittest.TestCase):
+ def test_changed_measurements_rejected(self):
+  with tempfile.TemporaryDirectory() as d:
+   p=Path(d);f=p/'records.json';f.write_text('original')
+   (p/'manifest.json').write_text(json.dumps({'files':{'records.json':hashlib.sha256(f.read_bytes()).hexdigest()}}));f.write_text('changed')
+   with self.assertRaisesRegex(ValueError,'hash mismatch'):verify_inputs(p)
+ def test_zero_shot_unit_and_invalid_continuation(self):
+  with tempfile.TemporaryDirectory() as d:
+   p=Path(d);(p/'query_orders.json').write_text(json.dumps({'remaining_20261116':['q1','q2'],'followup_20261116':[]}))
+   with gzip.open(p/'measurements.jsonl.gz','wt') as f:
+    for q,text in [('q1','Sports'),('q2','Sports\nText: another example')]:f.write(json.dumps(dict(family='G6',condition='m_early_K0',seed=0,draw=0,query=q,gold='Sports',text=text))+'\n')
+   a,n,_=load_arrays(p);self.assertEqual(n,2);self.assertEqual(a['G6','m_early_K0','generated'].shape,(1,1,2));self.assertEqual(a['G6','m_early_K0','valid'].mean(),.5)
+ def test_changed_or_omitted_adverse_result_rejected(self):
+  r=[dict(condition='adverse',estimate=-.7,ci95_low=-.8,ci95_high=-.6)]
+  with self.assertRaisesRegex(ValueError,'inventory'):compare(r,[],['condition'])
+  with self.assertRaisesRegex(ValueError,'Numerical'):compare(r,[dict(r[0],estimate=.7)],['condition'])
+ def test_unknown_query_rejected(self):
+  with tempfile.TemporaryDirectory() as d:
+   p=Path(d);(p/'query_orders.json').write_text(json.dumps({'remaining_20261116':['q1'],'followup_20261116':[]}))
+   with gzip.open(p/'measurements.jsonl.gz','wt') as f:f.write(json.dumps(dict(family='G6',query='unregistered'))+'\n')
+   with self.assertRaisesRegex(ValueError,'Unknown query'):load_arrays(p)
+ def test_k0_not_spurious_precision(self):
+  a=np.array([[[0.,1.,0.,1.,1.]]]);x=interval(a);y=interval(np.repeat(a,3,axis=1))
+  self.assertEqual(x['n_draws'],1);self.assertGreater(x['ci95_high']-x['ci95_low'],.3);self.assertGreater(y['ci95_high']-y['ci95_low'],.3)
+if __name__=='__main__':unittest.main()

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cliff-repro"
+version = "2.0.0"
+description = "Reproducible analyses of context-dependent language-model adaptation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Mohammad Rostami"}]
+
+# The current CPU analysis interface requires no model downloads.
+dependencies = ["matplotlib>=3.7", "numpy>=1.24", "PyMuPDF>=1.24"]
+
+[project.scripts]
+cliff = "publication.reproduce:main"
+cliff-reproduce = "publication.reproduce:main"
+
+[tool.setuptools]
+packages = ["cliff", "publication"]
+
+[tool.setuptools.package-data]
+publication = ["data/*.json", "data/*.csv", "data/*.gz"]
+
+[tool.pytest.ini_options]
+testpaths = ["publication"]
+addopts = "-q"

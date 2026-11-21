@@ -1,0 +1,44 @@
+{
+  "status": "validated_for_scoped_manuscript_analysis",
+  "date": "2026-11-20",
+  "final_records": 53200,
+  "final_configurations": 38,
+  "G1_G2_pilot_acceptance": {
+    "base": {
+      "accepted": true,
+      "final_config_sha256": "8c1d1b05aed35147dbd1749d55749a91df30360203b4a9153431807cda276767",
+      "pilot_summary_sha256": "06fbd4e0e1050eee20874be3b61e971ad2ec369e47ffadc85cae7dcf43f848ec"
+    },
+    "hermes": {
+      "accepted": true,
+      "final_config_sha256": "8c766d43cdc0707b70dd6b26c67830f6be630414fc5213cef24576d7ae42dc47",
+      "pilot_summary_sha256": "c1b56f0f681b4af20efd88c073ef8f4cc21fac42b88696b7f38aaa11ec4f10d3"
+    },
+    "instruct": {
+      "accepted": true,
+      "final_config_sha256": "06558df77dc3cbc131dbf2ccd2832ac08fbf2c649826f2c85e80e4c8c3b2323a",
+      "pilot_summary_sha256": "87dec762e92f194271104915e9808bd62d7b23a444b4805c30324f4939db8bfc"
+    },
+    "tulu_dpo": {
+      "accepted": true,
+      "final_config_sha256": "5ab4eea89f8ce075358a6dc28dfc5a187e15d4f274ba27200397591d089e6f5e",
+      "pilot_summary_sha256": "ae98b8c0a879aa064aaa16c2cdd82d0e4f933f16e452f942584f1baf122b074a"
+    },
+    "tulu_final": {
+      "accepted": true,
+      "final_config_sha256": "c88f4f565b5494f1193bf0b075445e38cf89b181008f24dcf6be42b2c40b8280",
+      "pilot_summary_sha256": "af3cd6c6c8ba99af2022c3c79e8584e8a2d8ddcf6986aeab50a67d8bf6e3fdea"
+    },
+    "tulu_sft": {
+      "accepted": true,
+      "final_config_sha256": "f0d28d7f48d3879b27544e80c700a9730ba5c5bae1cf2ca568d7acf92c6dabab",
+      "pilot_summary_sha256": "e3d0ded94860c24da45f426aeb62124a3e0e894eb1d2889962c92edaa9833063"
+    }
+  },
+  "validation_sources": [
+    "revision/followup_20261116/analysis_G1_G2/validation.json",
+    "revision/remaining_20261116/analysis/validation.json"
+  ],
+  "collection_flag_explanation": "The G1/G2 collection runner sets scientific_evidence=false even for completed final collection, pending independent analysis. The original flag is preserved unchanged in configs. This post-analysis record documents technical pilot acceptance and independent final-output validation; it does not relabel pilots as final evidence or imply positive outcomes.",
+  "scope": "Final panels only. Pilot summaries are technical diagnostics. Inference remains limited to the tested protocol; invalid generation, null contrasts and adverse adapters remain included. No claim of decisive G5 cliff transfer or a meaningful block31 patching null. Llama3.2 and hosted H1 remain unavailable."
+}

@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "labels": {
+    "article_cac.tex": 13,
+    "supplementary_ncs.tex": 42
+  },
+  "references": {
+    "article_cac.tex": 18,
+    "supplementary_ncs.tex": 26
+  },
+  "document_dependencies": {
+    "article_cac.tex": "edffd9811f53ce1987fd93f1af63a203268c2564038e2b527591e9ffac118eba",
+    "code/publication/generated/followup_tables.tex": "5917456cff504db1a7ff8f1f7d04c8fb2c85c4b121ac32cbc030ed3a769b9587",
+    "code/publication/generated/regional_main_table.tex": "4fa78c382060f22b6e7f4c864efe2f2ba69085fa547dcf375ba77526f9e74250",
+    "code/publication/generated/regional_tradeoffs.pdf": "2e45f0b41f7b7ffea0b18f9a3978ddcd0b7f3b0a71e6726a98c03aaa6ca8ac46",
+    "figures/fig_ed_mnli_entailment.pdf": "1b3e81b06098160c94123752edea1965ee90324070f5f639d6ad669757862589",
+    "figures/revision/final_behavioral_panel.pdf": "54ff393de235a88582761c9a87a93a53485bc929dee256f92d816cfd6b31151a",
+    "figures/revision/final_mechanistic_readouts.pdf": "67cf811601bba82551af5280f4a66de3740f699160a14334c39f3a50967c9e59",
+    "figures/revision/si_context_curve_schematic_focused_v2.pdf": "0ad6e4fd5a1c277fdf3cb6c9edfb1ae14eadf5403cadfc8c2c81f5bce5e0339a",
+    "figures/revision/si_cross_prompt_transfer_focused_v2.pdf": "fef27c5eef3b6755251246309421328ca292ae5e9980a7ae236e46f311204c89",
+    "figures/revision/si_ft_icl_comparison_focused.pdf": "6cfef7656f4a9fb2f04edd080b66063ff502b1fd1397ba46c0f16c9b50f9f2b8",
+    "revision/final_integration/behavioural_validity_table.tex": "defd2fbed0d8d11567b5dab7b15fcfec83651bae61f9e47a597bf3499044df6e",
+    "revision/final_integration/final_supplement_note.tex": "df928925529ce85b0177f56dec49a5b1a356ecfdcf65bd93d1c8560ceddada57",
+    "revision/final_integration/final_supplement_tables.tex": "448c3ad69913cbdf12b72a243108bf594c1668b0295a32343986b550399ac24c",
+    "revision/final_integration/si_order_final.pdf": "c23792a24025b3e9830cb8cdc15c0a7c206ecb8aa1380f61d5894cf595ebcdb6",
+    "revision/final_integration/si_readout_final.pdf": "0a84427abeef9e0db99685a14c9e8b2e21efd7c809cc010e02b0efeb40e27542",
+    "revision/final_integration/si_task_sequence_final.pdf": "df5cf8bd4ffc69354aef07be0c5ec2cdabba37c25491927dd8d4b28fe4b2e640",
+    "revision/final_integration/supplementary_consistency_tables.tex": "ba1221503605585ae3881863371652f6742784577288e355355be886178bd56a",
+    "revision/final_integration/w3_development_controls.tex": "cbaa8de39e616d00407a3f3849371ca6b8a052a8004b9eb21ff3b062ca24e360",
+    "revision/manuscript_20261120/followup_note.tex": "dff0d2e137d9c16e2f8d1b3fbd27bb3f1158a28c8762edd92d6ebec6ef00bc29",
+    "supplementary_ncs.tex": "4f1d77200ecf7d4e1711dd3d5b246ac1e3e466f4197eb129839d2fdd39e3d4a6"
+  },
+  "scope": "Current follow-up analyses, behavioral panel, objective/readout supplementary tables, mechanistic state arrays. Raw logit-lens and ancillary supplementary artwork are retained because per-query sources are unavailable; no fresh training is claimed."
+}

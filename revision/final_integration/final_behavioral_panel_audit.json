@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "created_utc": "2026-11-21T11:58:09.955259+00:00",
+  "source_hashes_before_and_after_match": {
+    "code/cliff/figures.py": "5a57e425bd5eef05c2696007d369b1327bee9b1fc8b211f754640cc1c86a44a7",
+    "code/results/exp1a_complete.csv": "fc8b1538c0fa3313c2714dbf201775619ec0242c047bf27bafcdb77f89652325",
+    "code/results/hosted_sweeps/hermes3_full.json": "1ac27f2a53a0955f1acb0ce37a60c608a79fe7276415881c8a57399b9d019391",
+    "code/results/hosted_sweeps/recipe_difference_gemma3_12b_it.json": "cf48718e601e3cdc2082a6236faa109b59f55ee1dc3d398ca7d183d06046c824",
+    "code/results/hosted_sweeps/recipe_difference_gemma3_27b_it.json": "b2505f11300da93e47b0d8376922c3044c9f500e085e31b5b6df058f5cd8157a",
+    "code/results/hosted_sweeps/recipe_difference_gemma3_4b_it.json": "3692b8af690ad1feca067352ab7626349755398f1d9f1c5330715e9995bea8ca",
+    "code/results/hosted_sweeps/recipe_difference_llama31_8b_instruct.json": "90c1d30a716cd702cc11a0ee8e82ac275189ff624fd14615e422569729dff915",
+    "code/results/hosted_sweeps/recipe_difference_qwen3_32b.json": "d95988d369d3bc2aa9162453bd698f20d6c9be0ae8e8e525c02b2793de12c5f4",
+    "code/results/interventions/remove_llama32_3b_early_t6_results.json": "72a02605038a3d97ae3322b9319ffa00b0e5b7db93a22ad8f259ebbacaf4a5bb"
+  },
+  "generator_sha256": "bed2f1f89ab2eec8c5530a18637c4676fbedec9cee2ff1b8e486b7e7d032c8d7",
+  "plotted_rows": 107,
+  "independent_loader_mean_and_raw_range_checks": 428,
+  "source_series_identical_to_original_figure1": true,
+  "uncertainty": {
+    "hosted_JSON": "min\u2013max of 3 recorded evaluation runs",
+    "self_hosted_Llama3_2_3B_JSON": "min\u2013max of 5 recorded evaluation runs",
+    "DeepSeek_CSV": "mean \u00b1 1 reported evaluation-run SD over 10 runs"
+  },
+  "no_inferred_query_training_or_bootstrap_intervals": true,
+  "no_new_experiments_or_original_file_changes": true,
+  "new_artifacts": {
+    "revision/final_integration/final_behavioral_panel_plotted_cells.csv": "df2b62f4e06a577ae9911f835a61608075c52b10eb1f5987a281b02e7e1b769b",
+    "figures/revision/final_behavioral_panel.pdf": "54ff393de235a88582761c9a87a93a53485bc929dee256f92d816cfd6b31151a",
+    "figures/revision/final_behavioral_panel.png": "7d2548c4188d649534c01c44f91af97bc85f6ecf3c8ffe8db15d1bf3af89a447"
+  }
+}

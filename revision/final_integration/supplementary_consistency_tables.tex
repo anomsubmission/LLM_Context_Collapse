@@ -1,0 +1,83 @@
+% Final descriptive protocol tables; numerical cells retained from generated source tables.
+\begingroup\color{blue}
+\begin{table}[t]
+\centering
+\color{blue}
+\caption{\textcolor{blue}{\textbf{Calibration protocols for the selected regional results.} All rows calibrate on ag\_news. Counts are recorded calibration examples and queries per evaluation draw. Draw counts are early/mid/late; -- denotes an unreported region. These are evaluation draws, not verified independently trained adapters. The descriptive panel uses whole-sequence language-model loss and nominal regions. Independently trained adapters with verified masks, optimizer updates and module targets are reported in Note~8.}}
+\label{stab:protocols}
+\footnotesize\color{blue}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrr}
+\toprule
+Checkpoint & Calibration $K$ & Calibration count & Queries & Evaluation $K$ & Draws (E/M/L) \\
+\midrule
+Llama-3.1-8B & 8 & 500 & 200 & 16 & 5/3/5 \\
+Llama-3.2-3B & 8 & 500 & 200 & 16 & 5/--/5 \\
+DeepSeek-7B-chat & 16 & 300 & 100 & 16 & 3/3/3 \\
+Mistral-7B & 32 & 500 & 200 & 32 & 3/3/3 \\
+InternLM2.5-7B & 64 & 100 & 100 & 64 & 3/3/3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+\endgroup
+
+\begingroup\color{blue}
+\begin{table}[t]
+\centering
+\color{blue}
+\caption{\textcolor{blue}{\textbf{Invalid output for every reported cell of Tables~\ref{stab:region} and~\ref{stab:crossfamily}.} Entries are the percentage invalid before $\to$ after adaptation at the selected $K$, pooling evaluation draws. $N$ gives the early/mid/late query--draw denominators; repeated queries across draws are not independent samples. -- denotes an unreported region. Total accuracy counts invalid output as incorrect; conditional accuracy has a selected denominator and does not remove that bias.}}
+\label{stab:validity}
+\footnotesize\color{blue}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrlrrr}
+\toprule
+Checkpoint / task & $K$ & $N$ (E/M/L) & Early (\%) & Mid (\%) & Late (\%) \\
+\midrule
+Llama-3.1-8B / ag\_news & 16 & 1000/600/1000 & $0\to 0$ & $0\to 0$ & $0\to 0$ \\
+Llama-3.1-8B / sst2 & 64 & 1000/--/1000 & $0\to 0$ & -- & $0\to 100$ \\
+Llama-3.1-8B / trec & 64 & 1000/--/1000 & $2.7\to 0$ & -- & $2.7\to 44.6$ \\
+Llama-3.2-3B / ag\_news & 16 & 1000/--/1000 & $0\to 0$ & -- & $0\to 0$ \\
+DeepSeek-7B-chat / ag\_news & 16 & 300/300/300 & $0\to 0$ & $0\to 1$ & $0\to 13.7$ \\
+Mistral-7B / ag\_news & 32 & 600/600/600 & $0\to 0$ & $0\to 0$ & $0\to 0$ \\
+InternLM2.5-7B / ag\_news & 64 & 300/300/300 & $0.3\to 0.7$ & $0.3\to 0.3$ & $0.3\to 0.3$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+\endgroup
+
+\begin{table}[t]
+\centering\color{blue}
+\caption{\textcolor{blue}{\textbf{Recovery, zero-shot change and specificity for selected regional cells.}
+All values are descriptive evaluation-draw means. $R$ is the change at selected K,
+$R(0)$ is the zero-shot change and $S=R-R(0)$. Positive S does not establish preservation.
+The SST2 late row reports total-accuracy change from entirely invalid outputs, not a
+semantic effect. The final row is the additional nominal four-block counterexample.
+Nominal targets and evaluation draws define the scope of this descriptive panel; protocol
+and invalidity counts are in Tables~\ref{stab:protocols} and~\ref{stab:validity}.}}
+\label{stab:components}
+\footnotesize
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llrrrrr}
+\toprule
+Checkpoint / task & Nominal region & K & Draws & $R(K)$ & $R(0)$ & $S(K)$ \\
+\midrule
+Llama-3.1 / ag\_news & early & 16 & 5 & $+0.581$ & $-0.010$ & $+0.591$ \\
+Llama-3.1 / ag\_news & middle & 16 & 3 & $+0.565$ & $+0.015$ & $+0.550$ \\
+Llama-3.1 / ag\_news & late & 16 & 5 & $+0.163$ & $+0.020$ & $+0.143$ \\
+Llama-3.1 / sst2 & early & 64 & 5 & $+0.316$ & $-0.040$ & $+0.356$ \\
+Llama-3.1 / sst2 & late & 64 & 5 & $-0.610$ & $+0.000$ & $-0.610$ \\
+Llama-3.1 / trec & early & 64 & 5 & $+0.213$ & $+0.055$ & $+0.158$ \\
+Llama-3.1 / trec & late & 64 & 5 & $-0.105$ & $+0.015$ & $-0.120$ \\
+Llama-3.2 / ag\_news & early & 16 & 5 & $+0.581$ & $+0.145$ & $+0.436$ \\
+Llama-3.2 / ag\_news & late & 16 & 5 & $+0.000$ & $+0.125$ & $-0.125$ \\
+DeepSeek-7B / ag\_news & early & 16 & 3 & $+0.423$ & $+0.230$ & $+0.193$ \\
+DeepSeek-7B / ag\_news & middle & 16 & 3 & $+0.423$ & $+0.080$ & $+0.343$ \\
+DeepSeek-7B / ag\_news & late & 16 & 3 & $+0.180$ & $-0.280$ & $+0.460$ \\
+Mistral-7B / ag\_news & early & 32 & 3 & $+0.390$ & $+0.035$ & $+0.355$ \\
+Mistral-7B / ag\_news & middle & 32 & 3 & $+0.390$ & $+0.130$ & $+0.260$ \\
+Mistral-7B / ag\_news & late & 32 & 3 & $+0.330$ & $+0.085$ & $+0.245$ \\
+InternLM2.5 / ag\_news & early & 64 & 3 & $-0.017$ & $+0.010$ & $-0.027$ \\
+InternLM2.5 / ag\_news & middle & 64 & 3 & $+0.157$ & $+0.030$ & $+0.127$ \\
+InternLM2.5 / ag\_news & late & 64 & 3 & $+0.073$ & $+0.010$ & $+0.063$ \\
+Llama-3.1 / ag\_news & blocks 0--3 & 16 & 3 & $+0.407$ & $-0.165$ & $+0.572$ \\
+\bottomrule\end{tabular}\end{adjustbox}\end{table}

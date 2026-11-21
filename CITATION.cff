@@ -1,19 +1,18 @@
 cff-version: 1.2.0
-message: "If you use this code or the archived results, please cite the paper."
-title: "Localizing and repairing the in-context cliff: a complementary learning systems account of fast and slow learning in large language models"
+message: "If you use this code or the results, please cite the paper."
+title: "Characterizing and mitigating the in-context cliff: a complementary learning systems perspective on fast and slow learning in large language models"
 abstract: >-
-  Many-shot in-context learning is not monotone: for some models accuracy collapses once
-  demonstrations exceed a threshold -- the in-context cliff. Vulnerability is set by the
-  post-training recipe rather than by scale or architecture, and the failure localizes
-  causally to transformer blocks 8-15 by three independent methods (function-vector
-  causal tracing, induction-head scoring, and targeted LoRA consolidation): consolidation
-  restricted to that band repairs the cliff, while the same intervention at the late
-  readout does not. Framed as a complementary learning systems account, with in-context
-  learning as the hippocampal fast path and fine-tuning as neocortical consolidation.
+  Reproducible measurements and analyses of many-shot classification, common-prompt
+  likelihood and output compliance, released post-training stages, count/length
+  controls, state transfer and regional adaptation. All completed final outcomes
+  are retained, including null and adverse results. Whole-prompt regional adaptation
+  can damage zero-shot output compliance and does not localize the original deficit.
+  Contextual query-label training is evaluated separately from whole-prompt training.
+version: 2.0.0
 authors:
   - family-names: Rostami
     given-names: Mohammad
-repository-code: "https://github.com/rostami-m/LLM_Context_Collapse"
+repository-code: "https://github.com/anomsubmission/LLM_Context_Collapse"
 license: MIT
 type: software
 keywords:

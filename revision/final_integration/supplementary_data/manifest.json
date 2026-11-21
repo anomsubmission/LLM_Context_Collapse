@@ -1,0 +1,156 @@
+{
+  "training_accuracy_by_block.csv": {
+    "source": "revision/four_day_revision/analysis/generation_20261106T032614Z/results/accuracy_by_block.csv",
+    "source_sha256": "005e43d73941ff416b9aa374b68ee4c0ddfd5d34469047e7f12902cf8e2be687",
+    "export_sha256": "005e43d73941ff416b9aa374b68ee4c0ddfd5d34469047e7f12902cf8e2be687",
+    "selected_fields": null
+  },
+  "training_contrasts.csv": {
+    "source": "revision/four_day_revision/analysis/generation_20261106T032614Z/results/prespecified_contrasts.csv",
+    "source_sha256": "ad26910e80bb93ee11ac20a4b0ef3479806af0e3915c06ba9310782f13c94ab9",
+    "export_sha256": "ad26910e80bb93ee11ac20a4b0ef3479806af0e3915c06ba9310782f13c94ab9",
+    "selected_fields": null
+  },
+  "training_confusions_by_block.csv": {
+    "source": "revision/four_day_revision/analysis/generation_20261106T032614Z/results/confusion_by_block.csv",
+    "source_sha256": "5656e4af9a6ea6ad13b37f4f16c9ea510ade3b9dbc21e77b841dfbcf9f89fd70",
+    "export_sha256": "5656e4af9a6ea6ad13b37f4f16c9ea510ade3b9dbc21e77b841dfbcf9f89fd70",
+    "selected_fields": null
+  },
+  "whole_prompt_development_curves.csv": {
+    "source": "revision/four_day_revision/analysis/full_curves_20261106T230638Z/results/curves.csv",
+    "source_sha256": "dc9ccba5b0b71b6ce1490e8b2df66645236b43f518ef0a049e706c443931a8d7",
+    "export_sha256": "dc9ccba5b0b71b6ce1490e8b2df66645236b43f518ef0a049e706c443931a8d7",
+    "selected_fields": null
+  },
+  "untreated_readouts.json": {
+    "source": "revision/four_day_revision/analysis/scoring_readouts_20261106T143206Z/base_results/analysis.json",
+    "source_sha256": "72c0e06326db19d7cc49389f7af7ec6917d2f63e34956ccf27eed781a8ee6ece",
+    "export_sha256": "4687810bb47f509f5a28ca584307c45ecba2f90a72b71449f8de53f4368e2561",
+    "selected_fields": [
+      "cells",
+      "contrasts",
+      "confusions",
+      "bootstrap_policy"
+    ]
+  },
+  "whole_prompt_readouts.json": {
+    "source": "revision/four_day_revision/analysis/scoring_readouts_20261106T143206Z/joint_results/analysis.json",
+    "source_sha256": "f26fc1e879ca8cd867e844d0634be5effe2f0a1f48ce89443147aa86570b816d",
+    "export_sha256": "e729ea50ade2be1536a1caf61f1b38a7d694b80d1574c3bf33f288a9a32616cf",
+    "selected_fields": [
+      "A_cells",
+      "contrasts",
+      "bootstrap_policy",
+      "interpretation_limits"
+    ]
+  },
+  "checkpoint_formats.json": {
+    "source": "revision/four_day_revision/analysis/format_transfer_20261106T230827Z/execution/format_comparison_results/analysis.json",
+    "source_sha256": "91066afd4406a6efb5ea7d1a0d8d7ab20365eec639d29d753f17a365b5e858a0",
+    "export_sha256": "99dd3e5ccde90db9496bcfaf21ce3a5fbe092ef9b806f58812820f179ca96f79",
+    "selected_fields": [
+      "cells",
+      "each_draw",
+      "confusions",
+      "contrasts",
+      "paired_transitions",
+      "bootstrap",
+      "limits"
+    ]
+  },
+  "sst2_transfer.json": {
+    "source": "revision/four_day_revision/analysis/format_transfer_20261106T230827Z/execution/transfer_results/analysis.json",
+    "source_sha256": "d87815f1b707567093eebc37bf97ab8128f099020251a567d3b84459413b1f9e",
+    "export_sha256": "26e574fe68bc33b387089ec7f62c5367260046d96c618898b9a83d9feaca7e5b",
+    "selected_fields": [
+      "cells",
+      "each_draw",
+      "confusions",
+      "contrasts",
+      "paired_transitions",
+      "bootstrap",
+      "limits"
+    ]
+  },
+  "whole_prompt_development_analysis.json": {
+    "source": "revision/four_day_revision/analysis/full_curves_20261106T230638Z/results/analysis.json",
+    "source_sha256": "36fb683c1c4175bd4faa309a49b00273805be7b82449504b9cfc0cf7e1b0cb82",
+    "export_sha256": "fae15453f70a71d43e23ea764c7d7a35fe3c911d2daaa41bc986ebacae239f37",
+    "selected_fields": [
+      "cells",
+      "contrasts",
+      "scope",
+      "bootstrap",
+      "limits"
+    ]
+  },
+  "behavioural_500_queries.json": {
+    "source": "revision/w2_confirmation_completion/20261104T141837Z/independent_audit.json",
+    "source_sha256": "99f18f324e32ee017e47b36b6a074c51e311e413a6a0edce853a001f65bfc6ef",
+    "export_sha256": "095a20652001eae2071bc033543ea02d9e21e7f9ad1f6c2358248d50ea670235",
+    "selected_fields": [
+      "n_queries",
+      "demonstration_draws",
+      "query_label_counts",
+      "strict_invalid_total",
+      "curve",
+      "primary_contrast",
+      "limitations"
+    ]
+  },
+  "w3_condition_curves.csv": {
+    "source": "revision/generated/w3_condition_curves.csv",
+    "source_sha256": "4ddccbf9fb636c863445c54ee5c8d65f8b676cb56578d12c5cbfa05cf49e9665",
+    "export_sha256": "4ddccbf9fb636c863445c54ee5c8d65f8b676cb56578d12c5cbfa05cf49e9665",
+    "selected_fields": null
+  },
+  "w3_label_marginals.csv": {
+    "source": "revision/generated/w3_label_marginals.csv",
+    "source_sha256": "0397f4cc5117837aebe6d0f332b0845d101fbe1153d93fff455f954affd6cc55",
+    "export_sha256": "0397f4cc5117837aebe6d0f332b0845d101fbe1153d93fff455f954affd6cc55",
+    "selected_fields": null
+  },
+  "w3_confusions.csv": {
+    "source": "revision/generated/w3_confusions.csv",
+    "source_sha256": "95641dd81738f6fa4c4b18bdd92e6556b3cb616f3c5da42782976d7bde9d5f6d",
+    "export_sha256": "95641dd81738f6fa4c4b18bdd92e6556b3cb616f3c5da42782976d7bde9d5f6d",
+    "selected_fields": null
+  },
+  "w3_paired_effects.csv": {
+    "source": "revision/generated/w3_paired_effects.csv",
+    "source_sha256": "7c130f384c80a3545c2d96ef0ae37c254ec8de5cc6196efe265999765790f9bb",
+    "export_sha256": "7c130f384c80a3545c2d96ef0ae37c254ec8de5cc6196efe265999765790f9bb",
+    "selected_fields": null
+  },
+  "final_protocol_manifest.json": {
+    "source": "revision/final_integration/final_protocol_manifest.json",
+    "source_sha256": "57d3c9a9ec2fbc22b15353f2a65de8e4e8afea5386ceea91f49066e6b7a7a743",
+    "export_sha256": "57d3c9a9ec2fbc22b15353f2a65de8e4e8afea5386ceea91f49066e6b7a7a743",
+    "selected_fields": null
+  },
+  "final_behavioral_panel_plotted_cells.csv": {
+    "source": "revision/final_integration/final_behavioral_panel_plotted_cells.csv",
+    "source_sha256": "df2b62f4e06a577ae9911f835a61608075c52b10eb1f5987a281b02e7e1b769b",
+    "export_sha256": "df2b62f4e06a577ae9911f835a61608075c52b10eb1f5987a281b02e7e1b769b",
+    "selected_fields": null
+  },
+  "generate_final_supplement.py": {
+    "source": "revision/final_integration/generate_final_supplement.py",
+    "source_sha256": "86fd5f69c98e0550105e9870815521f30a174758d2e8fedcf1caee67ab9d6523",
+    "export_sha256": "86fd5f69c98e0550105e9870815521f30a174758d2e8fedcf1caee67ab9d6523",
+    "selected_fields": null
+  },
+  "generate_final_behavioral_panel.py": {
+    "source": "revision/final_integration/generate_final_behavioral_panel.py",
+    "source_sha256": "bed2f1f89ab2eec8c5530a18637c4676fbedec9cee2ff1b8e486b7e7d032c8d7",
+    "export_sha256": "bed2f1f89ab2eec8c5530a18637c4676fbedec9cee2ff1b8e486b7e7d032c8d7",
+    "selected_fields": null
+  },
+  "independent_final_evidence_audit.py": {
+    "source": "revision/final_integration/independent_final_evidence_audit.py",
+    "source_sha256": "3c5a9e359e7eb90b74b7b98ca71ef778e1713925f4300fc762c750e3311b1188",
+    "export_sha256": "3c5a9e359e7eb90b74b7b98ca71ef778e1713925f4300fc762c750e3311b1188",
+    "selected_fields": null
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "source_pdf": "figures/revision/archive_mechanistic_readouts.pdf",
+  "source_sha256": "4c0befc616141b6447bb8f61eb498b043cc9d3a20544242616452f9a3f1ac70e",
+  "target_pdf": "figures/revision/final_mechanistic_readouts.pdf",
+  "target_sha256": "67cf811601bba82551af5280f4a66de3740f699160a14334c39f3a50967c9e59",
+  "old_legend": "archived K=16",
+  "new_legend": "K=16 reference",
+  "original_text_origin": [
+    65.79086303710938,
+    487.43914794921875
+  ],
+  "original_font_size": 7.0,
+  "font": "DejaVu Sans",
+  "all_non_target_text_spans_and_geometry_unchanged": true,
+  "all_non_target_numeric_spans_and_geometry_unchanged": true,
+  "changed_legend_preserves_K16_value": true,
+  "page_geometry_unchanged": true,
+  "pdf_remains_vector": true,
+  "rendered_pixels_unchanged_outside_edited_legend_at_3x": true,
+  "edited_pixel_count_at_3x": 3024,
+  "source_asset_not_modified": true,
+  "generator_sha256": "fd85b30a01a988cdf9fb3658a380c011b429938fb55f1df412ca36484ab337cd"
+}

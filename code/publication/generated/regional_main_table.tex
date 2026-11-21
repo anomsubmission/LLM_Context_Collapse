@@ -1,0 +1,24 @@
+\begin{table}[htbp]\centering\color{blue}\footnotesize
+\caption{\textbf{Regional accuracy and output validity (\%).} Zero-shot and contextual endpoints on AG News: $K=16$ for Llama/DeepSeek, 32 for Mistral and 64 for InternLM. Means weight fits equally. Llama has three fits per band, others one; parents are shared untreated baselines. Invalid outputs count as incorrect. Three paired endpoint draws; zero-shot once per query/adapter. Query counts are 200 for Llama/Mistral and 100 for DeepSeek/InternLM. Whole-prompt supervision is used throughout; this is distinct from the query-label objective in Table~\ref{tab:controlled}.}
+\label{tab:recovery}
+\begin{tabular}{lrrrr}
+\toprule
+Model / band & $a(0)$ & $a(K)$ & Valid $0$ & Valid $K$ \\
+\midrule
+Llama-3.1 parent & 88.50 & 28.50 & 100.00 & 100.00 \\
+Llama-3.1 early & 0.33 & 87.28 & 0.67 & 100.00 \\
+Llama-3.1 middle & 1.00 & 85.22 & 1.00 & 100.00 \\
+Llama-3.1 late & 83.33 & 72.89 & 92.83 & 99.33 \\
+DeepSeek-7B parent & 34.00 & 54.33 & 36.00 & 97.33 \\
+DeepSeek-7B early & 32.00 & 85.33 & 94.00 & 100.00 \\
+DeepSeek-7B middle & 0.00 & 85.33 & 0.00 & 100.00 \\
+DeepSeek-7B late & 67.00 & 80.33 & 81.00 & 100.00 \\
+Mistral parent & 76.00 & 18.67 & 96.50 & 19.67 \\
+Mistral early & 0.00 & 91.17 & 0.00 & 100.00 \\
+Mistral middle & 11.50 & 90.33 & 12.00 & 100.00 \\
+Mistral late & 88.50 & 89.83 & 100.00 & 100.00 \\
+InternLM parent & 75.00 & 76.00 & 100.00 & 100.00 \\
+InternLM early & 74.00 & 0.33 & 89.00 & 0.67 \\
+InternLM middle & 1.00 & 0.00 & 1.00 & 0.00 \\
+InternLM late & 24.00 & 0.00 & 27.00 & 0.00 \\
+\bottomrule\end{tabular}\end{table}

@@ -1,0 +1,10 @@
+{
+  "revision/four_day_revision/analysis/generation_20261106T032614Z/results/accuracy_by_block.csv": "005e43d73941ff416b9aa374b68ee4c0ddfd5d34469047e7f12902cf8e2be687",
+  "revision/four_day_revision/analysis/generation_20261106T032614Z/results/prespecified_contrasts.csv": "ad26910e80bb93ee11ac20a4b0ef3479806af0e3915c06ba9310782f13c94ab9",
+  "revision/four_day_revision/analysis/scoring_readouts_20261106T143206Z/base_results/analysis.json": "72c0e06326db19d7cc49389f7af7ec6917d2f63e34956ccf27eed781a8ee6ece",
+  "revision/four_day_revision/analysis/scoring_readouts_20261106T143206Z/joint_results/analysis.json": "f26fc1e879ca8cd867e844d0634be5effe2f0a1f48ce89443147aa86570b816d",
+  "revision/four_day_revision/analysis/full_curves_20261106T230638Z/results/curves.csv": "dc9ccba5b0b71b6ce1490e8b2df66645236b43f518ef0a049e706c443931a8d7",
+  "revision/four_day_revision/analysis/format_transfer_20261106T230827Z/execution/format_comparison_results/analysis.json": "91066afd4406a6efb5ea7d1a0d8d7ab20365eec639d29d753f17a365b5e858a0",
+  "revision/four_day_revision/analysis/format_transfer_20261106T230827Z/execution/transfer_results/analysis.json": "d87815f1b707567093eebc37bf97ab8128f099020251a567d3b84459413b1f9e",
+  "revision/w2_confirmation_completion/20261104T141837Z/independent_audit.json": "99f18f324e32ee017e47b36b6a074c51e311e413a6a0edce853a001f65bfc6ef"
+}
