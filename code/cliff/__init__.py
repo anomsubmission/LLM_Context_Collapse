@@ -3,4 +3,4 @@
 The current publication interface lives in publication.reproduce and
 publication.rebuild. Frozen experiment snapshots preserve executed versions.
 """
-__version__ = "2.0.0"
+__version__ = "2.0.1"

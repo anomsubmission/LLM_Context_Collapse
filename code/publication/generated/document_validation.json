@@ -9,7 +9,7 @@
     "supplementary_ncs.tex": 26
   },
   "document_dependencies": {
-    "article_cac.tex": "edffd9811f53ce1987fd93f1af63a203268c2564038e2b527591e9ffac118eba",
+    "article_cac.tex": "4d0d1031da15148f289cff39eded6002a5bd420a3edfe556ccab88ce6fd3c289",
     "code/publication/generated/followup_tables.tex": "5917456cff504db1a7ff8f1f7d04c8fb2c85c4b121ac32cbc030ed3a769b9587",
     "code/publication/generated/regional_main_table.tex": "4fa78c382060f22b6e7f4c864efe2f2ba69085fa547dcf375ba77526f9e74250",
     "code/publication/generated/regional_tradeoffs.pdf": "2e45f0b41f7b7ffea0b18f9a3978ddcd0b7f3b0a71e6726a98c03aaa6ca8ac46",
@@ -27,7 +27,7 @@
     "revision/final_integration/si_task_sequence_final.pdf": "df5cf8bd4ffc69354aef07be0c5ec2cdabba37c25491927dd8d4b28fe4b2e640",
     "revision/final_integration/supplementary_consistency_tables.tex": "ba1221503605585ae3881863371652f6742784577288e355355be886178bd56a",
     "revision/final_integration/w3_development_controls.tex": "cbaa8de39e616d00407a3f3849371ca6b8a052a8004b9eb21ff3b062ca24e360",
-    "revision/manuscript_20261120/followup_note.tex": "dff0d2e137d9c16e2f8d1b3fbd27bb3f1158a28c8762edd92d6ebec6ef00bc29",
+    "revision/manuscript_20261120/followup_note.tex": "4a953c9e1e79eea4d04b054a50b6fc420d202c8bda6a9276a7d53ba4509367d0",
     "supplementary_ncs.tex": "4f1d77200ecf7d4e1711dd3d5b246ac1e3e466f4197eb129839d2fdd39e3d4a6"
   },
   "scope": "Current follow-up analyses, behavioral panel, objective/readout supplementary tables, mechanistic state arrays. Raw logit-lens and ancillary supplementary artwork are retained because per-query sources are unavailable; no fresh training is claimed."

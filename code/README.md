@@ -45,15 +45,24 @@ they are not evidence for the verified regional cohort's targeting or a causal
 failure locus. Null and adverse scientific records are never filtered by outcome.
 
 Reanalysis of saved measurements is distinct from fresh model inference/training.
-The frozen execution configurations and source snapshots accompany the project;
-model payloads, licenses/access and a compatible accelerator are required for fresh
-execution. Numerical identity across different hardware is not promised. Llama-3.2
+The [scientific runtime](../runtime/README.md) supplies authenticated execution
+sources, exact registered inputs and isolated job preparation for the completed
+G1–G6 configurations. Model payloads, licenses/access and a compatible accelerator
+are required for fresh execution. Numerical identity across different hardware is not promised. Llama-3.2
 regional results and the hosted DeepSeek-V3.2 zero-shot extension are unavailable.
 No current command silently schedules either measurement or substitutes another
 checkpoint. Local DeepSeek-7B is a different model.
 
-The source implementation in `cliff/` supports the recorded experiments; its broad
-research drivers are not the publication reproduction interface. Historical
-operational queues, draft reports, caches and superseded manuscript copies are
-excluded from the clean submission package. Immutable experiment and audit records
-remain in the working research archive.
+`cliff/` in this analysis package contains figure/record utilities. The experiment
+implementation is under `../runtime/sources/`, with an explicit source-hash
+manifest. `publication.experiments` prepares a new workspace and runs only a
+requested registered job. Operational queues, caches and private correspondence
+are excluded.
+
+`data/regional_training_audits.json.gz` contains all 18 full regional training and
+exact-reload audits. Machine-specific adapter paths are replaced with relative
+paths; scientific fields and original audit hashes are retained. Summary
+calibration counts are checked against registered examples and tokenized training
+sequence counts. Zero-shot mean rows report one observed demonstration draw;
+paired contrast computations may broadcast that shared baseline across the
+endpoint draw axis without increasing its observed sample size.

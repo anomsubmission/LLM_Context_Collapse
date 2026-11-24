@@ -15,19 +15,20 @@
     "Hosted DeepSeek-V3.2 zero-shot"
   ],
   "files": {
-    "adapter_audit.json": "c2bf00e6bc92a809b04e3585c768fdb020afb1dd51100331a61436ebec7dfce3",
-    "checkpoint_reference.csv": "fb652cf3a14f09fd12946765a5cf66007a92e4203a4bbe20cb0a1e7a52951085",
+    "adapter_audit.json": "f700d3af9a8fceedf4dc659570299234a60c0e2a93a73326c8db133c3c3b59d3",
+    "checkpoint_reference.csv": "94a64b75e24c269d69c175d2635451f4f19a347baa9502686240b2d8e3c8ca7b",
     "complete_inventory.csv": "4b1eadd781d5f6f296001c48da9542b65549a7904b270d88b259288fc85af59c",
     "configs.json": "ddfc940c3891d24c07aa409943c7cda4000e137672d7fb071a0081eb715411db",
     "curve_coverage.csv": "1f3583fdeb61d4415dd3677c09d793d5b2eef366d1db16eba08679dc93e88e65",
     "evidence_admission.json": "de964b62c3dc89609805f7ff7e4234b6b30e5925538959c704f49d7c9c52475d",
     "language.json": "d44acabd03e144d8a45fb2f7dd4dba7ca9f8d5890eb059a1449a37c3e2f6e9a4",
     "measurements.jsonl.gz": "a534275edda2ca18aebc263bbcd3b7d70e45d7431a7bba1d21d6ba19c53b12ca",
-    "paired_reference.csv": "45deef985e04ea7c0f2eedd3041817879a668e5228d0ce44cf84d150262d4e2e",
+    "paired_reference.csv": "91658495c1efa8b9d2e21e20b35ade8bd1a680c1fe0d1829ac274ca748fc387d",
     "protocol_companions.json.gz": "39c50af020754a5acc5997e9d65d4a09bf636ffa478cb33b4a5e1252f002f11d",
     "protocol_source_hashes.json": "e850929a003135ba5170a8ee81dce2376f1eb95415e63de93b6ac35ef046a84d",
     "query_orders.json": "a522e8e1b68c634e0bda2c2ac7a3008f399e4869430b4aab1876b839c3ff03a0",
     "regional_reference.csv": "a59b4633d165a095b969853d5a221e95d76c2674a010881f4f260f9ae07baf99",
+    "regional_training_audits.json.gz": "5da115f044a477153820d40e19a54aab468845d32a6fca30d1630a7d6860340e",
     "source_hashes.json": "9e5d6bce149aa8dc56b370a7da1ef96ff14bd114de7d27ad0b6010b5e756cbab",
     "weight_distances.csv": "b5efc3d378e0732c34787d35ee121fdd9044c050420827f34eb5ca5f61e9bffe"
   },

@@ -1,0 +1,2875 @@
+{
+  "schema": 1,
+  "scope": "Authenticated scientific runtime subset and exact registered inputs for the completed G1\u2013G6 panels. Fresh execution uses a new workspace and new execution manifests; original source hashes and scientific configurations are preserved.",
+  "original_freezes": "code/publication/data/protocol_companions.json.gz",
+  "sources": {
+    "code/cliff/__init__.py": "21d114451ce64868ccd91923c4ccb7fe19626a98cc2191deb5faeb368a985564",
+    "code/cliff/backends/__init__.py": "ce0795156eb09e748f199384dccc3e3433021c9819836c4720e0d55ced50dcd0",
+    "code/cliff/backends/base.py": "998fc236443840f84898302fffed84e06b566a9d954a959e881872ab1a0dc503",
+    "code/cliff/backends/echo.py": "9e37cbfbe81e85e7b23147063777093b0cb368dc0c952e835c9ae0cae24ddfa6",
+    "code/cliff/backends/hf_local.py": "94def8560be2d7d9c9b689ed6230aa6c2ec4516be5735a03979011e79f579c95",
+    "code/cliff/backends/openai_compat.py": "2da2537db17f2fc5c70b185bb45d215b88832e8104a07285968c3b0d06aa1097",
+    "code/cliff/data.py": "a49c29f24d525610578962aa79bbee760498044c1a907e48c4e8f67a0f3e8986",
+    "code/cliff/experiments/__init__.py": "cabaae0640e2540de25c8215d350364571e561edabf3711ba9677d87d4b458b1",
+    "code/cliff/experiments/behavioural.py": "0b784fcade48d4545323cce7d3bd6f8a832bac6d30488d91acdace43aa49a6b0",
+    "code/cliff/experiments/intervention.py": "2d00bc50a8df7593eee4ac5775e05ef0f414fc18717c38fa923f784a19eaee59",
+    "code/cliff/experiments/revision_adapter_eval.py": "9155b4d01e85ad8541b2daaa6043ed1c6a73077c50e46c520a44b695c2da07db",
+    "code/cliff/experiments/revision_behaviour.py": "435069a98fce00398fdf4ee4bdfc43879fae9f31b4f674609d3e9210737a9606",
+    "code/cliff/experiments/revision_causal.py": "db0867204cda6be381bd9cd7df9975a52ae5d3459d1c71537fd3bd2843ce9765",
+    "code/cliff/paths.py": "1721a3e91e1fd53e3bad4d0bc2db765a1d14efea56be024862be045bbf163a46",
+    "code/cliff/prompting.py": "b3c0c50a5e830c670486a4533fd7a7d660b648abf0d717f4f699134354e3d1b1",
+    "code/cliff/revision_metrics.py": "cb81326843b55e5673433220e1711fcb3da2fd937a6c8c65adbf0d4f689892dd",
+    "code/cliff/revision_parameter_matching.py": "bf7c19db9fc940cf31ca7799446c6ccddc3c6318b37899689aea2d5dca46e34c",
+    "code/cliff/revision_records.py": "d54aba62b3160255532b34d5b68ebfc6b407e99eeb9fcf74b0c6c92bdb23ffff",
+    "code/cliff/revision_runtime.py": "e51fd65de028c5807584d49f39dc101c86d68b9192bd18f562ea4b1346bbdd07",
+    "code/cliff/revision_target_contract.py": "bcf521da6467a1bc9c23b6703c1d200e10b7e21f480f5952306d6ee42f53300c",
+    "revision/followup_20261116/runtime/common_readout.py": "8ea29ff08c3a90c794a3543b5a047acf86f90e359ebe01955cefce30846b706e",
+    "revision/four_day_revision/runtime/focused_scoring.py": "dbbdfa211b19124380682c7532cc81a4617ac657ddce7901c6990246b6ccc752",
+    "revision/remaining_20261116/runtime/length.py": "e59100a9ec10f35688441217c799ad6d63c5c2d6ca4bc4e6992ba345767953ea",
+    "revision/remaining_20261116/runtime/patching.py": "89cc8a2d3db3284903a4e9677f582e5201c33f4af00dbde3aa519567b7e9df25",
+    "revision/remaining_20261116/runtime/regional.py": "5b801f02d57cb48ce2efab8b472c0b1c540e345ba9ef1c192f56e00ac5f246ed",
+    "revision/remaining_20261116/runtime/shared.py": "6f2498132c1c6f06a0c2e583875ca916b26128b788adf4589e319aad63abbe22",
+    "revision/remaining_20261116/runtime/splice.py": "0fa6476a2936ae82eb0dc0f8c94a4f0767e15b3b359f2ccd18c09fe2692028c5"
+  },
+  "registrations": {
+    "revision/followup_20261116/registration/base_final.json": "8c1d1b05aed35147dbd1749d55749a91df30360203b4a9153431807cda276767",
+    "revision/followup_20261116/registration/base_pilot.json": "df7aa57b238d6e74e67f6128349825716e4b659761250833a4c25ef760d7eec0",
+    "revision/followup_20261116/registration/hermes_final.json": "8c766d43cdc0707b70dd6b26c67830f6be630414fc5213cef24576d7ae42dc47",
+    "revision/followup_20261116/registration/hermes_pilot.json": "08cb8477e1f7c86d0ee2dfc549678726325e5be42b2a63ff66ba8d39eb8c2029",
+    "revision/followup_20261116/registration/inputs.json": "ecfb7be0636bc0b5141d31c59a47fdb1fb01d422ec297319bc6a4cd46ada8e43",
+    "revision/followup_20261116/registration/instruct_final.json": "06558df77dc3cbc131dbf2ccd2832ac08fbf2c649826f2c85e80e4c8c3b2323a",
+    "revision/followup_20261116/registration/instruct_pilot.json": "bebb5e6f87f8bfbc81f9aa48883d28fe05a2c81d71551e4e55d36ed538a211d4",
+    "revision/followup_20261116/registration/tulu_dpo_final.json": "5ab4eea89f8ce075358a6dc28dfc5a187e15d4f274ba27200397591d089e6f5e",
+    "revision/followup_20261116/registration/tulu_dpo_pilot.json": "4bedf77a0967d6b31a38a107898a9fd7e82ec27d4a01821667cf9aceb4d0dd69",
+    "revision/followup_20261116/registration/tulu_final_final.json": "c88f4f565b5494f1193bf0b075445e38cf89b181008f24dcf6be42b2c40b8280",
+    "revision/followup_20261116/registration/tulu_final_pilot.json": "c3123d14fa1a442406777e927e02d1a6066c03e31c92e8fac1e0e632001cd20d",
+    "revision/followup_20261116/registration/tulu_sft_final.json": "f0d28d7f48d3879b27544e80c700a9730ba5c5bae1cf2ca568d7acf92c6dabab",
+    "revision/followup_20261116/registration/tulu_sft_pilot.json": "94ca66279d59f2200c24c480dd50e58f782ea5f23d0b77989691333067508d0b",
+    "revision/remaining_20261116/registration/G3_final.json": "e2787fdb891a4ce76944d4513125d4685fe88688fe01d5516a772a6fc4907f93",
+    "revision/remaining_20261116/registration/G3_pilot.json": "2bbf81081f35319ae627dda2b1367eb3d6ed3de1503de5e1c6a57643a78fef2c",
+    "revision/remaining_20261116/registration/G4_final.json": "c08f7e864ef4a0c3e37f7d80afb18fe33e0c83a135ab2b70ea09476c5313164a",
+    "revision/remaining_20261116/registration/G4_pilot.json": "a6ce7e93398fb71408c15d54d645cd5fda96ef828a06597377d97d799d5143ed",
+    "revision/remaining_20261116/registration/G5_hermes_early_final.json": "4fa16653ea4e009cb3b28469ae47baa2cedb1f36aab87d869cc0e36bc043bf32",
+    "revision/remaining_20261116/registration/G5_hermes_early_pilot.json": "28cd29ec948ca7dd7caa4c326ed0754b432278cff7b93400ffdfd3bd3353821e",
+    "revision/remaining_20261116/registration/G5_hermes_late_final.json": "4216fb026ff22fd509782c2e7eebed57455b83781b8c692828b24f5c32c83332",
+    "revision/remaining_20261116/registration/G5_hermes_late_pilot.json": "8ad57198884e8be1d5a30f2424ff1edac3b667f631f50cc54372bce9e648ae9b",
+    "revision/remaining_20261116/registration/G5_hermes_middle_final.json": "11efef487c44210b9308671c55ec736f1e65c5edeebd495a76b5e1477141c25d",
+    "revision/remaining_20261116/registration/G5_hermes_middle_pilot.json": "74e57b860c737f4ca48c341e3fadf0d53066d85eb707d65bf13536a00507b4a3",
+    "revision/remaining_20261116/registration/G5_hermes_parent_final.json": "61b2588f3d9b369c1f7db864f9d85d0b09fa61bbf407d275b4fdccea142b6dd1",
+    "revision/remaining_20261116/registration/G5_hermes_parent_pilot.json": "5deb7a8d46a5996ecd61a63e63f05b269d2312e2fe67f8ee35e2ddc82e515b93",
+    "revision/remaining_20261116/registration/G5_instruct_early_final.json": "7f145a59cd8d5422ed685ccad8f14a5fc4a9c2d141850d5c3e38d2cd25eccdea",
+    "revision/remaining_20261116/registration/G5_instruct_early_pilot.json": "d75ba4617d3ade47b778fb5cb4a14d73f72921a675fc8825af0beddeb081b767",
+    "revision/remaining_20261116/registration/G5_instruct_late_final.json": "dca8975b0564386e4f0be161eb0275e26227db01b9f740c8742fff180282b1f0",
+    "revision/remaining_20261116/registration/G5_instruct_late_pilot.json": "8ad3864dc8d7ef1e2737ecb902b6acf487f078808bfc3d0279a31a66de46d02b",
+    "revision/remaining_20261116/registration/G5_instruct_middle_final.json": "9396662c10518c770e10d9bde946b7dbba98f506e90704526fdddb3091d28b19",
+    "revision/remaining_20261116/registration/G5_instruct_middle_pilot.json": "db734fec83b2e468fa1c0813505af3e9c2d46093ca6a0e389f9803c422044520",
+    "revision/remaining_20261116/registration/G5_instruct_parent_final.json": "6e545e81178b9343257f0ea29e79a76ffb5b07ea74c06b305f33d3089271a3b8",
+    "revision/remaining_20261116/registration/G5_instruct_parent_pilot.json": "33b743ebdd9a786667791e431478cd29a27268a0ab03dd20a232f27ee01a4092",
+    "revision/remaining_20261116/registration/G6_deepseek7b_early_s0.json": "2cf1be0904e8357b35693b5bc156bdabbd872f4e849c64699b5bb3d8d88eb36a",
+    "revision/remaining_20261116/registration/G6_deepseek7b_late_s0.json": "0164f61afe470444bbe3ec57a369a2607971aeab1f51fd9cb18cc924aae85c1c",
+    "revision/remaining_20261116/registration/G6_deepseek7b_middle_s0.json": "e3a1ed4d712b9a1f5803fa8883bc3cdaca26b8228e4b731f807523ac979ae9c2",
+    "revision/remaining_20261116/registration/G6_deepseek7b_parent.json": "7d7d60eb31573d5544574c05278ee8f3b7ea4f746a62ecdef53b46164156be89",
+    "revision/remaining_20261116/registration/G6_deepseek7b_pilot.json": "e64cdc84b93f22dc046d2c9b7380213c42c9f7cbb86bf7f0bafa3ba5fee25034",
+    "revision/remaining_20261116/registration/G6_internlm25_early_s0.json": "7af7e6053de84ec31bab1857cfd176a48c0f7d02c8dc51eea2c297459df401b0",
+    "revision/remaining_20261116/registration/G6_internlm25_late_s0.json": "a1715b88311c11430b61a74856ad6c9c198200be90fa845231f5ef233b754e30",
+    "revision/remaining_20261116/registration/G6_internlm25_middle_s0.json": "930de0cf564123bc8ddd152986c72fec093b88654786782a8a5b92ebe4c1bfaa",
+    "revision/remaining_20261116/registration/G6_internlm25_parent.json": "2cf1646c7468930c2426d59d261f4a28b1716282b87e3cf1ef13ac8e8187fb0a",
+    "revision/remaining_20261116/registration/G6_internlm25_pilot.json": "fcd34d93fbe131af5ede7e9b06a8e84c1e6407f115cec79275c259133cb39568",
+    "revision/remaining_20261116/registration/G6_llama31_early_s0.json": "4bc6e70a565ae6daca64c9747585d4ffdfb5425a740fd03c2ab19b6763947119",
+    "revision/remaining_20261116/registration/G6_llama31_early_s1.json": "1ac792611547eb2316416bf86e1f65a8ff5a386bc60c17d0fd50e96c141f9dd6",
+    "revision/remaining_20261116/registration/G6_llama31_early_s2.json": "847904f0cbc8cacfb636c66c8220c488c321cc4828ca4321e1359469aaac4b12",
+    "revision/remaining_20261116/registration/G6_llama31_late_s0.json": "e2ef3f3391a80d76d75f57c7a99df1f7c41b251a46902294a6b6741ee0c94630",
+    "revision/remaining_20261116/registration/G6_llama31_late_s1.json": "c2f459559cea96c03946acdbb77cbf43f0f0a505add30985e6f7099631fcb60f",
+    "revision/remaining_20261116/registration/G6_llama31_late_s2.json": "bc34c453511d6dc0acc58d74d793709ec5025ba6885a80aa1878ca39be88921a",
+    "revision/remaining_20261116/registration/G6_llama31_middle_s0.json": "b77383c14a144d16acec86faef1a3c182c61a6654d21fe34457594a414072ed1",
+    "revision/remaining_20261116/registration/G6_llama31_middle_s1.json": "90ac1cf4312d4c7b7d951b390f7531d0778ec7ccef19fa2cfd1ddfeaf4946bae",
+    "revision/remaining_20261116/registration/G6_llama31_middle_s2.json": "bc9ebbcbe75ac58275652ad795a05ebc002a9d1b629b8e640d4f0a4d10690a68",
+    "revision/remaining_20261116/registration/G6_llama31_parent.json": "c8cda7a997fc9ac3a1b05fff9ac749147ebccef101cd0aedba0e2f5c2b56c4c4",
+    "revision/remaining_20261116/registration/G6_llama31_pilot.json": "0e0adc525071990fd5cd43354be585dc0d2ccfa4ceebb8506927d28270423007",
+    "revision/remaining_20261116/registration/G6_mistral7b_early_s0.json": "3e62d7198c2c7a5f9ca4accb0a003446db52a7a2b62b0e58a0f7150a193e8c47",
+    "revision/remaining_20261116/registration/G6_mistral7b_late_s0.json": "f523b9f3b156137ba4f3ebc1e253d08fd1eb0048fa1c7aa2ad2a61b5e57054af",
+    "revision/remaining_20261116/registration/G6_mistral7b_middle_s0.json": "b3877f03b19042348831b25471b85eef15db827256bb3ee946275d2e0fbb9e17",
+    "revision/remaining_20261116/registration/G6_mistral7b_parent.json": "39276f078d91a76f7bf3107b4c3d27bd9adedb9a548b457cd476c651fd18843b",
+    "revision/remaining_20261116/registration/G6_mistral7b_pilot.json": "3a4156b6b06c70647368be3fed1ab1536b30c032027dd1293a12c76ad5e4c27d",
+    "revision/remaining_20261116/registration/inputs.json": "ecfb7be0636bc0b5141d31c59a47fdb1fb01d422ec297319bc6a4cd46ada8e43",
+    "revision/remaining_20261116/registration/internlm_code_review.json": "1ef6c00e2b1e1b1bbd7aabf80c0e8206e01a2f410cd14592f91d515e3ec52611",
+    "revision/remaining_20261116/registration/language_spans.json": "f4e030cebdd3521daa6670f03bda25dbaa37ff5494e0e711af4a6cc9a12bf851",
+    "revision/remaining_20261116/registration/length_contexts.json": "7d526a271d7a2be5f011b1bc808c90dd202ae9efb44402ff5a2d9519b2c3eea2",
+    "revision/remaining_20261116/registration/length_stimuli.json": "766cc23ebe67d01488debd7a69908694e5ffc965094814f2c404968d4b12ba44",
+    "revision/remaining_20261116/registration/patch_donors.json": "647dad1dd6157322c71d7a3ad2bc9043c3611324708dc24eb480f165ad637841",
+    "revision/remaining_20261116/registration/regional_inputs.json": "d27af447aabb282b351f8fd61f6ef5708efcdba8c3bd4a063d45468fbc19000f"
+  },
+  "registration_archive_sha256": "3d07dadaa962a8e02b96880540749e67dcd14c9357cdc03113ebb6ee34441cb4",
+  "jobs": {
+    "base_final": {
+      "campaign": "followup_20261116",
+      "config": {
+        "schema_version": 1,
+        "job_id": "G12_base_final",
+        "family": "G1",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B",
+          "revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+          "tokenizer_revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "inputs_sha256": "ecfb7be0636bc0b5141d31c59a47fdb1fb01d422ec297319bc6a4cd46ada8e43",
+        "ks": [
+          0,
+          4,
+          16,
+          32
+        ],
+        "draws": [
+          0,
+          1,
+          2
+        ],
+        "n_queries": 200,
+        "max_new_tokens": 10,
+        "content_free_queries": [
+          "N/A",
+          "[MASK]",
+          ""
+        ],
+        "calibration_floor": 1e-12,
+        "primary_readout": "raw_complete_label_likelihood",
+        "format_policy": "One predeclared neutral serialization: existing render_prompt, raw template. Any fallback requires a separately frozen amendment before final evaluation.",
+        "scientific_evidence": false,
+        "final_requires_pilot_acceptance": true
+      },
+      "requires": [
+        "base_pilot"
+      ]
+    },
+    "base_pilot": {
+      "campaign": "followup_20261116",
+      "config": {
+        "schema_version": 1,
+        "job_id": "G12_base_pilot",
+        "family": "G1",
+        "role": "pilot",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B",
+          "revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+          "tokenizer_revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "inputs_sha256": "ecfb7be0636bc0b5141d31c59a47fdb1fb01d422ec297319bc6a4cd46ada8e43",
+        "ks": [
+          0,
+          4,
+          16,
+          32
+        ],
+        "draws": [
+          0
+        ],
+        "n_queries": 20,
+        "max_new_tokens": 10,
+        "content_free_queries": [
+          "N/A",
+          "[MASK]",
+          ""
+        ],
+        "calibration_floor": 1e-12,
+        "primary_readout": "raw_complete_label_likelihood",
+        "format_policy": "One predeclared neutral serialization: existing render_prompt, raw template. Any fallback requires a separately frozen amendment before final evaluation.",
+        "scientific_evidence": false,
+        "final_requires_pilot_acceptance": true
+      },
+      "requires": []
+    },
+    "hermes_final": {
+      "campaign": "followup_20261116",
+      "config": {
+        "schema_version": 1,
+        "job_id": "G12_hermes_final",
+        "family": "G1",
+        "role": "final",
+        "model": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "inputs_sha256": "ecfb7be0636bc0b5141d31c59a47fdb1fb01d422ec297319bc6a4cd46ada8e43",
+        "ks": [
+          0,
+          4,
+          16,
+          32
+        ],
+        "draws": [
+          0,
+          1,
+          2
+        ],
+        "n_queries": 200,
+        "max_new_tokens": 10,
+        "content_free_queries": [
+          "N/A",
+          "[MASK]",
+          ""
+        ],
+        "calibration_floor": 1e-12,
+        "primary_readout": "raw_complete_label_likelihood",
+        "format_policy": "One predeclared neutral serialization: existing render_prompt, raw template. Any fallback requires a separately frozen amendment before final evaluation.",
+        "scientific_evidence": false,
+        "final_requires_pilot_acceptance": true
+      },
+      "requires": [
+        "hermes_pilot"
+      ]
+    },
+    "hermes_pilot": {
+      "campaign": "followup_20261116",
+      "config": {
+        "schema_version": 1,
+        "job_id": "G12_hermes_pilot",
+        "family": "G1",
+        "role": "pilot",
+        "model": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "inputs_sha256": "ecfb7be0636bc0b5141d31c59a47fdb1fb01d422ec297319bc6a4cd46ada8e43",
+        "ks": [
+          0,
+          4,
+          16,
+          32
+        ],
+        "draws": [
+          0
+        ],
+        "n_queries": 20,
+        "max_new_tokens": 10,
+        "content_free_queries": [
+          "N/A",
+          "[MASK]",
+          ""
+        ],
+        "calibration_floor": 1e-12,
+        "primary_readout": "raw_complete_label_likelihood",
+        "format_policy": "One predeclared neutral serialization: existing render_prompt, raw template. Any fallback requires a separately frozen amendment before final evaluation.",
+        "scientific_evidence": false,
+        "final_requires_pilot_acceptance": true
+      },
+      "requires": []
+    },
+    "instruct_final": {
+      "campaign": "followup_20261116",
+      "config": {
+        "schema_version": 1,
+        "job_id": "G12_instruct_final",
+        "family": "G1",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "inputs_sha256": "ecfb7be0636bc0b5141d31c59a47fdb1fb01d422ec297319bc6a4cd46ada8e43",
+        "ks": [
+          0,
+          4,
+          16,
+          32
+        ],
+        "draws": [
+          0,
+          1,
+          2
+        ],
+        "n_queries": 200,
+        "max_new_tokens": 10,
+        "content_free_queries": [
+          "N/A",
+          "[MASK]",
+          ""
+        ],
+        "calibration_floor": 1e-12,
+        "primary_readout": "raw_complete_label_likelihood",
+        "format_policy": "One predeclared neutral serialization: existing render_prompt, raw template. Any fallback requires a separately frozen amendment before final evaluation.",
+        "scientific_evidence": false,
+        "final_requires_pilot_acceptance": true
+      },
+      "requires": [
+        "instruct_pilot"
+      ]
+    },
+    "instruct_pilot": {
+      "campaign": "followup_20261116",
+      "config": {
+        "schema_version": 1,
+        "job_id": "G12_instruct_pilot",
+        "family": "G1",
+        "role": "pilot",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "inputs_sha256": "ecfb7be0636bc0b5141d31c59a47fdb1fb01d422ec297319bc6a4cd46ada8e43",
+        "ks": [
+          0,
+          4,
+          16,
+          32
+        ],
+        "draws": [
+          0
+        ],
+        "n_queries": 20,
+        "max_new_tokens": 10,
+        "content_free_queries": [
+          "N/A",
+          "[MASK]",
+          ""
+        ],
+        "calibration_floor": 1e-12,
+        "primary_readout": "raw_complete_label_likelihood",
+        "format_policy": "One predeclared neutral serialization: existing render_prompt, raw template. Any fallback requires a separately frozen amendment before final evaluation.",
+        "scientific_evidence": false,
+        "final_requires_pilot_acceptance": true
+      },
+      "requires": []
+    },
+    "tulu_dpo_final": {
+      "campaign": "followup_20261116",
+      "config": {
+        "schema_version": 1,
+        "job_id": "G12_tulu_dpo_final",
+        "family": "G2",
+        "role": "final",
+        "model": {
+          "id": "allenai/Llama-3.1-Tulu-3-8B-DPO",
+          "revision": "a7beb67e33ffd01cc87ac3b46cadc1000985b8db",
+          "tokenizer_revision": "a7beb67e33ffd01cc87ac3b46cadc1000985b8db",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "inputs_sha256": "ecfb7be0636bc0b5141d31c59a47fdb1fb01d422ec297319bc6a4cd46ada8e43",
+        "ks": [
+          0,
+          4,
+          16,
+          32
+        ],
+        "draws": [
+          0,
+          1,
+          2
+        ],
+        "n_queries": 200,
+        "max_new_tokens": 10,
+        "content_free_queries": [
+          "N/A",
+          "[MASK]",
+          ""
+        ],
+        "calibration_floor": 1e-12,
+        "primary_readout": "raw_complete_label_likelihood",
+        "format_policy": "One predeclared neutral serialization: existing render_prompt, raw template. Any fallback requires a separately frozen amendment before final evaluation.",
+        "scientific_evidence": false,
+        "final_requires_pilot_acceptance": true
+      },
+      "requires": [
+        "tulu_dpo_pilot"
+      ]
+    },
+    "tulu_dpo_pilot": {
+      "campaign": "followup_20261116",
+      "config": {
+        "schema_version": 1,
+        "job_id": "G12_tulu_dpo_pilot",
+        "family": "G2",
+        "role": "pilot",
+        "model": {
+          "id": "allenai/Llama-3.1-Tulu-3-8B-DPO",
+          "revision": "a7beb67e33ffd01cc87ac3b46cadc1000985b8db",
+          "tokenizer_revision": "a7beb67e33ffd01cc87ac3b46cadc1000985b8db",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "inputs_sha256": "ecfb7be0636bc0b5141d31c59a47fdb1fb01d422ec297319bc6a4cd46ada8e43",
+        "ks": [
+          0,
+          4,
+          16,
+          32
+        ],
+        "draws": [
+          0
+        ],
+        "n_queries": 20,
+        "max_new_tokens": 10,
+        "content_free_queries": [
+          "N/A",
+          "[MASK]",
+          ""
+        ],
+        "calibration_floor": 1e-12,
+        "primary_readout": "raw_complete_label_likelihood",
+        "format_policy": "One predeclared neutral serialization: existing render_prompt, raw template. Any fallback requires a separately frozen amendment before final evaluation.",
+        "scientific_evidence": false,
+        "final_requires_pilot_acceptance": true
+      },
+      "requires": []
+    },
+    "tulu_final_final": {
+      "campaign": "followup_20261116",
+      "config": {
+        "schema_version": 1,
+        "job_id": "G12_tulu_final_final",
+        "family": "G2",
+        "role": "final",
+        "model": {
+          "id": "allenai/Llama-3.1-Tulu-3-8B",
+          "revision": "666943798adbde0b1aff34626007e26986a3c107",
+          "tokenizer_revision": "666943798adbde0b1aff34626007e26986a3c107",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "inputs_sha256": "ecfb7be0636bc0b5141d31c59a47fdb1fb01d422ec297319bc6a4cd46ada8e43",
+        "ks": [
+          0,
+          4,
+          16,
+          32
+        ],
+        "draws": [
+          0,
+          1,
+          2
+        ],
+        "n_queries": 200,
+        "max_new_tokens": 10,
+        "content_free_queries": [
+          "N/A",
+          "[MASK]",
+          ""
+        ],
+        "calibration_floor": 1e-12,
+        "primary_readout": "raw_complete_label_likelihood",
+        "format_policy": "One predeclared neutral serialization: existing render_prompt, raw template. Any fallback requires a separately frozen amendment before final evaluation.",
+        "scientific_evidence": false,
+        "final_requires_pilot_acceptance": true
+      },
+      "requires": [
+        "tulu_final_pilot"
+      ]
+    },
+    "tulu_final_pilot": {
+      "campaign": "followup_20261116",
+      "config": {
+        "schema_version": 1,
+        "job_id": "G12_tulu_final_pilot",
+        "family": "G2",
+        "role": "pilot",
+        "model": {
+          "id": "allenai/Llama-3.1-Tulu-3-8B",
+          "revision": "666943798adbde0b1aff34626007e26986a3c107",
+          "tokenizer_revision": "666943798adbde0b1aff34626007e26986a3c107",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "inputs_sha256": "ecfb7be0636bc0b5141d31c59a47fdb1fb01d422ec297319bc6a4cd46ada8e43",
+        "ks": [
+          0,
+          4,
+          16,
+          32
+        ],
+        "draws": [
+          0
+        ],
+        "n_queries": 20,
+        "max_new_tokens": 10,
+        "content_free_queries": [
+          "N/A",
+          "[MASK]",
+          ""
+        ],
+        "calibration_floor": 1e-12,
+        "primary_readout": "raw_complete_label_likelihood",
+        "format_policy": "One predeclared neutral serialization: existing render_prompt, raw template. Any fallback requires a separately frozen amendment before final evaluation.",
+        "scientific_evidence": false,
+        "final_requires_pilot_acceptance": true
+      },
+      "requires": []
+    },
+    "tulu_sft_final": {
+      "campaign": "followup_20261116",
+      "config": {
+        "schema_version": 1,
+        "job_id": "G12_tulu_sft_final",
+        "family": "G2",
+        "role": "final",
+        "model": {
+          "id": "allenai/Llama-3.1-Tulu-3-8B-SFT",
+          "revision": "f2a0b46b0cfda21003c6141b1ff837b7e165524d",
+          "tokenizer_revision": "f2a0b46b0cfda21003c6141b1ff837b7e165524d",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "inputs_sha256": "ecfb7be0636bc0b5141d31c59a47fdb1fb01d422ec297319bc6a4cd46ada8e43",
+        "ks": [
+          0,
+          4,
+          16,
+          32
+        ],
+        "draws": [
+          0,
+          1,
+          2
+        ],
+        "n_queries": 200,
+        "max_new_tokens": 10,
+        "content_free_queries": [
+          "N/A",
+          "[MASK]",
+          ""
+        ],
+        "calibration_floor": 1e-12,
+        "primary_readout": "raw_complete_label_likelihood",
+        "format_policy": "One predeclared neutral serialization: existing render_prompt, raw template. Any fallback requires a separately frozen amendment before final evaluation.",
+        "scientific_evidence": false,
+        "final_requires_pilot_acceptance": true
+      },
+      "requires": [
+        "tulu_sft_pilot"
+      ]
+    },
+    "tulu_sft_pilot": {
+      "campaign": "followup_20261116",
+      "config": {
+        "schema_version": 1,
+        "job_id": "G12_tulu_sft_pilot",
+        "family": "G2",
+        "role": "pilot",
+        "model": {
+          "id": "allenai/Llama-3.1-Tulu-3-8B-SFT",
+          "revision": "f2a0b46b0cfda21003c6141b1ff837b7e165524d",
+          "tokenizer_revision": "f2a0b46b0cfda21003c6141b1ff837b7e165524d",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "inputs_sha256": "ecfb7be0636bc0b5141d31c59a47fdb1fb01d422ec297319bc6a4cd46ada8e43",
+        "ks": [
+          0,
+          4,
+          16,
+          32
+        ],
+        "draws": [
+          0
+        ],
+        "n_queries": 20,
+        "max_new_tokens": 10,
+        "content_free_queries": [
+          "N/A",
+          "[MASK]",
+          ""
+        ],
+        "calibration_floor": 1e-12,
+        "primary_readout": "raw_complete_label_likelihood",
+        "format_policy": "One predeclared neutral serialization: existing render_prompt, raw template. Any fallback requires a separately frozen amendment before final evaluation.",
+        "scientific_evidence": false,
+        "final_requires_pilot_acceptance": true
+      },
+      "requires": []
+    },
+    "G3_final": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G3_final",
+        "family": "G3",
+        "runner": "length.py",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "expected_records": 2400,
+        "requires": [
+          "G3_pilot"
+        ],
+        "primary": "raw_complete_label_likelihood",
+        "secondary": "strict_generated_label_and_invalidity",
+        "analysis": "Paired query/draw percentile bootstrap5000 seed20261116,pointwise95% intervals; no multiplicity correction; retain null/adverse outcomes",
+        "contrasts": "fixed-K length, matched-token count, and interaction",
+        "acceptance": "Complete finite measurements, no overflow; token budget checks for G3; exact self identity and hook cleanup for G4. Accuracy/effect sign are not gates."
+      },
+      "requires": [
+        "G3_pilot"
+      ]
+    },
+    "G3_pilot": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G3_pilot",
+        "family": "G3",
+        "runner": "length.py",
+        "role": "pilot",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "expected_records": 80,
+        "requires": [],
+        "primary": "raw_complete_label_likelihood",
+        "secondary": "strict_generated_label_and_invalidity",
+        "analysis": "Paired query/draw percentile bootstrap5000 seed20261116,pointwise95% intervals; no multiplicity correction; retain null/adverse outcomes",
+        "contrasts": "fixed-K length, matched-token count, and interaction",
+        "acceptance": "Complete finite measurements, no overflow; token budget checks for G3; exact self identity and hook cleanup for G4. Accuracy/effect sign are not gates."
+      },
+      "requires": []
+    },
+    "G4_final": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G4_final",
+        "family": "G4",
+        "runner": "patching.py",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "expected_records": 8400,
+        "requires": [
+          "G4_pilot"
+        ],
+        "primary": "raw_complete_label_likelihood",
+        "secondary": "strict_generated_label_and_invalidity",
+        "analysis": "Paired query/draw percentile bootstrap5000 seed20261116,pointwise95% intervals; no multiplicity correction; retain null/adverse outcomes",
+        "contrasts": "same-query donor versus unrelated/self at K16 and relative to healthy K4 transfer, separately at blocks7/15/31",
+        "acceptance": "Complete finite measurements, no overflow; token budget checks for G3; exact self identity and hook cleanup for G4. Accuracy/effect sign are not gates."
+      },
+      "requires": [
+        "G4_pilot"
+      ]
+    },
+    "G4_pilot": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G4_pilot",
+        "family": "G4",
+        "runner": "patching.py",
+        "role": "pilot",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "expected_records": 280,
+        "requires": [],
+        "primary": "raw_complete_label_likelihood",
+        "secondary": "strict_generated_label_and_invalidity",
+        "analysis": "Paired query/draw percentile bootstrap5000 seed20261116,pointwise95% intervals; no multiplicity correction; retain null/adverse outcomes",
+        "contrasts": "same-query donor versus unrelated/self at K16 and relative to healthy K4 transfer, separately at blocks7/15/31",
+        "acceptance": "Complete finite measurements, no overflow; token budget checks for G3; exact self identity and hook cleanup for G4. Accuracy/effect sign are not gates."
+      },
+      "requires": []
+    },
+    "G5_hermes_early_final": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_hermes_early_final",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "final",
+        "model": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected_records": 2000,
+        "requires": [
+          "G5_hermes_early_pilot"
+        ],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": [
+        "G5_hermes_early_pilot"
+      ]
+    },
+    "G5_hermes_early_pilot": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_hermes_early_pilot",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "pilot",
+        "model": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected_records": 80,
+        "requires": [],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": []
+    },
+    "G5_hermes_late_final": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_hermes_late_final",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "final",
+        "model": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "expected_records": 2000,
+        "requires": [
+          "G5_hermes_late_pilot"
+        ],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": [
+        "G5_hermes_late_pilot"
+      ]
+    },
+    "G5_hermes_late_pilot": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_hermes_late_pilot",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "pilot",
+        "model": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "expected_records": 80,
+        "requires": [],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": []
+    },
+    "G5_hermes_middle_final": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_hermes_middle_final",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "final",
+        "model": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "expected_records": 2000,
+        "requires": [
+          "G5_hermes_middle_pilot"
+        ],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": [
+        "G5_hermes_middle_pilot"
+      ]
+    },
+    "G5_hermes_middle_pilot": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_hermes_middle_pilot",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "pilot",
+        "model": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "expected_records": 80,
+        "requires": [],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": []
+    },
+    "G5_hermes_parent_final": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_hermes_parent_final",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "final",
+        "model": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [],
+        "expected_records": 2000,
+        "requires": [
+          "G5_hermes_parent_pilot"
+        ],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": [
+        "G5_hermes_parent_pilot"
+      ]
+    },
+    "G5_hermes_parent_pilot": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_hermes_parent_pilot",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "pilot",
+        "model": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [],
+        "expected_records": 80,
+        "requires": [],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": []
+    },
+    "G5_instruct_early_final": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_instruct_early_final",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected_records": 2000,
+        "requires": [
+          "G5_instruct_early_pilot"
+        ],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": [
+        "G5_instruct_early_pilot"
+      ]
+    },
+    "G5_instruct_early_pilot": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_instruct_early_pilot",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "pilot",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "expected_records": 80,
+        "requires": [],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": []
+    },
+    "G5_instruct_late_final": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_instruct_late_final",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "expected_records": 2000,
+        "requires": [
+          "G5_instruct_late_pilot"
+        ],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": [
+        "G5_instruct_late_pilot"
+      ]
+    },
+    "G5_instruct_late_pilot": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_instruct_late_pilot",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "pilot",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "expected_records": 80,
+        "requires": [],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": []
+    },
+    "G5_instruct_middle_final": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_instruct_middle_final",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "expected_records": 2000,
+        "requires": [
+          "G5_instruct_middle_pilot"
+        ],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": [
+        "G5_instruct_middle_pilot"
+      ]
+    },
+    "G5_instruct_middle_pilot": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_instruct_middle_pilot",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "pilot",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "expected_records": 80,
+        "requires": [],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": []
+    },
+    "G5_instruct_parent_final": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_instruct_parent_final",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [],
+        "expected_records": 2000,
+        "requires": [
+          "G5_instruct_parent_pilot"
+        ],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": [
+        "G5_instruct_parent_pilot"
+      ]
+    },
+    "G5_instruct_parent_pilot": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G5_instruct_parent_pilot",
+        "runner": "splice.py",
+        "family": "G5",
+        "role": "pilot",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "donor": {
+          "id": "NousResearch/Hermes-3-Llama-3.1-8B",
+          "revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "tokenizer_revision": "896ea440e5a9e6070e3d8a2774daf2b481ab425b",
+          "template": "raw",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward"
+        },
+        "layers": [],
+        "expected_records": 80,
+        "requires": [],
+        "primary": "Raw complete-label likelihood; strict generation and invalidity reported separately",
+        "language": "50 fixed held-out news spans,128tokens each; diagnostic has news-domain limits",
+        "controls": "Exact self-splice and byte restoration each job; native low-K pilot diagnostic only",
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; high K16/32 minus K4; paired hybrid-parent differences; separate language-span paired bootstrap; no outcome-based exclusion"
+      },
+      "requires": []
+    },
+    "G6_deepseek7b_early_s0": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_deepseek7b_early_s0",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "deepseek-ai/deepseek-llm-7b-chat",
+          "revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+          "tokenizer_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "deepseek7b",
+        "seed": 0,
+        "band": "early",
+        "start": 0,
+        "n_blocks": 8,
+        "depth": 30,
+        "endpoint_k": 16,
+        "n_queries": 100,
+        "epochs": 2,
+        "updates": 150,
+        "expected_records": 400,
+        "requires": [
+          "G6_deepseek7b_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_deepseek7b_pilot"
+      ]
+    },
+    "G6_deepseek7b_pilot": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_deepseek7b_pilot",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "pilot",
+        "role": "pilot",
+        "model": {
+          "id": "deepseek-ai/deepseek-llm-7b-chat",
+          "revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+          "tokenizer_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "deepseek7b",
+        "seed": 0,
+        "band": "early",
+        "start": 0,
+        "n_blocks": 8,
+        "depth": 30,
+        "endpoint_k": 16,
+        "n_queries": 20,
+        "epochs": 1,
+        "updates": 1,
+        "expected_records": 40,
+        "requires": [],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": []
+    },
+    "G6_deepseek7b_late_s0": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_deepseek7b_late_s0",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "deepseek-ai/deepseek-llm-7b-chat",
+          "revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+          "tokenizer_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "deepseek7b",
+        "seed": 0,
+        "band": "late",
+        "start": 22,
+        "n_blocks": 8,
+        "depth": 30,
+        "endpoint_k": 16,
+        "n_queries": 100,
+        "epochs": 2,
+        "updates": 150,
+        "expected_records": 400,
+        "requires": [
+          "G6_deepseek7b_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_deepseek7b_pilot"
+      ]
+    },
+    "G6_deepseek7b_middle_s0": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_deepseek7b_middle_s0",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "deepseek-ai/deepseek-llm-7b-chat",
+          "revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+          "tokenizer_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "deepseek7b",
+        "seed": 0,
+        "band": "middle",
+        "start": 11,
+        "n_blocks": 8,
+        "depth": 30,
+        "endpoint_k": 16,
+        "n_queries": 100,
+        "epochs": 2,
+        "updates": 150,
+        "expected_records": 400,
+        "requires": [
+          "G6_deepseek7b_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_deepseek7b_pilot"
+      ]
+    },
+    "G6_deepseek7b_parent": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_deepseek7b_parent",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "parent",
+        "role": "final",
+        "model": {
+          "id": "deepseek-ai/deepseek-llm-7b-chat",
+          "revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+          "tokenizer_revision": "afbda8b347ec881666061fa67447046fc5164ec8",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "deepseek7b",
+        "seed": 0,
+        "band": "early",
+        "start": 0,
+        "n_blocks": 8,
+        "depth": 30,
+        "endpoint_k": 16,
+        "n_queries": 100,
+        "epochs": 2,
+        "updates": 150,
+        "expected_records": 400,
+        "requires": [
+          "G6_deepseek7b_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_deepseek7b_pilot"
+      ]
+    },
+    "G6_internlm25_early_s0": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_internlm25_early_s0",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "internlm/internlm2_5-7b-chat",
+          "revision": "eb72b541689b0432dade0435feb339b89fdd39ff",
+          "tokenizer_revision": "eb72b541689b0432dade0435feb339b89fdd39ff",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager",
+          "trust_remote_code": true
+        },
+        "model_key": "internlm25",
+        "seed": 0,
+        "band": "early",
+        "start": 0,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 64,
+        "n_queries": 100,
+        "epochs": 2,
+        "updates": 50,
+        "expected_records": 400,
+        "requires": [
+          "G6_internlm25_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_internlm25_pilot"
+      ]
+    },
+    "G6_internlm25_pilot": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_internlm25_pilot",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "pilot",
+        "role": "pilot",
+        "model": {
+          "id": "internlm/internlm2_5-7b-chat",
+          "revision": "eb72b541689b0432dade0435feb339b89fdd39ff",
+          "tokenizer_revision": "eb72b541689b0432dade0435feb339b89fdd39ff",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager",
+          "trust_remote_code": true
+        },
+        "model_key": "internlm25",
+        "seed": 0,
+        "band": "early",
+        "start": 0,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 64,
+        "n_queries": 20,
+        "epochs": 1,
+        "updates": 1,
+        "expected_records": 40,
+        "requires": [],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": []
+    },
+    "G6_internlm25_late_s0": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_internlm25_late_s0",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "internlm/internlm2_5-7b-chat",
+          "revision": "eb72b541689b0432dade0435feb339b89fdd39ff",
+          "tokenizer_revision": "eb72b541689b0432dade0435feb339b89fdd39ff",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager",
+          "trust_remote_code": true
+        },
+        "model_key": "internlm25",
+        "seed": 0,
+        "band": "late",
+        "start": 24,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 64,
+        "n_queries": 100,
+        "epochs": 2,
+        "updates": 50,
+        "expected_records": 400,
+        "requires": [
+          "G6_internlm25_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_internlm25_pilot"
+      ]
+    },
+    "G6_internlm25_middle_s0": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_internlm25_middle_s0",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "internlm/internlm2_5-7b-chat",
+          "revision": "eb72b541689b0432dade0435feb339b89fdd39ff",
+          "tokenizer_revision": "eb72b541689b0432dade0435feb339b89fdd39ff",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager",
+          "trust_remote_code": true
+        },
+        "model_key": "internlm25",
+        "seed": 0,
+        "band": "middle",
+        "start": 12,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 64,
+        "n_queries": 100,
+        "epochs": 2,
+        "updates": 50,
+        "expected_records": 400,
+        "requires": [
+          "G6_internlm25_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_internlm25_pilot"
+      ]
+    },
+    "G6_internlm25_parent": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_internlm25_parent",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "parent",
+        "role": "final",
+        "model": {
+          "id": "internlm/internlm2_5-7b-chat",
+          "revision": "eb72b541689b0432dade0435feb339b89fdd39ff",
+          "tokenizer_revision": "eb72b541689b0432dade0435feb339b89fdd39ff",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager",
+          "trust_remote_code": true
+        },
+        "model_key": "internlm25",
+        "seed": 0,
+        "band": "early",
+        "start": 0,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 64,
+        "n_queries": 100,
+        "epochs": 2,
+        "updates": 50,
+        "expected_records": 400,
+        "requires": [
+          "G6_internlm25_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_internlm25_pilot"
+      ]
+    },
+    "G6_llama31_early_s0": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_llama31_early_s0",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "llama31",
+        "seed": 0,
+        "band": "early",
+        "start": 0,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 16,
+        "n_queries": 200,
+        "epochs": 2,
+        "updates": 250,
+        "expected_records": 800,
+        "requires": [
+          "G6_llama31_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_llama31_pilot"
+      ]
+    },
+    "G6_llama31_pilot": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_llama31_pilot",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "pilot",
+        "role": "pilot",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "llama31",
+        "seed": 0,
+        "band": "early",
+        "start": 0,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 16,
+        "n_queries": 20,
+        "epochs": 1,
+        "updates": 1,
+        "expected_records": 40,
+        "requires": [],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": []
+    },
+    "G6_llama31_early_s1": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_llama31_early_s1",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "llama31",
+        "seed": 1,
+        "band": "early",
+        "start": 0,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 16,
+        "n_queries": 200,
+        "epochs": 2,
+        "updates": 250,
+        "expected_records": 800,
+        "requires": [
+          "G6_llama31_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_llama31_pilot"
+      ]
+    },
+    "G6_llama31_early_s2": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_llama31_early_s2",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "llama31",
+        "seed": 2,
+        "band": "early",
+        "start": 0,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 16,
+        "n_queries": 200,
+        "epochs": 2,
+        "updates": 250,
+        "expected_records": 800,
+        "requires": [
+          "G6_llama31_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_llama31_pilot"
+      ]
+    },
+    "G6_llama31_late_s0": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_llama31_late_s0",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "llama31",
+        "seed": 0,
+        "band": "late",
+        "start": 24,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 16,
+        "n_queries": 200,
+        "epochs": 2,
+        "updates": 250,
+        "expected_records": 800,
+        "requires": [
+          "G6_llama31_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_llama31_pilot"
+      ]
+    },
+    "G6_llama31_late_s1": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_llama31_late_s1",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "llama31",
+        "seed": 1,
+        "band": "late",
+        "start": 24,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 16,
+        "n_queries": 200,
+        "epochs": 2,
+        "updates": 250,
+        "expected_records": 800,
+        "requires": [
+          "G6_llama31_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_llama31_pilot"
+      ]
+    },
+    "G6_llama31_late_s2": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_llama31_late_s2",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "llama31",
+        "seed": 2,
+        "band": "late",
+        "start": 24,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 16,
+        "n_queries": 200,
+        "epochs": 2,
+        "updates": 250,
+        "expected_records": 800,
+        "requires": [
+          "G6_llama31_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_llama31_pilot"
+      ]
+    },
+    "G6_llama31_middle_s0": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_llama31_middle_s0",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "llama31",
+        "seed": 0,
+        "band": "middle",
+        "start": 12,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 16,
+        "n_queries": 200,
+        "epochs": 2,
+        "updates": 250,
+        "expected_records": 800,
+        "requires": [
+          "G6_llama31_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_llama31_pilot"
+      ]
+    },
+    "G6_llama31_middle_s1": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_llama31_middle_s1",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "llama31",
+        "seed": 1,
+        "band": "middle",
+        "start": 12,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 16,
+        "n_queries": 200,
+        "epochs": 2,
+        "updates": 250,
+        "expected_records": 800,
+        "requires": [
+          "G6_llama31_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_llama31_pilot"
+      ]
+    },
+    "G6_llama31_middle_s2": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_llama31_middle_s2",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "llama31",
+        "seed": 2,
+        "band": "middle",
+        "start": 12,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 16,
+        "n_queries": 200,
+        "epochs": 2,
+        "updates": 250,
+        "expected_records": 800,
+        "requires": [
+          "G6_llama31_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_llama31_pilot"
+      ]
+    },
+    "G6_llama31_parent": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_llama31_parent",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "parent",
+        "role": "final",
+        "model": {
+          "id": "meta-llama/Llama-3.1-8B-Instruct",
+          "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "llama31",
+        "seed": 0,
+        "band": "early",
+        "start": 0,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 16,
+        "n_queries": 200,
+        "epochs": 2,
+        "updates": 250,
+        "expected_records": 800,
+        "requires": [
+          "G6_llama31_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_llama31_pilot"
+      ]
+    },
+    "G6_mistral7b_early_s0": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_mistral7b_early_s0",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "mistralai/Mistral-7B-Instruct-v0.3",
+          "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+          "tokenizer_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "mistral7b",
+        "seed": 0,
+        "band": "early",
+        "start": 0,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 32,
+        "n_queries": 200,
+        "epochs": 2,
+        "updates": 250,
+        "expected_records": 800,
+        "requires": [
+          "G6_mistral7b_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_mistral7b_pilot"
+      ]
+    },
+    "G6_mistral7b_pilot": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_mistral7b_pilot",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "pilot",
+        "role": "pilot",
+        "model": {
+          "id": "mistralai/Mistral-7B-Instruct-v0.3",
+          "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+          "tokenizer_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "mistral7b",
+        "seed": 0,
+        "band": "early",
+        "start": 0,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 32,
+        "n_queries": 20,
+        "epochs": 1,
+        "updates": 1,
+        "expected_records": 40,
+        "requires": [],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": []
+    },
+    "G6_mistral7b_late_s0": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_mistral7b_late_s0",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "mistralai/Mistral-7B-Instruct-v0.3",
+          "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+          "tokenizer_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "mistral7b",
+        "seed": 0,
+        "band": "late",
+        "start": 24,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 32,
+        "n_queries": 200,
+        "epochs": 2,
+        "updates": 250,
+        "expected_records": 800,
+        "requires": [
+          "G6_mistral7b_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_mistral7b_pilot"
+      ]
+    },
+    "G6_mistral7b_middle_s0": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_mistral7b_middle_s0",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "adapter",
+        "role": "final",
+        "model": {
+          "id": "mistralai/Mistral-7B-Instruct-v0.3",
+          "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+          "tokenizer_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "mistral7b",
+        "seed": 0,
+        "band": "middle",
+        "start": 12,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 32,
+        "n_queries": 200,
+        "epochs": 2,
+        "updates": 250,
+        "expected_records": 800,
+        "requires": [
+          "G6_mistral7b_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_mistral7b_pilot"
+      ]
+    },
+    "G6_mistral7b_parent": {
+      "campaign": "remaining_20261116",
+      "config": {
+        "job_id": "G6_mistral7b_parent",
+        "runner": "regional.py",
+        "family": "G6",
+        "mode": "parent",
+        "role": "final",
+        "model": {
+          "id": "mistralai/Mistral-7B-Instruct-v0.3",
+          "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+          "tokenizer_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+          "template": "native",
+          "dtype": "bfloat16",
+          "device": "mps",
+          "local_files_only": true,
+          "overflow_policy": "reject",
+          "label_prefix": " ",
+          "label_score_implementation": "full_forward",
+          "attn_implementation": "eager"
+        },
+        "model_key": "mistral7b",
+        "seed": 0,
+        "band": "early",
+        "start": 0,
+        "n_blocks": 8,
+        "depth": 32,
+        "endpoint_k": 32,
+        "n_queries": 200,
+        "epochs": 2,
+        "updates": 250,
+        "expected_records": 800,
+        "requires": [
+          "G6_mistral7b_pilot"
+        ],
+        "primary": "strict_greedy_generated_label",
+        "training": {
+          "objective": "gold whole-prompt",
+          "lr": 0.0002,
+          "rank": 16,
+          "alpha": 32,
+          "dropout": 0.05,
+          "accumulation": 4
+        },
+        "analysis": "Paired query/draw bootstrap5000 seed20261116; central Llama additionally resample paired training blocks; other checkpoints descriptive one-fit cells; no significance-based exclusion"
+      },
+      "requires": [
+        "G6_mistral7b_pilot"
+      ]
+    }
+  },
+  "execution_adjustments": [
+    "Portable workspace/accelerator lock selected by the new launcher.",
+    "Fresh source manifests cover the shipped dependency closure, not unrelated historical drivers.",
+    "Pilot acceptance binds newly completed pilot summaries; archived pilot outcomes are not reused."
+  ],
+  "unavailable": [
+    "Llama3.2 exact-target cohort",
+    "Hosted DeepSeek-V3.2 zero-shot"
+  ]
+}

@@ -10,6 +10,6 @@
     "Llama3.2 exact-target cohort",
     "Hosted DeepSeek-V3.2 zero-shot"
   ],
-  "input_manifest_sha256": "89f1df6496c623533d719dadac3e8652711a54e943afc6685f20603a3123850f",
+  "input_manifest_sha256": "c974307ffed2760b4d8dd29151b40bfd7518d3b1004dbede538f6327f09b553e",
   "scope": "Reanalysis of saved measurements; no new model inference or training. Descriptive companion studies retain their separate source protocols."
 }

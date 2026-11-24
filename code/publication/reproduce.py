@@ -32,7 +32,33 @@ def verify_inputs(data):
  manifest=read(data/'manifest.json')
  for name,digest in manifest['files'].items():
   if hashlib.sha256((data/name).read_bytes()).hexdigest()!=digest:raise ValueError('Input hash mismatch: '+name)
+ if (data/'adapter_audit.json').exists():verify_regional_audits(data)
  return manifest
+
+def verify_regional_audits(data):
+ summaries=read(data/'adapter_audit.json')
+ with gzip.open(data/'regional_training_audits.json.gz','rt') as f:full=json.load(f)
+ with gzip.open(data/'protocol_companions.json.gz','rt') as f:protocols=json.load(f)
+ design=protocols['revision/remaining_20261116/registration/regional_inputs.json']['calibration']
+ if len(summaries)!=18 or {r['job'] for r in summaries}!=set(full):raise ValueError('Regional audit inventory differs')
+ for r in summaries:
+  bundle=full[r['job']];audit=bundle['training_audit'];reload=bundle['exact_reload']
+  n=len(design[r['model']][str(r['seed'])])
+  if r['calibration_rows']!=n or len(audit['encoding']['sequence_lengths'])!=n:
+   raise ValueError('Calibration row count differs: '+r['job'])
+  if r['optimizer_updates']!=n//4*2 or audit['optimizer_updates']!=r['optimizer_updates']:
+   raise ValueError('Optimizer update count differs: '+r['job'])
+  if (audit['adapted_blocks']!=r['blocks'] or audit['trainable_parameters']!=r['trainable_parameters']
+      or reload['registered_targets']!=audit['registered_targets']
+      or not audit['frozen_weights_unchanged'] or not audit['gradient_audit']['finite']
+      or not audit['gradient_audit']['nonzero_observed']
+      or audit['initial_adapter_sha256']==audit['adapter_sha256']
+      or bundle['original_training_audit_sha256']!=r['training_audit_sha256']):
+   raise ValueError('Regional execution audit differs: '+r['job'])
+  check=reload['saved_reload_audit']
+  if (not check['passed'] or check['exact_adapter_parameter_sha256']!=audit['adapter_sha256']
+      or check['exact_frozen_base_parameter_sha256']!=audit['frozen_sha256']):
+   raise ValueError('Exact saved reload differs: '+r['job'])
 
 def load_arrays(data):
  table=defaultdict(dict);confusions=Counter();n=0;job_counts=Counter()
@@ -80,7 +106,12 @@ def remaining_contrasts(arrays,data):
  reports=[]
  # Match the registered analysis's shared zero-shot draw axis, without changing N.
  a={k:np.repeat(v,3,axis=1) if v.shape[1]==1 else v for k,v in arrays.items() if k[0]!='G12'}
- for key in sorted(a):reports.append(dict(family=key[0],condition=key[1],readout=key[2],contrast='mean',**interval(a[key])))
+ for key in sorted(a):
+  summary=interval(a[key])
+  # The repeated axis preserves the registered paired bootstrap calculation;
+  # metadata must describe observed draws, not computational broadcast copies.
+  summary['n_draws']=arrays[key].shape[1]
+  reports.append(dict(family=key[0],condition=key[1],readout=key[2],contrast='mean',**summary))
  def contrast(f,name,r,terms):
   keys=[(f,c,r) for w,c in terms]
   if not all(k in a for k in keys):return
@@ -121,11 +152,11 @@ def checkpoint_contrasts(arrays):
   qi=rng.integers(0,200,200);di=rng.integers(0,3,3)
   boot[i]=np.take(np.take(a,di,axis=3),qi,axis=4).mean(axis=(3,4))
  means=a.mean(axis=(3,4));out=[]
- def append(m,r,c,val,samples):
-  lo,hi=np.quantile(samples,[.025,.975]);out.append(dict(model=m,readout=r,contrast=c,estimate=float(val),ci95_low=float(lo),ci95_high=float(hi),n_queries=200,n_demonstration_draws=3))
+ def append(m,r,c,val,samples,observed_draws=3):
+  lo,hi=np.quantile(samples,[.025,.975]);out.append(dict(model=m,readout=r,contrast=c,estimate=float(val),ci95_low=float(lo),ci95_high=float(hi),n_queries=200,n_demonstration_draws=observed_draws))
  for mi,m in enumerate(models):
   for ri,r in enumerate(modes):
-   for ki,k in enumerate(ks):append(m,r,f'accuracy_K{k}',means[mi,ri,ki],boot[:,mi,ri,ki])
+   for ki,k in enumerate(ks):append(m,r,f'accuracy_K{k}',means[mi,ri,ki],boot[:,mi,ri,ki],observed_draws=1 if k==0 else 3)
    for ki,k in [(2,16),(3,32)]:append(m,r,f'K{k}_minus_K4',means[mi,ri,ki]-means[mi,ri,1],boot[:,mi,ri,ki]-boot[:,mi,ri,1])
  for x,y in [(0,1),(0,2),(1,2),(3,4),(4,5),(3,5)]:
   for ri,r in enumerate(modes):

@@ -1,7 +1,7 @@
 # Characterizing and mitigating the in-context cliff
 
-This repository contains the current paper, supplement, measured evidence and CPU
-reproduction code. The analysis parses 53,200 final evaluations and checks 658
+This repository contains the current paper, supplement, measured evidence, CPU
+reproduction code and the authenticated scientific runtime. The analysis parses 53,200 final evaluations and checks 658
 estimates/confidence intervals against the independently validated analyses.
 Null results, invalid outputs and adverse adaptation outcomes remain included.
 
@@ -16,10 +16,15 @@ Add `--compile` to rebuild the paper and supplement with Tectonic. See
 [the analysis README](code/README.md) for protocols, limits and data provenance.
 The current main sources are `article_cac.tex` and `supplementary_ncs.tex`.
 
-This release replaces obsolete public drivers and drafts with the validated
-reproduction tree. Previous releases remain in Git history; original frozen model
-execution records and adapters remain in the research archive. This is reanalysis
-of saved measurements, not a fresh training/inference run. Some ancillary figures
+For model execution, [the runtime guide](runtime/README.md) provides the exact
+scientific source subset, registered inputs, technical pilots and isolated
+execution commands for the completed G1–G6 configurations. Preparation and import
+checks do not load models; actual inference/training requires an explicit `run`
+command and the pinned model payloads. Full regional training/reload audits are
+included with the publication data. Original saved adapter weights remain
+available from the authors on request.
+
+The CPU command above reanalyzes saved measurements. Some ancillary figures
 retain vector artwork because query-level source records are unavailable.
 
 Llama-3.2 regional and hosted DeepSeek-V3.2 zero-shot measurements are unavailable
